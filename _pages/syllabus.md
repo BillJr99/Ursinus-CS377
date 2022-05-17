@@ -202,7 +202,7 @@ schedule:
   - dtitle: "Exercise: Quadratic Formula in Python"
     dlink: "Modules/Python/Warmup/Exercise"
     points: 3
-    submission_types: "written"
+    submission_types: "onpaper"
   readings:
   - rtitle: "DD Ch. 2"
     rlink: false  
@@ -231,7 +231,7 @@ schedule:
   - dtitle: "Exercise: Iteration in Python"
     dlink: "Modules/Python/Iteration/Exercise"
     points: 3
-    submission_types: "written"  
+    submission_types: "onpaper"  
   readings:
   - rtitle: "DD Ch. 3"
     rlink: false 
@@ -340,7 +340,7 @@ schedule:
   - dtitle: "Exercise: SQL Warmup"
     dlink: "Modules/SQL/Warmup/Exercise"
     points: 3
-    submission_types: "written"   
+    submission_types: "onpaper"   
   readings:
   - rtitle: "SQL Injections from Computerphile"
     rlink: "https://www.youtube.com/watch?v=_jKylhJtPmI"
@@ -378,7 +378,7 @@ schedule:
   - dtitle: "Exercise: SQL Aggregation"
     dlink: "Modules/SQL/Aggregation/Exercise"
     points: 3
-    submission_types: "written"    
+    submission_types: "onpaper"    
 - week: "8"
   date: "0"
   title: "Facilitating Integrity with Modeling and the SQL Join"
@@ -394,7 +394,7 @@ schedule:
   - dtitle: "Exercise: SQL Joins"
     dlink: "Modules/SQL/Join/Exercise"
     points: 3
-    submission_types: "written"     
+    submission_types: "onpaper"     
 - week: "8"
   date: "2"
   title: "ER Modeling and Normalization"
