@@ -14,8 +14,8 @@ info:
   class_notebook: https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS377%20Fall%202023
   ical: files/CS377.ics
   course_prerequisites: "CS274"
-  course_start_date: "2021/08/28"
-  course_end_date: "2021/12/8"
+  course_start_date: "2023/08/28"
+  course_end_date: "2023/12/8"
   course_description: "The concepts involved in designing and using a database management system. Logical and physical database design.  Entity-Relational Modeling. Various types of database structures, manipulations of a database structure through applications, query techniques, and programming in a database language. Prerequisite: CS-275. Offered in the fall of  odd years. Three hours per week."
   welcome_message: "Welcome to CS377!"
   class_meets_days:
