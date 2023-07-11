@@ -9,6 +9,8 @@ info:
     - To model database dependencies using a formal notation
     - To normalize database schemas at varying degrees (first, second, and third normal forms)
     
+  notes: "./Notes"
+    
   models:
     - model: |
         <span>\(SSN \longrightarrow Name\)</span>
