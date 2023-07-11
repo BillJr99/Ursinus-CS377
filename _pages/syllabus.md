@@ -157,393 +157,343 @@ letter_grades:
   range: "0-59.49" 
 
 schedule:
-- week: "0"
-  date: "0"
-  title: "Course Overview: What is a Database, and Why Use Them?"
-  link: "../Ursinus-CS377-Overview"   
-  deliverables:
-  - dtitle: "Programming Assignment: Warmup Handed Out"    
-    dlink: "Assignments/Warmup"
-    points: 15
-    submission_types: "onpaper"
-- week: "0"
-  date: "1"
-  title: "Course Overview: What is a Database, and Why Use Them?"
-  readings:
-  - rtitle: "Introduction to Databases"
-    rlink: "https://www.techopedia.com/6/28832/enterprise/databases/introduction-to-databases"
-- week: "0"
-  date: "2"
-  title: "Managing Data: Text and Files" 
-  link: "Activities/TextAndFileManagement"
-  readings:
-  - rtitle: "DD Ch. 1"
-    rlink: false  
-- week: "1"
-  date: "0"
-  title: "File I/O Primer"
-  link: "Activities/FileIO"
-  deliverables:
-  - dtitle: "Programming Assignment: Warmup Due"    
-    dlink: "Assignments/Warmup"
-    points: 15
-    submission_types: "onpaper"
-  - dtitle: "Lab: File I/O Handed Out"
-    dlink: "Labs/FileIO"
-    points: 100    
-    rubricpath: "_pages/Labs/lab-fileio.md"    
-- week: "1"
-  date: "1"
-  title: "Organizing Data: Fields, Records, and Keys"
-  link: "Activities/OrganizingData"
-  deliverables:
-  - dtitle: "Exercise: Quadratic Formula in Python"
-    dlink: "Modules/Python/Warmup/Exercise"
-    points: 3
-    submission_types: "onpaper"
-  readings:
-  - rtitle: "DD Ch. 2"
-    rlink: false  
-- week: "1"
-  date: "2"
-  title: "Relational Database Systems (RDS)"
-  link: "Activities/RDS"
-  deliverables:
-  - dtitle: "Programming Assignment: GEDCOM File Format Handed Out"
-    dlink: "Assignments/GEDCOM/FileIO"
-    points: 100    
-    rubricpath: "_pages/Assignments/asmt-gedcomfile.md"  
-- week: "2"
-  date: "0"
-  title: "Relational Database Systems (RDS)"
-  deliverables:
-  - dtitle: "Lab: File I/O Due"
-    dlink: "Labs/FileIO"
-    points: 100    
-    rubricpath: "_pages/Labs/lab-fileio.md"     
-- week: "2"
-  date: "1"
-  title: "Processing and Aggregating Data Records"
-  link: "Activities/RDS/Aggregating"
-  deliverables:
-  - dtitle: "Exercise: Iteration in Python"
-    dlink: "Modules/Python/Iteration/Exercise"
-    points: 3
-    submission_types: "onpaper"  
-  readings:
-  - rtitle: "DD Ch. 3"
-    rlink: false 
-  - rtitle: "Database Introduction"
-    rlink: "https://comptoolsres.github.io/Database_Introduction.html"
-  - rlink: https://www.sqlite.org/lang_aggfunc.html
-    rtitle: Sqlite Aggregating Functions    
-- week: "2"
-  date: "2"
-  title: "Processing and Aggregating Data Records"    
-- week: "3"
-  date: "0"
-  title: "Processing and Aggregating Data Records"
-- week: "3"
-  date: "1"
-  title: "Data Modeling and Schemas"
-  link: "Activities/Modeling/Schemas"
-  deliverables:
-  - dtitle: "Programming Assignment: GEDCOM File Format Due"
-    dlink: "Assignments/GEDCOM/FileIO"
-    points: 100  
-    rubricpath: "_pages/Assignments/asmt-gedcomfile.md"   
-  readings:
-  - rtitle: "DD Ch. 4-5"
-    rlink: false 
-- week: "3"
-  date: "2"
-  title: "Data Modeling and Schemas"
-  deliverables:
-  - dtitle: "Lab: Database Tables Lab Handed Out"
-    dlink: "Labs/DatabaseTables"
-    points: 100    
-    rubricpath: "_pages/Labs/lab-dbtables.md"   
-- week: "4"
-  date: "0"
-  title: "Data Modeling and Schemas" 
-- week: "4"
-  date: "1"
-  title: "" 
-  title: "The Relational Database Model and Database Programming Primer"
-  link: "Activities/RelationalModel"
-  readings:
-  - rtitle: "DD Ch. 6-7"
-    rlink: false
-  - rlink: https://pypi.org/project/PyMySQL/
-    rtitle: PyMySQL Python Library
-  - rlink: https://docs.python.org/3/library/sqlite3.html
-    rtitle: Sqlite3 Python Library    
-  - rlink: https://www.tutorialspoint.com/postgresql/postgresql_python.htm
-    rtitle: PostgreSQL Python Library
-  - rlink: https://github.com/comptoolsres/Jupyter_content/blob/main/py4e_ch15_databases.ipynb
-    rtitle: Databases and SQL    
-- week: "4"
-  date: "2"
-  title: "The Relational Database Model and Database Programming Primer"
-  deliverables: 
-  - dtitle: "Lab: Schemas Handed Out"
-    dlink: "Labs/Schemas"
-    points: 100    
-    rubricpath: "_pages/Labs/lab-schemas.md"        
-- week: "5"
-  date: "0"
-  title: "The Relational Database Model and Database Programming Primer"
-  deliverables:
-  - dtitle: "Lab: Database Tables Lab Due"
-    dlink: "Labs/DatabaseTables"
-    points: 100    
-    rubricpath: "_pages/Labs/lab-dbtables.md"    
-- week: "5"
-  date: "1"
-  title: "The Entity-Relational (ER) Model" 
-  link: "Activities/ERModel"
-  readings:
-  - rtitle: "DD Ch. 8"
-    rlink: false     
-  deliverables: 
-  - dtitle: "Programming Assignment: ER Modeling Handed Out"
-    dlink: "Assignments/ERModeling"
-    points: 100    
-    submission_types: "written"      
-- week: "5"
-  date: "2"
-  title: "The Structured Query Language (SQL)" 
-  link: "Activities/SQL"
-  readings:
-  - rtitle: "DD Ch. 15-16"
-    rlink: false
-  - rtitle: "A Gentle Introduction to SQL"
-    rlink: "https://a-gentle-introduction-to-sql.readthedocs.io/en/latest/"    
-- week: "6"
-  date: "0"
-  title: "The Structured Query Language (SQL)"
-  deliverables:
-  - dtitle: "Lab: Schemas Due"
-    dlink: "Labs/Schemas"
-    points: 100    
-    rubricpath: "_pages/Labs/lab-schemas.md"   
-  - dtitle: "Lab: Database Design Lab Handed Out"
-    dlink: "Labs/DatabaseDesign"
-    points: 100    
-    rubricpath: "_pages/Labs/lab-dbdesign.md"   
-- week: "6"
-  date: "1"
-  title: "The Structured Query Language (SQL)"
-  deliverables:
-  - dtitle: "Exercise: SQL Warmup"
-    dlink: "Modules/SQL/Warmup/Exercise"
-    points: 3
-    submission_types: "onpaper"   
-  readings:
-  - rtitle: "SQL Injections from Computerphile"
-    rlink: "https://www.youtube.com/watch?v=_jKylhJtPmI"
-  - rtitle: "Avoiding SQL Injection Attacks by Learning to Execute One"
-    rlink: "https://www.youtube.com/watch?v=ciNHn38EyRc"      
-- week: "6"
-  date: "2"
-  title: "Data Integrity"
-  link: "Activities/DataIntegrity"  
-  readings:
-  - rtitle: "DD Ch. 9"
-    rlink: false 
-- week: "7"
-  date: "1"
-  title: "Facilitating Integrity with Modeling and the SQL Join"
-  link: "Activities/Modeling/Join"
-  deliverables:
-  - dtitle: "Programming Assignment: ER Modeling Due"
-    dlink: "Assignments/ERModeling"
-    points: 100    
-    submission_types: "written"    
-  - dtitle: "Programming Assignment: Database Programming Handed Out"
-    dlink: "Assignments/DatabaseProgramming"
-    points: 100    
-    rubricpath: "_pages/Assignments/asmt-dbprogramming.md"      
-  readings:
-  - rtitle: "DD Ch. 10"
-    rlink: false    
-  - rtitle: "SQL Joins"
-    rlink: "https://en.wikipedia.org/wiki/Join_(SQL)"    
-- week: "7"
-  date: "2"
-  title: "Facilitating Integrity with Modeling and the SQL Join"
-  deliverables:
-  - dtitle: "Exercise: SQL Aggregation"
-    dlink: "Modules/SQL/Aggregation/Exercise"
-    points: 3
-    submission_types: "onpaper"    
-- week: "8"
-  date: "0"
-  title: "Facilitating Integrity with Modeling and the SQL Join"
-  deliverables:
-  - dtitle: "Lab: Database Design Lab Due"
-    dlink: "Labs/DatabaseDesign"
-    points: 100    
-    rubricpath: "_pages/Labs/lab-dbdesign.md"     
-- week: "8"
-  date: "1"
-  title: "Facilitating Integrity with Modeling and the SQL Join"
-  deliverables:
-  - dtitle: "Exercise: SQL Joins"
-    dlink: "Modules/SQL/Join/Exercise"
-    points: 3
-    submission_types: "onpaper"     
-- week: "8"
-  date: "2"
-  title: "ER Modeling and Normalization"
-  link: "Activities/Modeling/Normalization"
-  readings:
-  - rtitle: "DD Ch. 11-12"
-    rlink: false 
-  deliverables:
-  - dtitle: "Programming Assignment: Database Programming Due"
-    dlink: "Assignments/DatabaseProgramming"
-    points: 100    
-    rubricpath: "_pages/Assignments/asmt-dbprogramming.md"   
-  - dtitle: "Programming Assignment: SQL Programming Handed Out"
-    dlink: "Assignments/SQLProgramming"
-    points: 100    
-    rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"  
-- week: "9"
-  date: "0"
-  title: "ER Modeling and Normalization"
-- week: "9"
-  date: "1"
-  title: "ER Modeling and Normalization"
-- week: "9"
-  date: "2"
-  title: "A Non-Relational Database Model: NoSQL"
-  link: "Activities/NoSQL"
-  readings:
-  - rtitle: "M Ch. 4, 8 (1, 5)"
-    rlink: false
-- week: "10"
-  date: "0"
-  title: "A Non-Relational Database Model: NoSQL"
-  deliverables:
-  - dtitle: "Programming Assignment: SQL Programming Due"
-    dlink: "Assignments/SQLProgramming"
-    points: 100    
-    rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"   
-  - dtitle: "Programming Assignment: SQL Joins Handed Out"
-    dlink: "Assignments/Join"
-    points: 100    
-    submission_types: "written" 
-- week: "10"
-  date: "1"
-  title: "CRUD with NoSQL" 
-  link: "Activities/NoSQL/CRUD"
-  readings:
-  - rtitle: "M Ch. 5 (2)"
-    rlink: false    
-  - rtitle: "PyMongo Tutorial"
-    rlink: "https://pymongo.readthedocs.io/en/stable/tutorial.html"    
-- week: "10"
-  date: "2"
-  title: "CRUD with NoSQL"
-- week: "11"
-  date: "0"
-  title: "RESTful Web Services with Databases"
-  link: "Activities/WebServices"  
-  readings:
-  - rtitle: "Flask RESTful Web Services"
-    rlink: "https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask"  
-  - rtitle: "Python Requests Library"
-    rlink: "https://realpython.com/python-requests/"
-  - rtitle: "How to use curl"
-    rlink: "https://flaviocopes.com/http-curl/"
-  deliverables:
-  - dtitle: "Programming Assignment: SQL Joins Due"
-    dlink: "Assignments/Join"
-    points: 100    
-    submission_types: "written"   
-  - dtitle: "Programming Assignment: Join Programming Handed Out"
-    dlink: "Assignments/JoinProgramming"
-    points: 100
-    rubricpath: "_pages/Assignments/asmt-joinprogramming.md"     
-- week: "11"
-  date: "1"
-  title: "RESTful Web Services with Databases"      
-- week: "11"
-  date: "2"
-  title: "NoSQL Data Processing and Aggregation" 
-  link: "Activities/NoSQL/Aggregating"    
-  readings:
-  - rtitle: "M Ch. 6, 9 (3, 6)"
-    rlink: false 
-  deliverables:
-  - dtitle: "Project: Final Project Handed Out"
-    dlink: "Projects/Final"
-    points: 100    
-    rubricpath: "_pages/Projects/proj-final.md"     
-- week: "12"
-  date: "0"
-  title: "NoSQL Data Models: Key-Value, Document, Columnar, and Graph"
-  link: "Activities/NoSQL/DataModels"
-  deliverables:
-  - dtitle: "Programming Assignment: Join Programming Due"
-    dlink: "Assignments/JoinProgramming"
-    points: 100
-    rubricpath: "_pages/Assignments/asmt-joinprogramming.md"    
-  - dtitle: "Lab: Graph Databases with Redis Handed Out"
-    dlink: "Labs/Redis"
-    points: 100    
-    rubricpath: "_pages/Labs/lab-redis.md"      
-  readings:
-  - rtitle: "Types of NoSQL Databases"
-    rlink: "https://www.mongodb.com/scale/types-of-nosql-databases"  
-  - rtitle: "Setting up Redis"
-    rlink: "https://dev.to/ramko9999/host-and-use-redis-for-free-51if"    
-- week: "13"
-  date: "0"
-  title: "Indexing a Denormalized NoSQL Datastore"
-  link: "Activities/NoSQL/Indexing"
-  readings:
-  - rtitle: "M Ch. 7 (4)"
-    rlink: false   
-  deliverables:
-  - dtitle: "Programming Assignment: Normalization Handed Out"
-    dlink: "Assignments/Normalization"
-    points: 100    
-    submission_types: "written"       
-- week: "13"
-  date: "1"
-  title: "Workshop: Toward Scaled Managed Cloud Databases"
-  readings:
-  - rtitle: "M Ch. 10 (7)"
-    rlink: false   
-- week: "13"
-  date: "2"
-  title: "Workshop: Toward Scaled Managed Cloud Databases"    
-- week: "14"
-  date: "0"
-  title: "Workshop: Toward Scaled Managed Cloud Databases"     
-  deliverables:
-  - dtitle: "Project: Final Project Due"
-    dlink: "Projects/Final"
-    points: 100    
-    rubricpath: "_pages/Projects/proj-final.md"   
-- week: "14"
-  date: "1"
-  title: "Review"   
-  deliverables:
-  - dtitle: "Lab: Graph Databases with Redis Due"
-    dlink: "Labs/Redis"
-    points: 100    
-    rubricpath: "_pages/Labs/lab-redis.md"     
-- week: "14"
-  date: "2"
-  title: "Review"
-  deliverables:   
-  - dtitle: "Programming Assignment: Normalization Due"
-    dlink: "Assignments/Normalization"
-    points: 100    
-    submission_types: "written"    
+  - week: "0"
+    date: "0"
+    title: "Course Overview: What is a Database, and Why Use Them?"
+    link: "../Ursinus-CS377-Overview"
+    deliverables:
+      - dtitle: "Programming Assignment: Warmup Handed Out"
+        dlink: "Assignments/Warmup"
+        points: 15
+        submission_types: "onpaper"
+    readings:
+      - rtitle: "Introduction to Databases"
+        rlink: "https://www.techopedia.com/6/28832/enterprise/databases/introduction-to-databases"
+  - week: "0"
+    date: "1"
+    title: "Managing Data: Text and Files"
+    link: "Activities/TextAndFileManagement"
+    readings:
+      - rtitle: "DD Ch. 1"
+        rlink: false
+  - week: "1"
+    date: "0"
+    title: "File I/O Primer"
+    link: "Activities/FileIO"
+    deliverables:
+      - dtitle: "Programming Assignment: Warmup Due"
+        dlink: "Assignments/Warmup"
+        points: 15
+        submission_types: "onpaper"
+      - dtitle: "Lab: File I/O Handed Out"
+        dlink: "Labs/FileIO"
+        points: 100
+        rubricpath: "_pages/Labs/lab-fileio.md"
+  - week: "1"
+    date: "1"
+    title: "Organizing Data: Fields, Records, and Keys"
+    link: "Activities/OrganizingData"
+    deliverables:
+      - dtitle: "Exercise: Quadratic Formula in Python"
+        dlink: "Modules/Python/Warmup/Exercise"
+        points: 3
+        submission_types: "onpaper"
+    readings:
+      - rtitle: "DD Ch. 2"
+        rlink: false
+  - week: "2"
+    date: "0"
+    title: "Relational Database Systems (RDS)"
+    link: "Activities/RDS"
+    deliverables:
+      - dtitle: "Programming Assignment: GEDCOM File Format Handed Out"
+        dlink: "Assignments/GEDCOM/FileIO"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-gedcomfile.md"
+      - dtitle: "Lab: File I/O Due"
+        dlink: "Labs/FileIO"
+        points: 100
+        rubricpath: "_pages/Labs/lab-fileio.md"
+  - week: "2"
+    date: "1"
+    title: "Processing and Aggregating Data Records"
+    link: "Activities/RDS/Aggregating"
+    deliverables:
+      - dtitle: "Exercise: Iteration in Python"
+        dlink: "Modules/Python/Iteration/Exercise"
+        points: 3
+        submission_types: "onpaper"
+    readings:
+      - rtitle: "DD Ch. 3"
+        rlink: false
+      - rtitle: "Database Introduction"
+        rlink: "https://comptoolsres.github.io/Database_Introduction.html"
+      - rtitle: "Sqlite Aggregating Functions"
+        rlink: "https://www.sqlite.org/lang_aggfunc.html"
+  - week: "3"
+    date: "0"
+    title: "Processing and Aggregating Data Records"
+  - week: "3"
+    date: "1"
+    title: "Data Modeling and Schemas"
+    link: "Activities/Modeling/Schemas"
+    deliverables:
+      - dtitle: "Programming Assignment: GEDCOM File Format Due"
+        dlink: "Assignments/GEDCOM/FileIO"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-gedcomfile.md"
+      - dtitle: "Lab: Database Tables Lab Handed Out"
+        dlink: "Labs/DatabaseTables"
+        points: 100
+        rubricpath: "_pages/Labs/lab-dbtables.md"
+    readings:
+      - rtitle: "DD Ch. 4-5"
+        rlink: false
+  - week: "4"
+    date: "0"
+    title: "Data Modeling and Schemas"
+  - week: "4"
+    date: "1"
+    title: "The Relational Database Model and Database Programming Primer"
+    link: "Activities/RelationalModel"
+    deliverables:
+      - dtitle: "Lab: Schemas Handed Out"
+        dlink: "Labs/Schemas"
+        points: 100
+        rubricpath: "_pages/Labs/lab-schemas.md"
+    readings:
+      - rtitle: "DD Ch. 6-7"
+        rlink: false
+      - rtitle: "PyMySQL Python Library"
+        rlink: "https://pypi.org/project/PyMySQL/"
+      - rtitle: "Sqlite3 Python Library"
+        rlink: "https://docs.python.org/3/library/sqlite3.html"
+      - rtitle: "PostgreSQL Python Library"
+        rlink: "https://www.tutorialspoint.com/postgresql/postgresql_python.htm"
+      - rtitle: "Databases and SQL"
+        rlink: "https://github.com/comptoolsres/Jupyter_content/blob/main/py4e_ch15_databases.ipynb"
+  - week: "5"
+    date: "0"
+    title: "The Relational Database Model and Database Programming Primer"
+    deliverables:
+      - dtitle: "Lab: Database Tables Lab Due"
+        dlink: "Labs/DatabaseTables"
+        points: 100
+        rubricpath: "_pages/Labs/lab-dbtables.md"
+  - week: "5"
+    date: "1"
+    title: "The Entity-Relational (ER) Model"
+    link: "Activities/ERModel"
+    deliverables:
+      - dtitle: "Programming Assignment: ER Modeling Handed Out"
+        dlink: "Assignments/ERModeling"
+        points: 100
+        submission_types: "written"
+    readings:
+      - rtitle: "DD Ch. 8"
+        rlink: false
+  - week: "6"
+    date: "0"
+    title: "The Structured Query Language (SQL)"
+    link: "Activities/SQL"
+    deliverables:
+      - dtitle: "Lab: Schemas Due"
+        dlink: "Labs/Schemas"
+        points: 100
+        rubricpath: "_pages/Labs/lab-schemas.md"
+      - dtitle: "Lab: Database Design Lab Handed Out"
+        dlink: "Labs/DatabaseDesign"
+        points: 100
+        rubricpath: "_pages/Labs/lab-dbdesign.md"
+    readings:
+      - rtitle: "DD Ch. 15-16"
+        rlink: false
+      - rtitle: "A Gentle Introduction to SQL"
+        rlink: "https://a-gentle-introduction-to-sql.readthedocs.io/en/latest/"
+  - week: "6"
+    date: "1"
+    title: "The Structured Query Language (SQL)"
+    deliverables:
+      - dtitle: "Exercise: SQL Warmup"
+        dlink: "Modules/SQL/Warmup/Exercise"
+        points: 3
+        submission_types: "onpaper"
+    readings:
+      - rtitle: "SQL Injections from Computerphile"
+        rlink: "https://www.youtube.com/watch?v=_jKylhJtPmI"
+      - rtitle: "Avoiding SQL Injection Attacks by Learning to Execute One"
+        rlink: "https://www.youtube.com/watch?v=ciNHn38EyRc"
+  - week: "7"
+    date: "1"
+    title: "Data Integrity"
+    link: "Activities/DataIntegrity"
+    readings:
+      - rtitle: "DD Ch. 9"
+        rlink: false
+  - week: "8"
+    date: "0"
+    title: "Facilitating Integrity with Modeling and the SQL Join"
+    link: "Activities/Modeling/Join"
+    deliverables:
+      - dtitle: "Programming Assignment: ER Modeling Due"
+        dlink: "Assignments/ERModeling"
+        points: 100
+        submission_types: "written"
+      - dtitle: "Programming Assignment: Database Programming Handed Out"
+        dlink: "Assignments/DatabaseProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-dbprogramming.md"
+    readings:
+      - rtitle: "DD Ch. 10"
+        rlink: false
+      - rtitle: "SQL Joins"
+        rlink: "https://en.wikipedia.org/wiki/Join_(SQL)"
+  - week: "8"
+    date: "1"
+    title: "Facilitating Integrity with Modeling and the SQL Join"
+    deliverables:
+      - dtitle: "Lab: Database Design Lab Due"
+        dlink: "Labs/DatabaseDesign"
+        points: 100
+        rubricpath: "_pages/Labs/lab-dbdesign.md"
+      - dtitle: "Exercise: SQL Aggregation"
+        dlink: "Modules/SQL/Aggregation/Exercise"
+        points: 3
+        submission_types: "onpaper"
+  - week: "9"
+    date: "0"
+    title: "ER Modeling and Normalization"
+    link: "Activities/Modeling/Normalization"
+    deliverables:
+      - dtitle: "Programming Assignment: Database Programming Due"
+        dlink: "Assignments/DatabaseProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-dbprogramming.md"
+      - dtitle: "Programming Assignment: SQL Programming Handed Out"
+        dlink: "Assignments/SQLProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"
+    readings:
+      - rtitle: "DD Ch. 11-12"
+        rlink: false
+  - week: "9"
+    date: "1"
+    title: "ER Modeling and Normalization"
+    deliverables:
+      - dtitle: "Exercise: SQL Joins"
+        dlink: "Modules/SQL/Join/Exercise"
+        points: 3
+        submission_types: "onpaper"
+  - week: "10"
+    date: "0"
+    title: "A Non-Relational Database Model: NoSQL"
+    link: "Activities/NoSQL"
+    deliverables:
+      - dtitle: "Programming Assignment: SQL Programming Due"
+        dlink: "Assignments/SQLProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"
+      - dtitle: "Programming Assignment: SQL Joins Handed Out"
+        dlink: "Assignments/Join"
+        points: 100
+        submission_types: "written"
+    readings:
+      - rtitle: "M Ch. 4, 8 (1, 5)"
+        rlink: false
+  - week: "10"
+    date: "1"
+    title: "CRUD with NoSQL"
+    link: "Activities/NoSQL/CRUD"
+    readings:
+      - rtitle: "M Ch. 5 (2)"
+        rlink: false
+      - rtitle: "PyMongo Tutorial"
+        rlink: "https://pymongo.readthedocs.io/en/stable/tutorial.html"
+  - week: "11"
+    date: "0"
+    title: "RESTful Web Services with Databases"
+    link: "Activities/WebServices"
+    deliverables:
+      - dtitle: "Programming Assignment: SQL Joins Due"
+        dlink: "Assignments/Join"
+        points: 100
+        submission_types: "written"
+      - dtitle: "Programming Assignment: Join Programming Handed Out"
+        dlink: "Assignments/JoinProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-joinprogramming.md"
+    readings:
+      - rtitle: "Flask RESTful Web Services"
+        rlink: "https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask"
+      - rtitle: "Python Requests Library"
+        rlink: "https://realpython.com/python-requests/"
+      - rtitle: "How to use curl"
+        rlink: "https://flaviocopes.com/http-curl/"
+  - week: "12"
+    date: "0"
+    title: "NoSQL Data Processing and Aggregation"
+    link: "Activities/NoSQL/Aggregating"
+    deliverables:
+      - dtitle: "Project: Final Project Handed Out"
+        dlink: "Projects/Final"
+        points: 100
+        rubricpath: "_pages/Projects/proj-final.md"
+    readings:
+      - rtitle: "M Ch. 6, 9 (3, 6)"
+        rlink: false
+  - week: "13"
+    date: "0"
+    title: "NoSQL Data Models: Key-Value, Document, Columnar, and Graph"
+    link: "Activities/NoSQL/DataModels"
+    deliverables:
+      - dtitle: "Programming Assignment: Join Programming Due"
+        dlink: "Assignments/JoinProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-joinprogramming.md"
+      - dtitle: "Lab: Graph Databases with Redis Handed Out"
+        dlink: "Labs/Redis"
+        points: 100
+        rubricpath: "_pages/Labs/lab-redis.md"
+    readings:
+      - rtitle: "Types of NoSQL Databases"
+        rlink: "https://www.mongodb.com/scale/types-of-nosql-databases"
+      - rtitle: "Setting up Redis"
+        rlink: "https://dev.to/ramko9999/host-and-use-redis-for-free-51if"
+  - week: "13"
+    date: "1"
+    title: "Indexing a Denormalized NoSQL Datastore"
+    link: "Activities/NoSQL/Indexing"
+    deliverables:
+      - dtitle: "Programming Assignment: Normalization Handed Out"
+        dlink: "Assignments/Normalization"
+        points: 100
+        submission_types: "written"
+    readings:
+      - rtitle: "M Ch. 7 (4)"
+        rlink: false
+  - week: "14"
+    date: "0"
+    title: "Workshop: Toward Scaled Managed Cloud Databases"
+    deliverables:
+      - dtitle: "Project: Final Project Due"
+        dlink: "Projects/Final"
+        points: 100
+        rubricpath: "_pages/Projects/proj-final.md"
+    readings:
+      - rtitle: "M Ch. 10 (7)"
+        rlink: false
+  - week: "14"
+    date: "1"
+    title: "Workshop: Toward Scaled Managed Cloud Databases"
+    deliverables:
+      - dtitle: "Programming Assignment: Normalization Due"
+        dlink: "Assignments/Normalization"
+        points: 100
+        submission_types: "written"
+      - dtitle: "Lab: Graph Databases with Redis Due"
+        dlink: "Labs/Redis"
+        points: 100
+        rubricpath: "_pages/Labs/lab-redis.md"   
   
 university:
   semester: "Fall"
