@@ -100,7 +100,6 @@ textbooks:
   authors: "Adrienne Watt and Nelson Eng"
   edition: "2nd Edition"
   link: https://opentextbc.ca/dbdesign01/open/download?type=pdf
-  image: https://opentextbc.ca/dbdesign01/wp-content/uploads/sites/11/2019/02/OTB008-Database-Design-2018-COVER-350x453.jpg
   isrequired: true 
   freelyavailable: https://opentextbc.ca/dbdesign01/open/download?type=pdf
 - title: "The Little MongoDB Book"

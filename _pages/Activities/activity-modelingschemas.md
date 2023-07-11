@@ -28,7 +28,13 @@ info:
         - "Draw lines between the foreign keys that you find and their primary keys.  What do you notice about these lines, with respect to the clusters of tables?"
         - "Which tables need to be modified to add a log message to the database?  Do any records need to be modified elsewhere?  How might you define the concept of <strong>physical data independence</strong> based on this idea?"
         - "How might you define <strong>logical independence</strong> (independence within the schema itself), given our definition of physical independence?"
-        
+
+  additional_reading:
+    - link: https://dbdiagram.io/home
+      title: "dbdiagram.io"  
+    - link: https://dev.to/techschoolguru/design-db-schema-and-generate-sql-code-with-dbdiagram-io-4ko5
+      title: "Design DB Schema and Generate SQL Code with dbdiagram"
+      
 tags:
   - models
   - schemas  
