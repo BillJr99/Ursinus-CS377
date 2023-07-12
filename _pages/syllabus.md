@@ -411,6 +411,9 @@ schedule:
     date: "0"
     title: "Vector Databases"
     link: "Activities/VectorDB"
+    readings:
+    - rtitle: "Demystifying Vector Databases"
+      rlink: "https://towardsdatascience.com/explaining-vector-databases-in-3-levels-of-difficulty-fc392e48ab78"
     deliverables:
       - dtitle: "Project: Final Project Handed Out"
         dlink: "Projects/Final"
