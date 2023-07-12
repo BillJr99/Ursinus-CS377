@@ -37,3 +37,68 @@ tags:
   
 ---
 
+## Indexing a Denormalized NoSQL Datastore
+In this report, we will explore the concept of indexing a denormalized NoSQL datastore. Denormalization is a technique used to optimize data retrieval in NoSQL databases by reducing joins and improving query performance. However, without proper indexing, denormalized data can result in slower queries and increased storage requirements. Indexing plays a crucial role in optimizing query performance in denormalized NoSQL datastores.
+
+### Indexing in NoSQL Datastores
+NoSQL databases are designed for high scalability and performance, and they employ various indexing techniques to improve query efficiency. In a denormalized NoSQL datastore, where data is intentionally duplicated to avoid joins, indexing becomes even more important to ensure fast query execution.
+
+#### Types of Indexes
+There are several types of indexes commonly used in NoSQL databases, including:
+
+1. **B-tree indexes**: B-tree indexes are widely used in NoSQL databases due to their efficient performance characteristics. They allow efficient range queries and support sorting. B-tree indexes can be used for both primary and secondary key-based lookups.
+
+2. **Hash indexes**: Hash indexes use a hashing function to map keys to their corresponding values. They are fast for exact match queries but do not support range queries or sorting.
+
+3. **Bitmap indexes**: Bitmap indexes are well-suited for databases with low cardinality attributes. They maintain a bitmap for each possible attribute value, allowing for efficient filtering and aggregations.
+
+#### Indexing Strategies for Denormalized Datastores
+In denormalized NoSQL datastores, where data duplication is intentionally performed, indexes should be carefully chosen and created to optimize query performance. Here are some indexing strategies commonly used in denormalized datastores:
+
+1. **Composite indexes**: Composite indexes combine multiple attributes into a single index, enabling efficient querying on multiple attributes simultaneously. This can significantly improve performance in denormalized datastores.
+
+2. **Covering indexes**: Covering indexes store all the columns required by a query in the index itself, eliminating the need to access the actual data rows. This helps reduce disk I/O and improves query performance.
+
+3. **Partial indexes**: Partial indexes index a subset of the data to reduce the size of the index and improve query performance. This can be useful when working with large denormalized datastores.
+
+## Python Examples
+
+### Creating an Index in MongoDB
+```python
+import pymongo
+
+# Connect to MongoDB
+client = pymongo.MongoClient("mongodb://localhost:27017")
+
+# Get reference to database and collection
+db = client["mydatabase"]
+collection = db["mycollection"]
+
+# Create index on "name" attribute
+collection.create_index("name")
+
+# Create compound index on "name" and "age" attributes
+collection.create_index([("name", pymongo.ASCENDING), ("age", pymongo.ASCENDING)])
+```
+
+### Creating an Index in Apache Cassandra
+```python
+from cassandra.cluster import Cluster
+from cassandra.query import SimpleStatement
+
+# Connect to Cassandra
+cluster = Cluster(['127.0.0.1'])
+session = cluster.connect()
+
+# Create index on "name" attribute
+create_index_query = "CREATE INDEX ON mykeyspace.mytable (name)"
+session.execute(create_index_query)
+
+# Create compound index on "name" and "age" attributes
+create_compound_index_query = "CREATE INDEX ON mykeyspace.mytable (name, age)"
+session.execute(create_compound_index_query)
+```
+
+## Additional References
+- Lakshman, A., & Maliki, K. S. (2010). Cassandra: A decentralized structured storage system. ACM SIGOPS Operating Systems Review, 44(2), 35-40. [Link](https://www.usenix.org/legacy/event/hotos09/tech/full_papers/lakshman/lakshman.pdf)
+- Stonebraker, M., Madden, S., Abadi, D., & Harizopoulos, S. (2005). The end of an architectural era: (it's time for a complete rewrite). Proceedings of the 32nd International Conference on Very Large Data Bases, 90-100. [Link](http://www.vldb.org/conf/2005/papers/p089-stonebraker.pdf)

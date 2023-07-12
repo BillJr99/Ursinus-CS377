@@ -32,9 +32,7 @@ info:
       proficient: The program is submitted according to the directions, including a readme writeup describing the solution and answering all questions posed in the instructions
   readings:
     - rtitle: "Text and File Management Activity"
-      rlink: "../../Activities/TextAndFileManagement" 
-    - rtitle: "File I/O Activity"
-      rlink: "../../Activities/FileIO"    
+      rlink: "../../Activities/TextAndFileManagement"  
       
 tags:
   - introduction

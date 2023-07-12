@@ -100,3 +100,89 @@ tags:
   - nosql  
 ---
 
+## CRUD Operations with NoSQL
+
+NoSQL databases are a popular choice for managing large volumes of unstructured and semi-structured data. Unlike traditional relational databases, NoSQL databases offer flexible data models and scalable architecture. CRUD operations (Create, Read, Update, Delete) are fundamental to working with any database, including NoSQL databases. In this report, we will explore CRUD operations with NoSQL databases, focusing on MongoDB as an example.
+
+### 1. Create
+To create a new document in a NoSQL database, we use the `insert_one()` or `insert_many()` methods in the PyMongo library. Here's an example:
+
+```python
+from pymongo import MongoClient
+
+# Connect to MongoDB
+client = MongoClient()
+db = client.mydatabase
+
+# Create a new document
+new_document = {"name": "John Doe", "age": 25, "email": "johndoe@example.com"}
+result = db.mycollection.insert_one(new_document)
+
+# Print the inserted document's ID
+print("Document inserted with ID:", result.inserted_id)
+```
+
+### 2. Read
+To retrieve data from a NoSQL database, we use the `find()` method in PyMongo. We can pass a query object to filter the data. Here's an example:
+
+```python
+from pymongo import MongoClient
+
+# Connect to MongoDB
+client = MongoClient()
+db = client.mydatabase
+
+# Retrieve data
+data = db.mycollection.find({"age": {"$gte": 18}})
+
+# Print the retrieved documents
+for document in data:
+    print(document)
+```
+
+### 3. Update
+To update existing documents in a NoSQL database, we use the `update_one()` or `update_many()` methods in PyMongo. Here's an example:
+
+```python
+from pymongo import MongoClient
+
+# Connect to MongoDB
+client = MongoClient()
+db = client.mydatabase
+
+# Update a document
+query = {"name": "John Doe"}
+update = {"$set": {"age": 30, "email": "johndoe@example.com"}}
+result = db.mycollection.update_one(query, update)
+
+# Print the number of modified documents
+print("Documents modified:", result.modified_count)
+```
+
+### 4. Delete
+To remove documents from a NoSQL database, we use the `delete_one()` or `delete_many()` methods in PyMongo. Here's an example:
+
+```python
+from pymongo import MongoClient
+
+# Connect to MongoDB
+client = MongoClient()
+db = client.mydatabase
+
+# Delete a document
+query = {"name": "John Doe"}
+result = db.mycollection.delete_one(query)
+
+# Print the number of deleted documents
+print("Documents deleted:", result.deleted_count)
+```
+
+## Conclusion
+CRUD operations are vital for interacting with NoSQL databases. This report provided an overview of CRUD with NoSQL, with a focus on MongoDB. We explored the basics of creating, reading, updating, and deleting data in a NoSQL database using PyMongo. Further references, such as the PyMongo tutorial and scholarly articles, can provide more in-depth knowledge in this area.
+
+> Note: The code examples in this report assume that the PyMongo library is installed and a MongoDB database connection is established.
+
+## References
+
+1. PyMongo Tutorial. [Online] Available: [https://pymongo.readthedocs.io/en/stable/tutorial.html](https://pymongo.readthedocs.io/en/stable/tutorial.html).
+2. Shannon Bradshaw.  MongoDB: The Definitive Guide.  2019.

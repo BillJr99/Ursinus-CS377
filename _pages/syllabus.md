@@ -178,8 +178,8 @@ schedule:
         rlink: false
   - week: "1"
     date: "0"
-    title: "File I/O Primer"
-    link: "Activities/FileIO"
+    title: "Organizing Data: Fields, Records, and Keys"
+    link: "Activities/OrganizingData"
     deliverables:
       - dtitle: "Programming Assignment: Warmup Due"
         dlink: "Assignments/Warmup"
@@ -189,40 +189,17 @@ schedule:
         dlink: "Labs/FileIO"
         points: 100
         rubricpath: "_pages/Labs/lab-fileio.md"
-  - week: "1"
-    date: "1"
-    title: "Organizing Data: Fields, Records, and Keys"
-    link: "Activities/OrganizingData"
-    deliverables:
-      - dtitle: "Exercise: Quadratic Formula in Python"
-        dlink: "Modules/Python/Warmup/Exercise"
-        points: 3
-        submission_types: "onpaper"
     readings:
       - rtitle: "DD Ch. 2"
         rlink: false
-  - week: "2"
-    date: "0"
+  - week: "1"
+    date: "1"
     title: "Relational Database Systems (RDS)"
     link: "Activities/RDS"
-    deliverables:
-      - dtitle: "Programming Assignment: GEDCOM File Format Handed Out"
-        dlink: "Assignments/GEDCOM/FileIO"
-        points: 100
-        rubricpath: "_pages/Assignments/asmt-gedcomfile.md"
-      - dtitle: "Lab: File I/O Due"
-        dlink: "Labs/FileIO"
-        points: 100
-        rubricpath: "_pages/Labs/lab-fileio.md"
   - week: "2"
-    date: "1"
+    date: "0"
     title: "Processing and Aggregating Data Records"
     link: "Activities/RDS/Aggregating"
-    deliverables:
-      - dtitle: "Exercise: Iteration in Python"
-        dlink: "Modules/Python/Iteration/Exercise"
-        points: 3
-        submission_types: "onpaper"
     readings:
       - rtitle: "DD Ch. 3"
         rlink: false
@@ -230,18 +207,19 @@ schedule:
         rlink: "https://comptoolsres.github.io/Database_Introduction.html"
       - rtitle: "Sqlite Aggregating Functions"
         rlink: "https://www.sqlite.org/lang_aggfunc.html"
+  - week: "2"
+    date: "1"
+    title: "Processing and Aggregating Data Records"
+    deliverables:
+      - dtitle: "Lab: File I/O Due"
+        dlink: "Labs/FileIO"
+        points: 100
+        rubricpath: "_pages/Labs/lab-fileio.md"
   - week: "3"
     date: "0"
-    title: "Processing and Aggregating Data Records"
-  - week: "3"
-    date: "1"
     title: "Data Modeling and Schemas"
     link: "Activities/Modeling/Schemas"
     deliverables:
-      - dtitle: "Programming Assignment: GEDCOM File Format Due"
-        dlink: "Assignments/GEDCOM/FileIO"
-        points: 100
-        rubricpath: "_pages/Assignments/asmt-gedcomfile.md"
       - dtitle: "Lab: Database Tables Lab Handed Out"
         dlink: "Labs/DatabaseTables"
         points: 100
@@ -249,11 +227,11 @@ schedule:
     readings:
       - rtitle: "DD Ch. 4-5"
         rlink: false
-  - week: "4"
-    date: "0"
+  - week: "3"
+    date: "1"
     title: "Data Modeling and Schemas"
   - week: "4"
-    date: "1"
+    date: "0"
     title: "The Relational Database Model and Database Programming Primer"
     link: "Activities/RelationalModel"
     deliverables:
@@ -272,8 +250,8 @@ schedule:
         rlink: "https://www.tutorialspoint.com/postgresql/postgresql_python.htm"
       - rtitle: "Databases and SQL"
         rlink: "https://github.com/comptoolsres/Jupyter_content/blob/main/py4e_ch15_databases.ipynb"
-  - week: "5"
-    date: "0"
+  - week: "4"
+    date: "1"
     title: "The Relational Database Model and Database Programming Primer"
     deliverables:
       - dtitle: "Lab: Database Tables Lab Due"
@@ -281,7 +259,7 @@ schedule:
         points: 100
         rubricpath: "_pages/Labs/lab-dbtables.md"
   - week: "5"
-    date: "1"
+    date: "0"
     title: "The Entity-Relational (ER) Model"
     link: "Activities/ERModel"
     deliverables:
@@ -292,8 +270,8 @@ schedule:
     readings:
       - rtitle: "DD Ch. 8"
         rlink: false
-  - week: "6"
-    date: "0"
+  - week: "5"
+    date: "1"
     title: "The Structured Query Language (SQL)"
     link: "Activities/SQL"
     deliverables:
@@ -311,7 +289,7 @@ schedule:
       - rtitle: "A Gentle Introduction to SQL"
         rlink: "https://a-gentle-introduction-to-sql.readthedocs.io/en/latest/"
   - week: "6"
-    date: "1"
+    date: "0"
     title: "The Structured Query Language (SQL)"
     deliverables:
       - dtitle: "Exercise: SQL Warmup"
@@ -323,15 +301,15 @@ schedule:
         rlink: "https://www.youtube.com/watch?v=_jKylhJtPmI"
       - rtitle: "Avoiding SQL Injection Attacks by Learning to Execute One"
         rlink: "https://www.youtube.com/watch?v=ciNHn38EyRc"
-  - week: "7"
+  - week: "6"
     date: "1"
     title: "Data Integrity"
     link: "Activities/DataIntegrity"
     readings:
       - rtitle: "DD Ch. 9"
         rlink: false
-  - week: "8"
-    date: "0"
+  - week: "7"
+    date: "1"
     title: "Facilitating Integrity with Modeling and the SQL Join"
     link: "Activities/Modeling/Join"
     deliverables:
@@ -349,7 +327,7 @@ schedule:
       - rtitle: "SQL Joins"
         rlink: "https://en.wikipedia.org/wiki/Join_(SQL)"
   - week: "8"
-    date: "1"
+    date: "0"
     title: "Facilitating Integrity with Modeling and the SQL Join"
     deliverables:
       - dtitle: "Lab: Database Design Lab Due"
@@ -360,8 +338,8 @@ schedule:
         dlink: "Modules/SQL/Aggregation/Exercise"
         points: 3
         submission_types: "onpaper"
-  - week: "9"
-    date: "0"
+  - week: "8"
+    date: "1"
     title: "ER Modeling and Normalization"
     link: "Activities/Modeling/Normalization"
     deliverables:
@@ -377,15 +355,15 @@ schedule:
       - rtitle: "DD Ch. 11-12"
         rlink: false
   - week: "9"
-    date: "1"
+    date: "0"
     title: "ER Modeling and Normalization"
     deliverables:
       - dtitle: "Exercise: SQL Joins"
         dlink: "Modules/SQL/Join/Exercise"
         points: 3
         submission_types: "onpaper"
-  - week: "10"
-    date: "0"
+  - week: "9"
+    date: "1"
     title: "A Non-Relational Database Model: NoSQL"
     link: "Activities/NoSQL"
     deliverables:
@@ -401,7 +379,7 @@ schedule:
       - rtitle: "M Ch. 4, 8 (1, 5)"
         rlink: false
   - week: "10"
-    date: "1"
+    date: "0"
     title: "CRUD with NoSQL"
     link: "Activities/NoSQL/CRUD"
     readings:
@@ -409,8 +387,8 @@ schedule:
         rlink: false
       - rtitle: "PyMongo Tutorial"
         rlink: "https://pymongo.readthedocs.io/en/stable/tutorial.html"
-  - week: "11"
-    date: "0"
+  - week: "10"
+    date: "1"
     title: "RESTful Web Services with Databases"
     link: "Activities/WebServices"
     deliverables:
@@ -429,22 +407,19 @@ schedule:
         rlink: "https://realpython.com/python-requests/"
       - rtitle: "How to use curl"
         rlink: "https://flaviocopes.com/http-curl/"
-  - week: "12"
+  - week: "11"
     date: "0"
-    title: "NoSQL Data Processing and Aggregation"
-    link: "Activities/NoSQL/Aggregating"
+    title: "Vector Databases"
+    link: "Activities/VectorDB"
     deliverables:
       - dtitle: "Project: Final Project Handed Out"
         dlink: "Projects/Final"
         points: 100
         rubricpath: "_pages/Projects/proj-final.md"
-    readings:
-      - rtitle: "M Ch. 6, 9 (3, 6)"
-        rlink: false
-  - week: "13"
+  - week: "12"
     date: "0"
-    title: "NoSQL Data Models: Key-Value, Document, Columnar, and Graph"
-    link: "Activities/NoSQL/DataModels"
+    title: "NoSQL Data Processing and Aggregation"
+    link: "Activities/NoSQL/Aggregating"
     deliverables:
       - dtitle: "Programming Assignment: Join Programming Due"
         dlink: "Assignments/JoinProgramming"
@@ -455,36 +430,39 @@ schedule:
         points: 100
         rubricpath: "_pages/Labs/lab-redis.md"
     readings:
-      - rtitle: "Types of NoSQL Databases"
-        rlink: "https://www.mongodb.com/scale/types-of-nosql-databases"
+      - rtitle: "M Ch. 6, 9 (3, 6)"
+        rlink: false
       - rtitle: "Setting up Redis"
         rlink: "https://dev.to/ramko9999/host-and-use-redis-for-free-51if"
   - week: "13"
-    date: "1"
-    title: "Indexing a Denormalized NoSQL Datastore"
-    link: "Activities/NoSQL/Indexing"
+    date: "0"
+    title: "NoSQL Data Models: Key-Value, Document, Columnar, and Graph"
+    link: "Activities/NoSQL/DataModels"
     deliverables:
       - dtitle: "Programming Assignment: Normalization Handed Out"
         dlink: "Assignments/Normalization"
         points: 100
         submission_types: "written"
     readings:
-      - rtitle: "M Ch. 7 (4)"
+      - rtitle: "M. Ch. 10 (7)"
         rlink: false
-  - week: "14"
-    date: "0"
-    title: "Workshop: Toward Scaled Managed Cloud Databases"
+      - rtitle: "Types of NoSQL Databases"
+        rlink: "https://www.mongodb.com/scale/types-of-nosql-databases"
+  - week: "13"
+    date: "1"
+    title: "Indexing a Denormalized NoSQL Datastore"
+    link: "Activities/NoSQL/Indexing"
     deliverables:
       - dtitle: "Project: Final Project Due"
         dlink: "Projects/Final"
         points: 100
         rubricpath: "_pages/Projects/proj-final.md"
     readings:
-      - rtitle: "M Ch. 10 (7)"
+      - rtitle: "M Ch. 7 (4)"
         rlink: false
   - week: "14"
-    date: "1"
-    title: "Workshop: Toward Scaled Managed Cloud Databases"
+    date: "0"
+    title: "Review"
     deliverables:
       - dtitle: "Programming Assignment: Normalization Due"
         dlink: "Assignments/Normalization"
@@ -493,7 +471,10 @@ schedule:
       - dtitle: "Lab: Graph Databases with Redis Due"
         dlink: "Labs/Redis"
         points: 100
-        rubricpath: "_pages/Labs/lab-redis.md"   
+        rubricpath: "_pages/Labs/lab-redis.md"
+  - week: "14"
+    date: "1"
+    title: "Review"
   
 university:
   semester: "Fall"
@@ -563,7 +544,27 @@ university:
 ---
 
 ## Overview
-Welcome to CS377: Database Design!  In this course, we will explore models for storing, organizing, indexing, searching, transmitting, and scaling data to make it useful for humans and computers to extract efficiently and effectively. 
+Welcome to CS377: Database Design!  In this course, we will explore models for storing, organizing, indexing, searching, transmitting, and scaling data to make it useful for humans and computers to extract efficiently and effectively.  We will explore these fundamental concepts of databases and understand why they are an essential component of modern computing systems. Databases are widely used to store, manage, and retrieve vast amounts of structured data efficiently. Whether it is for a small business or a large enterprise, understanding databases is crucial for making informed decisions about data storage and retrieval processes.
+
+### What is a Database?
+A database is an organized collection of data, typically stored and accessed electronically. It consists of structured data, such as tables, records, and fields, which can be manipulated and queried using a database management system (DBMS). Databases provide a structured and efficient way to store, retrieve, update, and analyze data.
+
+#### Relational Databases
+Relational databases are the most common type of database used in modern systems. They organize data in tables, where each table consists of rows (records) and columns (fields). The relationships between tables are established through keys, such as primary keys and foreign keys. The SQL (Structured Query Language) is widely used for interacting with relational databases.
+
+#### NoSQL Databases
+NoSQL (Not Only SQL) databases have gained popularity due to their ability to handle unstructured and semi-structured data efficiently. Unlike relational databases, NoSQL databases do not require a predefined schema and can handle large amounts of data with high scalability and performance. Examples of NoSQL databases include MongoDB, Cassandra, and Redis.
+
+### Why Use Databases?
+Databases offer various benefits that make them indispensable in modern computing systems. Here are some of the key reasons for using databases:
+
+1. Data Persistence: Databases provide a reliable method for long-term data storage, ensuring data durability and availability even in the face of hardware or software failures.
+
+2. Data Integrity: Databases enforce data integrity by defining constraints and rules that ensure the validity and consistency of the stored data. This helps maintain data quality and accuracy.
+
+3. Data Security: Databases offer mechanisms to control access to data, ensuring that only authorized users can view or modify sensitive information. Security features include user authentication, role-based access control, and encryption.
+
+4. Data Efficiency: Databases enable efficient storage and retrieval of data by optimizing internal data structures and query processing algorithms. This leads to faster response times and improved system performance.
 
 ## Homework
 
