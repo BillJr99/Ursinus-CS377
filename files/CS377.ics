@@ -462,7 +462,7 @@ DTSTAMP:20231114T000000Z
 DTSTART;VALUE=DATE:20231114
 SUMMARY:CS377 Database Design: Class Meeting
 LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/VectorDB\nDeliverable: Project: Final Project Handed Out https://www.billmongan.com/Ursinus-CS377-Fall2023/Projects/Final
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/VectorDB\nReading: Demystifying Vector Databases https://towardsdatascience.com/explaining-vector-databases-in-3-levels-of-difficulty-fc392e48ab78\nDeliverable: Project: Final Project Handed Out https://www.billmongan.com/Ursinus-CS377-Fall2023/Projects/Final
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
