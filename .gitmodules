@@ -13,3 +13,6 @@
 [submodule "files/cosc_304"]
 	path = files/cosc_304
 	url = https://github.com/rlawrenc/cosc_304.git
+[submodule "files/microsoft-sql-server-samples"]
+	path = files/microsoft-sql-server-samples
+	url = https://github.com/microsoft/sql-server-samples.git
