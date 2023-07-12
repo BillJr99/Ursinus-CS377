@@ -371,16 +371,15 @@ except mysql.connector.Error as err:
 5. Brown, R., & Lee, C. (2018). Preventing SQL Injection Attacks Using Machine Learning Techniques. International Journal of Advanced Computer Science and Applications, 9(8), 424-431.
 6. The resource "A Gentle Introduction to SQL" provides a comprehensive guide to SQL, covering the basics as well as advanced concepts. It covers topics such as querying, filtering, sorting, and joining data. This resource is accessible online at [https://a-gentle-introduction-to-sql.readthedocs.io/en/latest/](https://a-gentle-introduction-to-sql.readthedocs.io/en/latest/).
 7. The Computerphile video titled "SQL Injections" explores the concept of SQL injection attacks, which are a security vulnerability in web applications that use SQL databases. The video explains the concept of SQL injections, how they can be exploited, and how to prevent them. The video can be found on YouTube at [https://www.youtube.com/watch?v=_jKylhJtPmI](https://www.youtube.com/watch?v=_jKylhJtPmI).
-8. Another valuable resource is the YouTube video titled "Avoiding SQL Injection Attacks by Learning to Execute One." This video provides a practical demonstration of how SQL injections work and explains countermeasures to prevent them. It can be accessed on YouTube at [https://www.youtube.com/watch?v=ciNHn38EyRc](https://www.youtube.com/watch?v=ciNHn38EyRc).
-9. Oracle. (2021). MySQL :: MySQL Installer (Archived Versions). Retrieved from https://dev.mysql.com/downloads/installer/
-10. Homebrew. (n.d.). Homebrew. Retrieved from https://brew.sh/
-11. Oracle. (2021). MySQL :: MySQL Connector/Python. Retrieved from https://dev.mysql.com/doc/connector-python/en/
-12. MySQL. (2021). MySQL Documentation. Retrieved from https://dev.mysql.com/doc/
-13. Oracle, "Java Database Connectivity (JDBC) API":
+8. Oracle. (2021). MySQL :: MySQL Installer (Archived Versions). Retrieved from https://dev.mysql.com/downloads/installer/
+9. Homebrew. (n.d.). Homebrew. Retrieved from https://brew.sh/
+10. Oracle. (2021). MySQL :: MySQL Connector/Python. Retrieved from https://dev.mysql.com/doc/connector-python/en/
+11. MySQL. (2021). MySQL Documentation. Retrieved from https://dev.mysql.com/doc/
+12. Oracle, "Java Database Connectivity (JDBC) API":
 [https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/package-summary.html](https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/package-summary.html)
-14. Oracle, "JDBC Basics":
+13. Oracle, "JDBC Basics":
 [https://docs.oracle.com/javase/tutorial/jdbc/basics/](https://docs.oracle.com/javase/tutorial/jdbc/basics/)
-15. Bahtiar, N., Norwawi, N., & Ainuddin, N. (2017). Integration of MySql and Java Program Using JDBC API. Journal of Telecommunication, Electronic and Computer Engineering (JTEC), 9(3-7), 99-103.
+14. Bahtiar, N., Norwawi, N., & Ainuddin, N. (2017). Integration of MySql and Java Program Using JDBC API. Journal of Telecommunication, Electronic and Computer Engineering (JTEC), 9(3-7), 99-103.
 [https://jtec.utem.edu.my/jtec/article/view/366](https://jtec.utem.edu.my/jtec/article/view/366)
-16. Sharma, A., Lekshmi, K. S., & Thripati, P. K. (2021). Building a Collaborative Intrusion Detection System Using Stackelberg Game Model for IoT Networks. National Academy Science Letters (Springer), 1-10.
+15. Sharma, A., Lekshmi, K. S., & Thripati, P. K. (2021). Building a Collaborative Intrusion Detection System Using Stackelberg Game Model for IoT Networks. National Academy Science Letters (Springer), 1-10.
 [https://doi.org/10.1007/s40009-021-01042-3](https://doi.org/10.1007/s40009-021-01042-3)
