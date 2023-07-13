@@ -380,6 +380,4 @@ except mysql.connector.Error as err:
 13. Oracle, "JDBC Basics":
 [https://docs.oracle.com/javase/tutorial/jdbc/basics/](https://docs.oracle.com/javase/tutorial/jdbc/basics/)
 14. Bahtiar, N., Norwawi, N., & Ainuddin, N. (2017). Integration of MySql and Java Program Using JDBC API. Journal of Telecommunication, Electronic and Computer Engineering (JTEC), 9(3-7), 99-103.
-[https://jtec.utem.edu.my/jtec/article/view/366](https://jtec.utem.edu.my/jtec/article/view/366)
 15. Sharma, A., Lekshmi, K. S., & Thripati, P. K. (2021). Building a Collaborative Intrusion Detection System Using Stackelberg Game Model for IoT Networks. National Academy Science Letters (Springer), 1-10.
-[https://doi.org/10.1007/s40009-021-01042-3](https://doi.org/10.1007/s40009-021-01042-3)

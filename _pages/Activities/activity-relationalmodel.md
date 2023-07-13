@@ -132,5 +132,3 @@ connection.close()
 Here are some additional resources that will help you further understand the relational database model and database programming:
 
 - [Databases and SQL](https://github.com/comptoolsres/Jupyter_content/blob/main/py4e_ch15_databases.ipynb): This comprehensive tutorial provides an in-depth introduction to databases, SQL, and database programming using Python.
-- [Introduction to the Relational Model and SQL](https://dl.acm.org/doi/10.1145/34222.34223): This scholarly article introduces the relational model and SQL, providing a foundation for understanding database systems.
-- [An Analysis of Database Programming Languages](https://www.semanticscholar.org/paper/An-Analysis-of-Database-Programming-Languages-Codd/0df5df215990f89bf7d3b071e57bbbc394b86baa): This research paper compares various database programming languages, discussing their features, advantages, and limitations.

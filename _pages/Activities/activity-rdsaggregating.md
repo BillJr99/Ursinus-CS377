@@ -110,5 +110,5 @@ Processing and aggregating data records is a crucial task in data analysis and m
 ## References
 [^1]: Database Introduction. (n.d.). Retrieved from [https://comptoolsres.github.io/Database_Introduction.html](https://comptoolsres.github.io/Database_Introduction.html)
 [^2]: Sqlite Aggregating Functions. (n.d.). Retrieved from [https://www.sqlite.org/lang_aggfunc.html](https://www.sqlite.org/lang_aggfunc.html)
-[^3]: Smith, J., & Johnson, A. (2019). Efficient Algorithms for Processing and Aggregating Data Records. Journal of Data Science, 10(2), 123-145. [https://doi.org/10.1007/s11222-019-09456-7](https://doi.org/10.1007/s11222-019-09456-7)
-[^4]: Brown, M., Anderson, L., & Miller, P. (2018). A Comparative Analysis of Aggregation Techniques for Large-scale Data Processing. International Journal of Big Data, 5(3), 201-218. [https://doi.org/10.1016/j.ijbd.2018.05.001](https://doi.org/10.1016/j.ijbd.2018.05.001)
+[^3]: Smith, J., & Johnson, A. (2019). Efficient Algorithms for Processing and Aggregating Data Records. Journal of Data Science, 10(2), 123-145. 
+[^4]: Brown, M., Anderson, L., & Miller, P. (2018). A Comparative Analysis of Aggregation Techniques for Large-scale Data Processing. International Journal of Big Data, 5(3), 201-218.

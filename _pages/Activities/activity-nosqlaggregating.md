@@ -135,8 +135,8 @@ Effective use of these techniques requires a good understanding of the underlyin
 
 ## References
 
-1. Dean, J., & Ghemawat, S. (2008). MapReduce: simplified data processing on large clusters. Communications of the ACM, 51(1), 107-13. (https://dl.acm.org/doi/10.1145/1327452.1327492)
+1. Dean, J., & Ghemawat, S. (2008). MapReduce: simplified data processing on large clusters. Communications of the ACM, 51(1), 107-13. 
 
-2. Han, J., Haihong, E., Le, G., & Du, J. (2011). Survey on NoSQL database. 2011 6th International Conference on Pervasive Computing and Applications, Port Elizabeth, South Africa, pp. 363-366. (https://ieeexplore.ieee.org/abstract/document/6069593)
+2. Han, J., Haihong, E., Le, G., & Du, J. (2011). Survey on NoSQL database. 2011 6th International Conference on Pervasive Computing and Applications, Port Elizabeth, South Africa, pp. 363-366. 
 
 3. MongoDB Manual. (n.d.). Aggregation Pipeline. MongoDB Documentation. Retrieved from https://docs.mongodb.com/manual/core/aggregation-pipeline/

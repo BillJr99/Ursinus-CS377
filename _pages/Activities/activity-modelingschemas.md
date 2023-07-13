@@ -102,9 +102,9 @@ A schema is a logical structure that represents the organization and design of a
 
 ### Research and Further Reading
 
-1. Codd, E. F. (1970). **A Relational Model of Data for Large Shared Data Banks**. *Communications of the ACM, 13(6)*. [Link](https://dl.acm.org/doi/10.1145/362384.362685)
+1. Codd, E. F. (1970). **A Relational Model of Data for Large Shared Data Banks**. *Communications of the ACM, 13(6)*. 
 2. Batini, C., & Navathe, S. B. (1986). **Conceptual Database Design: An Entity-Relationship Approach**. *Addison-Wesley*.
 3. Oracle. **Database Concepts**. *Oracle Database Documentation*. [Link](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/cncpt/introduction-to-the-oracle-database.html)
-4. Chong, F. W. K., Lee, M. L., Ling, T. W., & J. S. (2001). **A Multi-Relational Extension to UML Class Diagram for Advanced Database Schema Design**. *Proceedings of the 4th International Conference on the Entity-Relationship Approach*. [Link](https://dl.acm.org/doi/10.5555/780225.780235)
+4. Chong, F. W. K., Lee, M. L., Ling, T. W., & J. S. (2001). **A Multi-Relational Extension to UML Class Diagram for Advanced Database Schema Design**. *Proceedings of the 4th International Conference on the Entity-Relationship Approach*.
 
 Data modeling and schemas are essential components of database design. By creating clear, structured representations of data, data modeling enables effective communication, data integrity, and efficient querying. Schemas, on the other hand, provide a logical and physical structure to organize and manage data. Properly designed data models and schemas are crucial for building scalable, maintainable, and secure databases.
