@@ -122,11 +122,11 @@ grade_breakdown:
 - category: "Programming Assignments"
   weight: "40%"
 - category: "Labs"
-  weight: "25%"
+  weight: "35%"
 - category: "Exercises"
-  weight: "15%"
+  weight: "10%"
 - category: "Final Project"
-  weight: "20%"  
+  weight: "15%"  
 
 letter_grades:
 - letter: "A+"
