@@ -298,6 +298,10 @@ schedule:
         dlink: "Assignments/ERModeling"
         points: 100
         submission_types: "written"
+      - dtitle: "Exercise: SQL Warmup"
+        dlink: "Modules/SQL/Warmup/Exercise"
+        points: 3
+        submission_types: "onpaper"        
   - week: "5"
     date: "1"
     title: "The Relational Database Model and Advanced Database Programming"
@@ -326,10 +330,10 @@ schedule:
     date: "0"
     title: "The Relational Database Model and Advanced Database Programming"
     deliverables:
-      - dtitle: "Exercise: SQL Warmup"
-        dlink: "Modules/SQL/Warmup/Exercise"
+      - dtitle: "Exercise: SQL Aggregation"
+        dlink: "Modules/SQL/Aggregation/Exercise"
         points: 3
-        submission_types: "onpaper"
+        submission_types: "onpaper"    
     readings:
       - rtitle: "SQL Injections from Computerphile"
         rlink: "https://www.youtube.com/watch?v=_jKylhJtPmI"
@@ -377,10 +381,6 @@ schedule:
         dlink: "Labs/DatabaseDesign"
         points: 100
         rubricpath: "_pages/Labs/lab-dbdesign.md"
-      - dtitle: "Exercise: SQL Aggregation"
-        dlink: "Modules/SQL/Aggregation/Exercise"
-        points: 3
-        submission_types: "onpaper"
     readings:
       - rtitle: "DD Ch. 10"
         rlink: false
@@ -484,10 +484,10 @@ schedule:
         dlink: "Assignments/JoinProgramming"
         points: 100
         rubricpath: "_pages/Assignments/asmt-joinprogramming.md"
-      - dtitle: "Lab: Graph Databases with Redis Handed Out"
-        dlink: "Labs/Redis"
+      - dtitle: "Programming Assignment: Normalization Handed Out"
+        dlink: "Assignments/Normalization"
         points: 100
-        rubricpath: "_pages/Labs/lab-redis.md"
+        submission_types: "written"        
     readings:
       - rtitle: "M Ch. 6, 9 (3, 6)"
         rlink: false
@@ -498,10 +498,10 @@ schedule:
     title: "NoSQL Data Models: Key-Value, Document, Columnar, and Graph"
     link: "Activities/NoSQL/DataModels"
     deliverables:
-      - dtitle: "Programming Assignment: Normalization Handed Out"
-        dlink: "Assignments/Normalization"
+      - dtitle: "Lab: Graph Databases with Redis Handed Out"
+        dlink: "Labs/Redis"
         points: 100
-        submission_types: "written"
+        rubricpath: "_pages/Labs/lab-redis.md"    
     readings:
       - rtitle: "M. Ch. 10 (7)"
         rlink: false
@@ -527,13 +527,14 @@ schedule:
         dlink: "Assignments/Normalization"
         points: 100
         submission_types: "written"
-      - dtitle: "Lab: Graph Databases with Redis Due"
-        dlink: "Labs/Redis"
-        points: 100
-        rubricpath: "_pages/Labs/lab-redis.md"
   - week: "14"
     date: "1"
     title: "Review"
+    deliverables:
+      - dtitle: "Lab: Graph Databases with Redis Due"
+        dlink: "Labs/Redis"
+        points: 100
+        rubricpath: "_pages/Labs/lab-redis.md"    
   
 university:
   semester: "Fall"
