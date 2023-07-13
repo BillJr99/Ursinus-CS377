@@ -244,13 +244,22 @@ BEGIN:VEVENT
 UID:00000000-0000-0000-0000-036dc582c416
 DTSTAMP:20231003T000000Z
 DTSTART;VALUE=DATE:20231003
-SUMMARY:CS377 Database Design: Class Meeting
+SUMMARY:CS377 Database Design: Exercise: SQL Warmup
 LOCATION:
-DESCRIPTION:\nDeliverable: Programming Assignment: ER Modeling Handed Out https://www.billmongan.com/Ursinus-CS377-Fall2023/Assignments/ERModeling
+DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:00000000-0000-0000-0000-036dc582c417
+DTSTAMP:20231003T000000Z
+DTSTART;VALUE=DATE:20231003
+SUMMARY:CS377 Database Design: Class Meeting
+LOCATION:
+DESCRIPTION:\nDeliverable: Programming Assignment: ER Modeling Handed Out https://www.billmongan.com/Ursinus-CS377-Fall2023/Assignments/ERModeling\nDeliverable: Exercise: SQL Warmup https://www.billmongan.com/Ursinus-CS377-Fall2023/Modules/SQL/Warmup/Exercise
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+UID:00000000-0000-0000-0000-036dc582c418
 DTSTAMP:20231005T000000Z
 DTSTART;VALUE=DATE:20231005
 SUMMARY:CS377 Database Design: Lab: Schemas Due
@@ -259,7 +268,7 @@ DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-036dc582c418
+UID:00000000-0000-0000-0000-036dc582c419
 DTSTAMP:20231005T000000Z
 DTSTART;VALUE=DATE:20231005
 SUMMARY:CS377 Database Design: Lab: Database Design Lab Handed Out
@@ -268,7 +277,7 @@ DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-036dc582c419
+UID:00000000-0000-0000-0000-036dc582c41a
 DTSTAMP:20231005T000000Z
 DTSTART;VALUE=DATE:20231005
 SUMMARY:CS377 Database Design: Class Meeting
@@ -277,25 +286,25 @@ DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/Relatio
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-036dc582c41a
+UID:00000000-0000-0000-0000-036dc582c41b
 DTSTAMP:20231010T000000Z
 DTSTART;VALUE=DATE:20231010
-SUMMARY:CS377 Database Design: Exercise: SQL Warmup
+SUMMARY:CS377 Database Design: Exercise: SQL Aggregation
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-036dc582c41b
+UID:00000000-0000-0000-0000-036dc582c41c
 DTSTAMP:20231010T000000Z
 DTSTART;VALUE=DATE:20231010
 SUMMARY:CS377 Database Design: Class Meeting
 LOCATION:
-DESCRIPTION:\nReading: SQL Injections from Computerphile https://www.youtube.com/watch?v=_jKylhJtPmI\nReading: Avoiding SQL Injection Attacks by Learning to Execute One https://www.youtube.com/watch?v=ciNHn38EyRc\nReading: SQL Security Slides https://www.billmongan.com/Ursinus-CS377-Fall2023/./files/cosc_304/topics/17_security/304_17_Security.pdf\nDeliverable: Exercise: SQL Warmup https://www.billmongan.com/Ursinus-CS377-Fall2023/Modules/SQL/Warmup/Exercise
+DESCRIPTION:\nReading: SQL Injections from Computerphile https://www.youtube.com/watch?v=_jKylhJtPmI\nReading: Avoiding SQL Injection Attacks by Learning to Execute One https://www.youtube.com/watch?v=ciNHn38EyRc\nReading: SQL Security Slides https://www.billmongan.com/Ursinus-CS377-Fall2023/./files/cosc_304/topics/17_security/304_17_Security.pdf\nDeliverable: Exercise: SQL Aggregation https://www.billmongan.com/Ursinus-CS377-Fall2023/Modules/SQL/Aggregation/Exercise
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-036dc582c41c
+UID:00000000-0000-0000-0000-036dc582c41d
 DTSTAMP:20231012T000000Z
 DTSTART;VALUE=DATE:20231012
 SUMMARY:CS377 Database Design: Class Meeting
@@ -304,7 +313,7 @@ DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/ERModel
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-036dc582c41d
+UID:00000000-0000-0000-0000-036dc582c41e
 DTSTAMP:20231019T000000Z
 DTSTART;VALUE=DATE:20231019
 SUMMARY:CS377 Database Design: Programming Assignment: ER Modeling Due
@@ -313,7 +322,7 @@ DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-036dc582c41e
+UID:00000000-0000-0000-0000-036dc582c41f
 DTSTAMP:20231019T000000Z
 DTSTART;VALUE=DATE:20231019
 SUMMARY:CS377 Database Design: Programming Assignment: Database Programming Handed Out
@@ -322,7 +331,7 @@ DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-036dc582c41f
+UID:00000000-0000-0000-0000-036dc582c420
 DTSTAMP:20231019T000000Z
 DTSTART;VALUE=DATE:20231019
 SUMMARY:CS377 Database Design: Class Meeting
@@ -331,19 +340,10 @@ DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/DataInt
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-036dc582c420
-DTSTAMP:20231024T000000Z
-DTSTART;VALUE=DATE:20231024
-SUMMARY:CS377 Database Design: Lab: Database Design Lab Due
-LOCATION:
-DESCRIPTION:
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
 UID:00000000-0000-0000-0000-036dc582c421
 DTSTAMP:20231024T000000Z
 DTSTART;VALUE=DATE:20231024
-SUMMARY:CS377 Database Design: Exercise: SQL Aggregation
+SUMMARY:CS377 Database Design: Lab: Database Design Lab Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
@@ -354,7 +354,7 @@ DTSTAMP:20231024T000000Z
 DTSTART;VALUE=DATE:20231024
 SUMMARY:CS377 Database Design: Class Meeting
 LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/Modeling/Join\nReading: DD Ch. 10\nReading: SQL Joins https://en.wikipedia.org/wiki/Join_(SQL)\nDeliverable: Lab: Database Design Lab Due https://www.billmongan.com/Ursinus-CS377-Fall2023/Labs/DatabaseDesign\nDeliverable: Exercise: SQL Aggregation https://www.billmongan.com/Ursinus-CS377-Fall2023/Modules/SQL/Aggregation/Exercise
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/Modeling/Join\nReading: DD Ch. 10\nReading: SQL Joins https://en.wikipedia.org/wiki/Join_(SQL)\nDeliverable: Lab: Database Design Lab Due https://www.billmongan.com/Ursinus-CS377-Fall2023/Labs/DatabaseDesign
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -496,7 +496,7 @@ BEGIN:VEVENT
 UID:00000000-0000-0000-0000-036dc582c432
 DTSTAMP:20231121T000000Z
 DTSTART;VALUE=DATE:20231121
-SUMMARY:CS377 Database Design: Lab: Graph Databases with Redis Handed Out
+SUMMARY:CS377 Database Design: Programming Assignment: Normalization Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
@@ -507,14 +507,14 @@ DTSTAMP:20231121T000000Z
 DTSTART;VALUE=DATE:20231121
 SUMMARY:CS377 Database Design: Class Meeting
 LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/NoSQL/Aggregating\nReading: M Ch. 6, 9 (3, 6)\nReading: Setting up Redis https://dev.to/ramko9999/host-and-use-redis-for-free-51if\nDeliverable: Programming Assignment: Join Programming Due https://www.billmongan.com/Ursinus-CS377-Fall2023/Assignments/JoinProgramming\nDeliverable: Lab: Graph Databases with Redis Handed Out https://www.billmongan.com/Ursinus-CS377-Fall2023/Labs/Redis
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/NoSQL/Aggregating\nReading: M Ch. 6, 9 (3, 6)\nReading: Setting up Redis https://dev.to/ramko9999/host-and-use-redis-for-free-51if\nDeliverable: Programming Assignment: Join Programming Due https://www.billmongan.com/Ursinus-CS377-Fall2023/Assignments/JoinProgramming\nDeliverable: Programming Assignment: Normalization Handed Out https://www.billmongan.com/Ursinus-CS377-Fall2023/Assignments/Normalization
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:00000000-0000-0000-0000-036dc582c434
 DTSTAMP:20231128T000000Z
 DTSTART;VALUE=DATE:20231128
-SUMMARY:CS377 Database Design: Programming Assignment: Normalization Handed Out
+SUMMARY:CS377 Database Design: Lab: Graph Databases with Redis Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
@@ -525,7 +525,7 @@ DTSTAMP:20231128T000000Z
 DTSTART;VALUE=DATE:20231128
 SUMMARY:CS377 Database Design: Class Meeting
 LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/NoSQL/DataModels\nReading: M. Ch. 10 (7)\nReading: Types of NoSQL Databases https://www.mongodb.com/scale/types-of-nosql-databases\nDeliverable: Programming Assignment: Normalization Handed Out https://www.billmongan.com/Ursinus-CS377-Fall2023/Assignments/Normalization
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/NoSQL/DataModels\nReading: M. Ch. 10 (7)\nReading: Types of NoSQL Databases https://www.mongodb.com/scale/types-of-nosql-databases\nDeliverable: Lab: Graph Databases with Redis Handed Out https://www.billmongan.com/Ursinus-CS377-Fall2023/Labs/Redis
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -559,18 +559,18 @@ BEGIN:VEVENT
 UID:00000000-0000-0000-0000-036dc582c439
 DTSTAMP:20231205T000000Z
 DTSTART;VALUE=DATE:20231205
-SUMMARY:CS377 Database Design: Lab: Graph Databases with Redis Due
+SUMMARY:CS377 Database Design: Class Meeting
 LOCATION:
-DESCRIPTION:
+DESCRIPTION:\nDeliverable: Programming Assignment: Normalization Due https://www.billmongan.com/Ursinus-CS377-Fall2023/Assignments/Normalization
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:00000000-0000-0000-0000-036dc582c43a
-DTSTAMP:20231205T000000Z
-DTSTART;VALUE=DATE:20231205
-SUMMARY:CS377 Database Design: Class Meeting
+DTSTAMP:20231207T000000Z
+DTSTART;VALUE=DATE:20231207
+SUMMARY:CS377 Database Design: Lab: Graph Databases with Redis Due
 LOCATION:
-DESCRIPTION:\nDeliverable: Programming Assignment: Normalization Due https://www.billmongan.com/Ursinus-CS377-Fall2023/Assignments/Normalization\nDeliverable: Lab: Graph Databases with Redis Due https://www.billmongan.com/Ursinus-CS377-Fall2023/Labs/Redis
+DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -579,7 +579,7 @@ DTSTAMP:20231207T000000Z
 DTSTART;VALUE=DATE:20231207
 SUMMARY:CS377 Database Design: Class Meeting
 LOCATION:
-DESCRIPTION:
+DESCRIPTION:\nDeliverable: Lab: Graph Databases with Redis Due https://www.billmongan.com/Ursinus-CS377-Fall2023/Labs/Redis
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
