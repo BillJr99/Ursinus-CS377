@@ -176,8 +176,8 @@ schedule:
     readings:
       - rtitle: "DD Ch. 1"
         rlink: false
-      - rtitle: "Why Using Microsoft Excel caused Covid-19 results to be lost"
-        rlink: https://www.bbc.com/news/technology-54423988
+      - rtitle: "Introduction to Databases Slides"
+        rlink: "./files/cosc_304/topics/2_database_introduction/304_2_DBIntro.pdf"
   - week: "1"
     date: "0"
     title: "Organizing Data: Fields, Records, and Keys"
@@ -194,53 +194,123 @@ schedule:
     readings:
       - rtitle: "DD Ch. 2"
         rlink: false
-  - week: "1"
-    date: "1"
-    title: "Relational Database Systems (RDS)"
-    link: "Activities/RDS"
-  - week: "2"
-    date: "0"
-    title: "Processing and Aggregating Data Records"
-    link: "Activities/RDS/Aggregating"
-    readings:
-      - rtitle: "DD Ch. 3"
-        rlink: false
+      - rtitle: "Why Using Microsoft Excel caused Covid-19 results to be lost"
+        rlink: "https://www.bbc.com/news/technology-54423988"
       - rtitle: "Database Introduction"
         rlink: "https://comptoolsres.github.io/Database_Introduction.html"
-      - rtitle: "Sqlite Aggregating Functions"
-        rlink: "https://www.sqlite.org/lang_aggfunc.html"
+      - rtitle: "JSON Slides"
+        rlink: "./files/cosc_304/topics/20_json/304_20_JSON.pdf"
+  - week: "1"
+    date: "1"
+    title: "Vector Databases"
+    link: "Activities/VectorDB"
+    deliverables:
+      - dtitle: "Programming Assignment: Vector Databases Handed Out"
+        dlink: "Assignments/VectorDB"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-vectordb.md"
+    readings:
+      - rtitle: "Demystifying Vector Databases"
+        rlink: "https://towardsdatascience.com/explaining-vector-databases-in-3-levels-of-difficulty-fc392e48ab78"
+  - week: "2"
+    date: "0"
+    title: "Relational Database Systems (RDS)"
+    link: "Activities/RDS"
+    readings:
+      - rtitle: "Relational Model Slides"
+        rlink: "./files/cosc_304/topics/3_relational_model/304_3_Relational_Model.pdf"
   - week: "2"
     date: "1"
     title: "Processing and Aggregating Data Records"
+    link: "Activities/RDS/Aggregating"
     deliverables:
       - dtitle: "Lab: File I/O Due"
         dlink: "Labs/FileIO"
         points: 100
         rubricpath: "_pages/Labs/lab-fileio.md"
+    readings:
+      - rtitle: "DD Ch. 3"
+        rlink: false
+      - rtitle: "Sqlite Aggregating Functions"
+        rlink: "https://www.sqlite.org/lang_aggfunc.html"
+      - rtitle: "Relational Algebra Slides"
+        rlink: "./files/cosc_304/topics/4_relational_algebra/304_4_Relational_Algebra.pdf"
   - week: "3"
     date: "0"
+    title: "Processing and Aggregating Data Records"
+    deliverables:
+      - dtitle: "Lab: Database Tables Lab Handed Out"
+        dlink: "Labs/DatabaseTables"
+        points: 100
+        rubricpath: "_pages/Labs/lab-dbtables.md"
+  - week: "3"
+    date: "1"
+    title: "The Structured Query Language (SQL) and Database Programming Primer"
+    link: "Activities/SQL"
+    readings:
+      - rtitle: "DD Ch. 15-16"
+        rlink: false
+      - rtitle: "A Gentle Introduction to SQL"
+        rlink: "https://a-gentle-introduction-to-sql.readthedocs.io/en/latest/"
+      - rtitle: "SQL DDL Slides"
+        rlink: "./files/cosc_304/topics/5_sql_ddl/304_5_SQL_DDL.pdf"
+      - rtitle: "SQL Slides"
+        rlink: "./files/cosc_304/topics/6_sql/304_6_SQL.pdf"
+  - week: "4"
+    date: "0"
+    title: "The Structured Query Language (SQL) and Database Programming Primer"
+    link: "Activities/VectorDB"
+    deliverables:
+      - dtitle: "Programming Assignment: Vector Databases Due"
+        dlink: "Assignments/VectorDB"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-vectordb.md"
+      - dtitle: "Lab: Schemas Handed Out"
+        dlink: "Labs/Schemas"
+        points: 100
+        rubricpath: "_pages/Labs/lab-schemas.md"
+    readings:
+      - rtitle: "SQL Aggregation Slides"
+        rlink: "./files/cosc_304/topics/7_sql_aggregation/304_7_SQL_aggregation.pdf"
+      - rtitle: "Database Programming Slides"
+        rlink: "./files/cosc_304/topics/12_db_programming/304_12_DBProgramming.pdf"
+      - rtitle: "Python Database Programming Slides"
+        rlink: "./files/cosc_304/topics/13_db_python_programming/304_13_DB_Python.pdf"
+  - week: "4"
+    date: "1"
     title: "Data Modeling and Schemas"
     link: "Activities/Modeling/Schemas"
     deliverables:
-      - dtitle: "Lab: Database Tables Lab Handed Out"
+      - dtitle: "Lab: Database Tables Lab Due"
         dlink: "Labs/DatabaseTables"
         points: 100
         rubricpath: "_pages/Labs/lab-dbtables.md"
     readings:
       - rtitle: "DD Ch. 4-5"
         rlink: false
-  - week: "3"
-    date: "1"
-    title: "Data Modeling and Schemas"
-  - week: "4"
+      - rtitle: "DB Design Slides"
+        rlink: "./files/cosc_304/topics/8_db_design/304_8_DBDesign.pdf"
+  - week: "5"
     date: "0"
-    title: "The Relational Database Model and Database Programming Primer"
+    title: "Data Modeling and Schemas"
+    deliverables:
+      - dtitle: "Programming Assignment: ER Modeling Handed Out"
+        dlink: "Assignments/ERModeling"
+        points: 100
+        submission_types: "written"
+  - week: "5"
+    date: "1"
+    title: "The Relational Database Model and Advanced Database Programming"
     link: "Activities/RelationalModel"
     deliverables:
-      - dtitle: "Lab: Schemas Handed Out"
+      - dtitle: "Lab: Schemas Due"
         dlink: "Labs/Schemas"
         points: 100
         rubricpath: "_pages/Labs/lab-schemas.md"
+      - dtitle: "Lab: Database Design Lab Handed Out"
+        dlink: "Labs/DatabaseDesign"
+        points: 100
+        rubricpath: "_pages/Labs/lab-dbdesign.md"
     readings:
       - rtitle: "DD Ch. 6-7"
         rlink: false
@@ -252,47 +322,9 @@ schedule:
         rlink: "https://www.tutorialspoint.com/postgresql/postgresql_python.htm"
       - rtitle: "Databases and SQL"
         rlink: "https://github.com/comptoolsres/Jupyter_content/blob/main/py4e_ch15_databases.ipynb"
-  - week: "4"
-    date: "1"
-    title: "The Relational Database Model and Database Programming Primer"
-    deliverables:
-      - dtitle: "Lab: Database Tables Lab Due"
-        dlink: "Labs/DatabaseTables"
-        points: 100
-        rubricpath: "_pages/Labs/lab-dbtables.md"
-  - week: "5"
-    date: "0"
-    title: "The Entity-Relational (ER) Model"
-    link: "Activities/ERModel"
-    deliverables:
-      - dtitle: "Programming Assignment: ER Modeling Handed Out"
-        dlink: "Assignments/ERModeling"
-        points: 100
-        submission_types: "written"
-    readings:
-      - rtitle: "DD Ch. 8"
-        rlink: false
-  - week: "5"
-    date: "1"
-    title: "The Structured Query Language (SQL)"
-    link: "Activities/SQL"
-    deliverables:
-      - dtitle: "Lab: Schemas Due"
-        dlink: "Labs/Schemas"
-        points: 100
-        rubricpath: "_pages/Labs/lab-schemas.md"
-      - dtitle: "Lab: Database Design Lab Handed Out"
-        dlink: "Labs/DatabaseDesign"
-        points: 100
-        rubricpath: "_pages/Labs/lab-dbdesign.md"
-    readings:
-      - rtitle: "DD Ch. 15-16"
-        rlink: false
-      - rtitle: "A Gentle Introduction to SQL"
-        rlink: "https://a-gentle-introduction-to-sql.readthedocs.io/en/latest/"
   - week: "6"
     date: "0"
-    title: "The Structured Query Language (SQL)"
+    title: "The Relational Database Model and Advanced Database Programming"
     deliverables:
       - dtitle: "Exercise: SQL Warmup"
         dlink: "Modules/SQL/Warmup/Exercise"
@@ -303,17 +335,25 @@ schedule:
         rlink: "https://www.youtube.com/watch?v=_jKylhJtPmI"
       - rtitle: "Avoiding SQL Injection Attacks by Learning to Execute One"
         rlink: "https://www.youtube.com/watch?v=ciNHn38EyRc"
+      - rtitle: "SQL Security Slides"
+        rlink: "./files/cosc_304/topics/17_security/304_17_Security.pdf"
   - week: "6"
+    date: "1"
+    title: "The Entity-Relational (ER) Model"
+    link: "Activities/ERModel"
+    readings:
+      - rtitle: "DD Ch. 8"
+        rlink: false
+      - rtitle: "ER Design Slides"
+        rlink: "./files/cosc_304/topics/9_er_design/304_9_ER.pdf"
+      - rtitle: "EER Design Slides"
+        rlink: "./files/cosc_304/topics/10_eer_design/304_10_EER.pdf"
+      - rtitle: "ER to Relational Slides"
+        rlink: "./files/cosc_304/topics/11_er_to_relational/304_11_ER_to_Relational.pdf"
+  - week: "7"
     date: "1"
     title: "Data Integrity"
     link: "Activities/DataIntegrity"
-    readings:
-      - rtitle: "DD Ch. 9"
-        rlink: false
-  - week: "7"
-    date: "1"
-    title: "Facilitating Integrity with Modeling and the SQL Join"
-    link: "Activities/Modeling/Join"
     deliverables:
       - dtitle: "Programming Assignment: ER Modeling Due"
         dlink: "Assignments/ERModeling"
@@ -324,13 +364,14 @@ schedule:
         points: 100
         rubricpath: "_pages/Assignments/asmt-dbprogramming.md"
     readings:
-      - rtitle: "DD Ch. 10"
+      - rtitle: "DD Ch. 9"
         rlink: false
-      - rtitle: "SQL Joins"
-        rlink: "https://en.wikipedia.org/wiki/Join_(SQL)"
+      - rtitle: "SQL Triggers Slides"
+        rlink: "./files/cosc_304/topics/15_triggers/304_15_Triggers.pdf"
   - week: "8"
     date: "0"
     title: "Facilitating Integrity with Modeling and the SQL Join"
+    link: "Activities/Modeling/Join"
     deliverables:
       - dtitle: "Lab: Database Design Lab Due"
         dlink: "Labs/DatabaseDesign"
@@ -340,10 +381,14 @@ schedule:
         dlink: "Modules/SQL/Aggregation/Exercise"
         points: 3
         submission_types: "onpaper"
+    readings:
+      - rtitle: "DD Ch. 10"
+        rlink: false
+      - rtitle: "SQL Joins"
+        rlink: "https://en.wikipedia.org/wiki/Join_(SQL)"
   - week: "8"
     date: "1"
-    title: "ER Modeling and Normalization"
-    link: "Activities/Modeling/Normalization"
+    title: "Facilitating Integrity with Modeling and the SQL Join"
     deliverables:
       - dtitle: "Programming Assignment: Database Programming Due"
         dlink: "Assignments/DatabaseProgramming"
@@ -354,20 +399,25 @@ schedule:
         points: 100
         rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"
     readings:
-      - rtitle: "DD Ch. 11-12"
-        rlink: false
+      - rtitle: "SQL Views Slides"
+        rlink: "./files/cosc_304/topics/16_views/304_16_Views.pdf"
   - week: "9"
     date: "0"
     title: "ER Modeling and Normalization"
+    link: "Activities/Modeling/Normalization"
     deliverables:
       - dtitle: "Exercise: SQL Joins"
         dlink: "Modules/SQL/Join/Exercise"
         points: 3
         submission_types: "onpaper"
+    readings:
+      - rtitle: "DD Ch. 11-12"
+        rlink: false
+      - rtitle: "Normalization Slides"
+        rlink: "./files/cosc_304/topics/22_normalization/304_22_Normalization.pdf"
   - week: "9"
     date: "1"
-    title: "A Non-Relational Database Model: NoSQL"
-    link: "Activities/NoSQL"
+    title: "ER Modeling and Normalization"
     deliverables:
       - dtitle: "Programming Assignment: SQL Programming Due"
         dlink: "Assignments/SQLProgramming"
@@ -378,21 +428,26 @@ schedule:
         points: 100
         submission_types: "written"
     readings:
-      - rtitle: "M Ch. 4, 8 (1, 5)"
-        rlink: false
+      - rtitle: "SQL Transactions Slides"
+        rlink: "./files/cosc_304/topics/18_transactions/304_18_Transactions.pdf"
   - week: "10"
     date: "0"
-    title: "CRUD with NoSQL"
-    link: "Activities/NoSQL/CRUD"
+    title: "A Non-Relational Database Model: NoSQL"
+    link: "Activities/NoSQL"
+    deliverables:
+      - dtitle: "Project: Final Project Handed Out"
+        dlink: "Projects/Final"
+        points: 100
+        rubricpath: "_pages/Projects/proj-final.md"
     readings:
-      - rtitle: "M Ch. 5 (2)"
+      - rtitle: "M Ch. 4, 8 (1, 5)"
         rlink: false
-      - rtitle: "PyMongo Tutorial"
-        rlink: "https://pymongo.readthedocs.io/en/stable/tutorial.html"
+      - rtitle: "NoSQL Slides"
+        rlink: "./files/cosc_304/topics/21_nosql/304_21_NoSQL.pdf"
   - week: "10"
     date: "1"
-    title: "RESTful Web Services with Databases"
-    link: "Activities/WebServices"
+    title: "CRUD with NoSQL"
+    link: "Activities/NoSQL/CRUD"
     deliverables:
       - dtitle: "Programming Assignment: SQL Joins Due"
         dlink: "Assignments/Join"
@@ -403,24 +458,23 @@ schedule:
         points: 100
         rubricpath: "_pages/Assignments/asmt-joinprogramming.md"
     readings:
+      - rtitle: "M Ch. 5 (2)"
+        rlink: false
+      - rtitle: "PyMongo Tutorial"
+        rlink: "https://pymongo.readthedocs.io/en/stable/tutorial.html"
+  - week: "11"
+    date: "0"
+    title: "RESTful Web Services with Databases"
+    link: "Activities/WebServices"
+    readings:
       - rtitle: "Flask RESTful Web Services"
         rlink: "https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask"
       - rtitle: "Python Requests Library"
         rlink: "https://realpython.com/python-requests/"
       - rtitle: "How to use curl"
         rlink: "https://flaviocopes.com/http-curl/"
-  - week: "11"
-    date: "0"
-    title: "Vector Databases"
-    link: "Activities/VectorDB"
-    readings:
-    - rtitle: "Demystifying Vector Databases"
-      rlink: "https://towardsdatascience.com/explaining-vector-databases-in-3-levels-of-difficulty-fc392e48ab78"
-    deliverables:
-      - dtitle: "Project: Final Project Handed Out"
-        dlink: "Projects/Final"
-        points: 100
-        rubricpath: "_pages/Projects/proj-final.md"
+      - rtitle: "Web DB Programming Slides"
+        rlink: "./files/cosc_304/topics/304_14_Web_Programming.pdf"
   - week: "12"
     date: "0"
     title: "NoSQL Data Processing and Aggregation"

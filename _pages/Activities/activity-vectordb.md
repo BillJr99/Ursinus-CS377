@@ -11,7 +11,9 @@ info:
     
   models:
     - model: |
-        <p>consider a scenario where we have a database of restaurants, and each restaurant is represented by a vector that encodes various features such as cuisine type, price range, location, etc. We can use a vector database to perform efficient similarity searches, such as finding restaurants that are similar to a given restaurant.</p>
+        <div align="left">
+        <p>Consider a scenario where we have a database of restaurants, and each restaurant is represented by a vector that encodes various features such as cuisine type, price range, location, etc. We can use a vector database to perform efficient similarity searches, such as finding restaurants that are similar to a given restaurant.</p>
+        </div>
         <script type="syntaxhighlighter" class="brush: python"><![CDATA[    
         import vecs
 
@@ -113,9 +115,9 @@ A vector database stores data in a high-dimensional space, where each data point
 
 The process usually involves the following steps:
 
-1. ***Vectorization***: The query is converted into a vector using the same process that was used to convert the original data into vectors. This could involve a variety of techniques, such as one-hot encoding, word embeddings, or more complex machine learning models.
+- ***Vectorization***: The query is converted into a vector using the same process that was used to convert the original data into vectors. This could involve a variety of techniques, such as one-hot encoding, word embeddings, or more complex machine learning models.
 
-2. ***Similarity Search***: The vectorized query is compared to all vectors in the database to calculate a similarity score. This score represents how similar the query vector is to each database vector.
+- ***Similarity Search***: The vectorized query is compared to all vectors in the database to calculate a similarity score. This score represents how similar the query vector is to each database vector.
 
 Here is an example of how these similarity scores might be calculated (using cosine similarity):
 
@@ -143,9 +145,9 @@ The `cosine_similarity` function returns a similarity matrix with shape `(n_samp
 
 Finally, we retrieve the nearest vector using the index found and return it as the result.
 
-3. ***Ranking***: The vectors in the database are ranked based on their similarity scores, and the top K vectors are selected. These are the vectors that are most similar to the query vector.
+- ***Ranking***: The vectors in the database are ranked based on their similarity scores, and the top K vectors are selected. These are the vectors that are most similar to the query vector.
 
-4. ***Retrieval***: The data associated with the top K vectors is retrieved and returned as the result of the query.
+- ***Retrieval***: The data associated with the top K vectors is retrieved and returned as the result of the query.
 
 ### Vector Databases and Large Language Models (LLM)
 Large language models like GPT-3 or BERT can be thought of as a kind of vector database. When the model is trained, it learns to represent words, phrases, or entire sentences as high-dimensional vectors. These vectors capture the semantic meaning of the text.
@@ -168,7 +170,7 @@ Vector databases come with several challenges when dealing with large-scale spat
 ### Scaling for Efficiency
 When searching a large vector database, calculating the similarity vectors for all vectors in the database can be computationally expensive and time-consuming. To scale the calculation, you can use approximate nearest neighbor (ANN) algorithms or dimensionality reduction techniques. Here are two common approaches:
 
-1. **Approximate Nearest Neighbor (ANN) Search:** ANN algorithms provide an efficient way to find approximate nearest neighbors, sacrificing some accuracy for faster retrieval. These algorithms, such as Locality-Sensitive Hashing (LSH) and k-d trees, can significantly speed up the search process for large vector databases. They work by partitioning the vector space into smaller regions, allowing for quick elimination of large portions of the database without calculating the exact similarity for every vector.
+- **Approximate Nearest Neighbor (ANN) Search:** ANN algorithms provide an efficient way to find approximate nearest neighbors, sacrificing some accuracy for faster retrieval. These algorithms, such as Locality-Sensitive Hashing (LSH) and k-d trees, can significantly speed up the search process for large vector databases. They work by partitioning the vector space into smaller regions, allowing for quick elimination of large portions of the database without calculating the exact similarity for every vector.
 
 Here is an example of ANN Search using the annoy library:
 
@@ -194,7 +196,7 @@ nearest_vectors = [vectors[i] for i in nearest_indexes]
 print("Nearest vectors:", nearest_vectors)
 ```
 
-2. **Dimensionality Reduction:** Another approach is to reduce the dimensionality of the vectors before calculating the similarity. Dimensionality reduction techniques, like Principal Component Analysis (PCA) or t-distributed Stochastic Neighbor Embedding (t-SNE), can transform high-dimensional vectors into lower-dimensional representations while preserving their structure and similarity relationships. By operating on the reduced-dimensional space, the similarity calculations become more efficient.
+- **Dimensionality Reduction:** Another approach is to reduce the dimensionality of the vectors before calculating the similarity. Dimensionality reduction techniques, like Principal Component Analysis (PCA) or t-distributed Stochastic Neighbor Embedding (t-SNE), can transform high-dimensional vectors into lower-dimensional representations while preserving their structure and similarity relationships. By operating on the reduced-dimensional space, the similarity calculations become more efficient.
 
 These approaches can be combined to further improve the efficiency. For example, you can first apply dimensionality reduction to reduce the vector space's dimensionality and then use an ANN algorithm to perform fast approximate nearest neighbor search.  By utilizing ANN algorithms or dimensionality reduction techniques, you can scale the calculation of similarity vectors and perform efficient searches on large vector databases.
 
