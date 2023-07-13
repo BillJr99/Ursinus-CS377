@@ -176,6 +176,8 @@ schedule:
     readings:
       - rtitle: "DD Ch. 1"
         rlink: false
+      - rtitle: "Why Using Microsoft Excel caused Covid-19 results to be lost"
+        rlink: https://www.bbc.com/news/technology-54423988
   - week: "1"
     date: "0"
     title: "Organizing Data: Fields, Records, and Keys"
