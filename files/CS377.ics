@@ -84,7 +84,7 @@ DTSTAMP:20230831T000000Z
 DTSTART;VALUE=DATE:20230831
 SUMMARY:CS377 Database Design: Class Meeting
 LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/TextAndFileManagement\nReading: DD Ch. 1
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS377-Fall2023/Activities/TextAndFileManagement\nReading: DD Ch. 1\nReading: Why Using Microsoft Excel caused Covid-19 results to be lost https://www.bbc.com/news/technology-54423988
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
