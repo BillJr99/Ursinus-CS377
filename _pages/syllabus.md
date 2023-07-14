@@ -72,6 +72,7 @@ instructors:
   office: "Pfahler Hall 101L"
   webpage_url: "http://www.billmongan.com"
   picture: /images/profile.png
+  officehourssignup: "https://cal.com/billmongan/10min"
   officehours:
   - day: "M"
     starttime: "10:00 AM"
