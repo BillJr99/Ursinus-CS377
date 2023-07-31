@@ -86,14 +86,14 @@ instructors:
     starttime: "11:15 AM"
     endtime: "12:00 PM"
     location: "Pfahler Hall 101L"        
-  - day: "T"
-    starttime: "4:00 PM"
-    endtime: "5:00 PM"
-    location: "Pfahler Hall 101L"        
   - day: "R"
     starttime: "11:15 AM"
     endtime: "12:00 PM"
     location: "Pfahler Hall 101L" 
+  - day: "R"
+    starttime: "4:00 PM"
+    endtime: "5:00 PM"
+    location: "Pfahler Hall 101L"        
     
 textbooks:
 - title: "Database Design"
