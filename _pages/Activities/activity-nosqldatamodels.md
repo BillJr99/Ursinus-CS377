@@ -55,7 +55,7 @@ NoSQL databases have gained popularity due to their ability to handle vast amoun
 ### Key-Value Data Model
 In a key-value data model, data is stored as a collection of key-value pairs. The key is unique and used to retrieve the associated value. This model is simple and efficient, making it suitable for scenarios that require fast read and write operations. It is commonly used for caching, session management, and storing user profiles.
 
-One popular key-value database is Redis, which is an open-source, in-memory data store. According to the article "Setting up Redis" by Ramko [^1^], Redis can be easily configured and hosted for free. Below is a Python code example demonstrating how to connect to a Redis server and perform basic operations:
+One popular key-value database is Redis, which is an open-source, in-memory data store. Redis can be easily configured and hosted for free. Below is a Python code example demonstrating how to connect to a Redis server and perform basic operations:
 
 ```python
 import redis
@@ -77,7 +77,7 @@ r.delete('myKey')
 ### Document Data Model
 In a document data model, data is stored as self-contained documents, typically in a format like JSON or BSON (Binary JSON). Each document can have a different structure, allowing for flexibility. Documents are grouped into collections, similar to tables in relational databases. Common use cases for document databases include content management, user profiles, and real-time analytics.
 
-One prominent document database is MongoDB. The article "Types of NoSQL Databases" by MongoDB [^2^] provides insights into various NoSQL databases, including MongoDB. MongoDB offers rich querying capabilities, scalability, and automatic sharding. It also provides an intuitive API for interacting with the database. Below is an example of using the MongoDB Python library to insert and query documents:
+One prominent document database is MongoDB. MongoDB offers rich querying capabilities, scalability, and automatic sharding. It also provides an intuitive API for interacting with the database. Below is an example of using the MongoDB Python library to insert and query documents:
 
 ```python
 from pymongo import MongoClient
@@ -103,7 +103,7 @@ for doc in docs:
 ### Columnar Data Model
 The columnar data model stores data in columns rather than rows, promoting efficient storage and retrieval. It is often used for analytical workloads that involve aggregations and complex queries. Columnar databases excel in scenarios where a subset of columns is frequently accessed or when dealing with large volumes of data.
 
-Apache Cassandra is a popular columnar database. Kumar et al. [^3^] present a detailed analysis of Cassandra's columnar data model and various optimization techniques in their research paper. Cassandra allows for distributed data storage and automatic data replication across multiple nodes. Below is an example of using the Cassandra Python driver to create a table and insert data:
+Apache Cassandra is a popular columnar database. Below is an example of using the Cassandra Python driver to create a table and insert data:
 
 ```python
 from cassandra.cluster import Cluster
@@ -123,7 +123,7 @@ session.execute("INSERT INTO mykeyspace.mytable (id, name) VALUES (uuid(), 'John
 ### Graph Data Model
 The graph data model represents data as nodes and the relationships between them as edges. This model is highly suitable for scenarios involving complex relationships, such as social networks, recommendation systems, and fraud detection. Graph databases provide powerful traversal and query capabilities to analyze these relationships efficiently.
 
-Neo4j is a widely used graph database. The paper "Neo4j: A Graph Database Management System" by Webber et al. [^4^] provides an overview of Neo4j's data model and query language. Neo4j leverages a property graph model where nodes, relationships, and properties can be easily represented. Below is an example of using the Neo4j Python driver to create nodes, relationships, and perform a query:
+Neo4j is a widely used graph database. Neo4j leverages a property graph model where nodes, relationships, and properties can be easily represented. Below is an example of using the Neo4j Python driver to create nodes, relationships, and perform a query:
 
 ```python
 from neo4j import GraphDatabase
@@ -144,13 +144,3 @@ with driver.session() as session:
     for record in result:
         print(record)
 ```
-
-## References
-
-[^1^]: Ramko. (n.d.). Setting up Redis. Retrieved from [https://dev.to/ramko9999/host-and-use-redis-for-free-51if](https://dev.to/ramko9999/host-and-use-redis-for-free-51if)
-
-[^2^]: MongoDB. (n.d.). Types of NoSQL Databases. Retrieved from [https://www.mongodb.com/scale/types-of-nosql-databases](https://www.mongodb.com/scale/types-of-nosql-databases)
-
-[^3^]: Kumar, D., Bhattacharyya, P., & Das, S. (2012). Distributed data management using Apache Cassandra. International Journal of Computer Applications, 44(18), 9-16.
-
-[^4^]: Webber, J., Robinson, I., & Erl, T. (2012). Neo4j: A Graph Database Management System. Neo4j Inc. Retrieved from [https://neo4j.com/docs/pdf/graph-database-neo4j.pdf](https://neo4j.com/docs/pdf/graph-database-neo4j.pdf)

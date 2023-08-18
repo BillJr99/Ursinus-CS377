@@ -42,16 +42,6 @@ The relational database model is based on the principles of logic and set theory
 - **Keys**: Keys are used to uniquely identify records in a table. Primary keys are unique identifiers for a table, while foreign keys establish relationships with other tables.
 - **Relationships**: Relationships define how tables are linked together using keys. Common relationships include one-to-one, one-to-many, and many-to-many.
 
-### Additional Resources
-
-In addition to the provided references, here are some additional scholarly articles and research papers that delve deeper into the relational database model and database programming:
-
-- \[1\] C. J. Date, "An Introduction to Database Systems," 8th ed., 2004.
-- \[2\] E. F. Codd, "A Relational Model of Data for Large Shared Data Banks," Communications of the ACM, vol. 13, no. 6, pp. 377-387, 1970.
-- \[3\] M. Stonebraker, "The Case for Shared Nothing," Database Engineering, vol. 9, no. 1, pp. 49-54, 1986.
-- \[4\] J. M. Hellerstein, M. Stonebraker, and J. Hamilton, "Architecture of a Database System," Foundations and Trends in Databases, vol. 1, no. 2, pp. 141-259, 2007.
-- **Databases and SQL**: The Jupyter notebook [py4e_ch15_databases.ipynb](https://github.com/comptoolsres/Jupyter_content/blob/main/py4e_ch15_databases.ipynb) provides a comprehensive introduction to databases and SQL. It covers essential concepts such as creating tables, inserting data, querying, and joining tables. The notebook also includes examples using Python and SQLite to illustrate the concepts.
-
 ## Database Programming with Python
 To manipulate and interact with relational databases programmatically in Python, we can utilize various libraries and APIs. Here are some key resources that provide useful information on this topic:
 
@@ -127,8 +117,3 @@ results = cursor.fetchall()
 # Close the connection
 connection.close()
 ```
-
-## Additional Resources
-Here are some additional resources that will help you further understand the relational database model and database programming:
-
-- [Databases and SQL](https://github.com/comptoolsres/Jupyter_content/blob/main/py4e_ch15_databases.ipynb): This comprehensive tutorial provides an in-depth introduction to databases, SQL, and database programming using Python.

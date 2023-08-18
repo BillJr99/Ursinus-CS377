@@ -106,9 +106,3 @@ In the first example, we filter the data records to only include those where the
 ## Conclusion
 
 Processing and aggregating data records is a crucial task in data analysis and management. SQL provides powerful tools for performing these operations within databases, while Python libraries like pandas offer similar functionality for working with structured data outside of databases. By efficiently processing and aggregating data, we can gain valuable insights and make informed decisions based on the information stored in our datasets.
-
-## References
-[^1]: Database Introduction. (n.d.). Retrieved from [https://comptoolsres.github.io/Database_Introduction.html](https://comptoolsres.github.io/Database_Introduction.html)
-[^2]: Sqlite Aggregating Functions. (n.d.). Retrieved from [https://www.sqlite.org/lang_aggfunc.html](https://www.sqlite.org/lang_aggfunc.html)
-[^3]: Smith, J., & Johnson, A. (2019). Efficient Algorithms for Processing and Aggregating Data Records. Journal of Data Science, 10(2), 123-145. 
-[^4]: Brown, M., Anderson, L., & Miller, P. (2018). A Comparative Analysis of Aggregation Techniques for Large-scale Data Processing. International Journal of Big Data, 5(3), 201-218.

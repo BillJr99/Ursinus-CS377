@@ -123,15 +123,3 @@ render_er(metadata, 'output.png')
 In the above code, we first import the necessary libraries and create a SQLAlchemy `MetaData` object. We then create a database engine using `create_engine` from SQLAlchemy, specifying the database URL. Next, we reflect the database structure using the `reflect` method of the `metadata` object, binding it to the engine. Finally, we use the `render_er` function from the ERAlchemy package to generate an ER diagram in PNG format.
 
 Make sure to install the ERAlchemy package using `pip install eralchemy` before running the code.
-
-## References
-
-1. Chen, P. P. (1976). The Entity-Relationship Model—Toward a Unified View of Data. ACM Transactions on Database Systems (TODS), 1(1), 9-36. [Read here](https://dl.acm.org/doi/10.1145/320434.320440).
-2. Elmasri, R., & Navathe, S. B. (2015). Fundamentals of Database Systems. Addison-Wesley.
-3. Teorey, T. J., Lightstone, S. S., & Nadeau, T. D. (2011). Database Modeling & Design: Logical Design. Morgan Kaufmann.
-4. Halpin, T. A. (2001). Conceptual Schema and Relational-Model Design Using Case Tools and Entity-Relationship Diagrams. Journal of Database Management (JDM), 12(4), 12-19. [DOI: 10.4018/jdm.2001100102]
-5. Ramakrishnan, R., & Gehrke, J. (2003). Database Management Systems (3rd ed.). McGraw-Hill.
-6. ERAlchemy Documentation: [https://eralchemy.readthedocs.io/](https://eralchemy.readthedocs.io/)
-7. Draw.io: [https://draw.io](https://draw.io) (A web-based tool for creating ER diagrams)
-8. Lucidchart: [https://www.lucidchart.com/](https://www.lucidchart.com/) (A web-based diagramming tool that supports ER diagrams)
-

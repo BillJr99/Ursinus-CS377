@@ -176,13 +176,3 @@ result = db.mycollection.delete_one(query)
 # Print the number of deleted documents
 print("Documents deleted:", result.deleted_count)
 ```
-
-## Conclusion
-CRUD operations are vital for interacting with NoSQL databases. This report provided an overview of CRUD with NoSQL, with a focus on MongoDB. We explored the basics of creating, reading, updating, and deleting data in a NoSQL database using PyMongo. Further references, such as the PyMongo tutorial and scholarly articles, can provide more in-depth knowledge in this area.
-
-> Note: The code examples in this report assume that the PyMongo library is installed and a MongoDB database connection is established.
-
-## References
-
-1. PyMongo Tutorial. [Online] Available: [https://pymongo.readthedocs.io/en/stable/tutorial.html](https://pymongo.readthedocs.io/en/stable/tutorial.html).
-2. Shannon Bradshaw.  MongoDB: The Definitive Guide.  2019.

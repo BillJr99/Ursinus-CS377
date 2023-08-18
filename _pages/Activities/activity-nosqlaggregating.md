@@ -132,11 +132,3 @@ spark.stop()
 NoSQL databases offer powerful data processing and aggregation capabilities through techniques like MapReduce and distributed query processing. These techniques enable efficient processing of large volumes of data while providing flexibility in data modeling.
 
 Effective use of these techniques requires a good understanding of the underlying concepts and the specific features provided by the chosen NoSQL database. Additionally, Python provides rich libraries and frameworks that facilitate working with NoSQL databases efficiently.
-
-## References
-
-1. Dean, J., & Ghemawat, S. (2008). MapReduce: simplified data processing on large clusters. Communications of the ACM, 51(1), 107-13. 
-
-2. Han, J., Haihong, E., Le, G., & Du, J. (2011). Survey on NoSQL database. 2011 6th International Conference on Pervasive Computing and Applications, Port Elizabeth, South Africa, pp. 363-366. 
-
-3. MongoDB Manual. (n.d.). Aggregation Pipeline. MongoDB Documentation. Retrieved from https://docs.mongodb.com/manual/core/aggregation-pipeline/

@@ -220,12 +220,3 @@ print(index.get('key1'))  # Outputs: value1
 ```
 
 In this example, `HashIndex` is a class that represents a hash-based index stored in a binary file. The `add` method adds a key-value pair to the index, and the get method retrieves a value by its key. The `_hash` method is a helper method that computes a SHA-256 hash of a key. The `_load` and `_save` methods are used to load the index from a file and save the index to a file, respectively.
-
-## Further Reading
-For a more in-depth understanding of Relational Database Systems and their applications, the following scholarly articles and research papers provide valuable insights:
-
-1. Date, C.J., 2003. An introduction to database systems (Vol. 1). Pearson Education India.
-2. Codd, E.F., 1970. A relational model of data for large shared data banks. Communications of the ACM, 13(6), pp.377-387.
-3. Elmasri, R. and Navathe, S.B., 2015. Fundamentals of database systems. Pearson.
-
-These resources explore the concepts of RDS, normalization, indexing, query optimization, and advanced topics like distributed databases and NoSQL systems.

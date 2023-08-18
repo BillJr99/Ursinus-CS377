@@ -165,11 +165,3 @@ result = session.run("MATCH (p:Person)-[:FRIEND_OF]->(friend:Person) "
 for record in result:
     print(record)
 ```
-
-## References
-
-1. DeCandia, G., Hastorun, D., Jampani, M., Kakulapati, G., Lakshman, A., Pilchin, A., ... & Sivasubramanian, S. (2007). Dynamo: Amazon's highly available key-value store. *ACM SIGOPS operating systems review, 41*(6), 205-220.
-2. Chodorow, K., & Dirolf, M. (2010). *MongoDB: The definitive guide.* O'Reilly Media.
-3. Lakshman, A., & Malik, P. (2010). Cassandra: A decentralized structured storage system. *ACM SIGOPS operating systems review, 44*(2), 35-40.
-4. Neo4j. (n.d.). Retrieved from https://neo4j.com/
-5. Redis. (n.d.). Retrieved from https://redis.io/

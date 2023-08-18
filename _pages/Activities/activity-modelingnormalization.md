@@ -295,9 +295,3 @@ conn.commit()
 # Close the connection
 conn.close()
 ```
-
-## Additional References
-
-1. Codd, E. F. (1970). A relational model of data for large shared data banks. Communications of the ACM, 13(6), 377-387. 
-2. Chen, P. P. (1976). The Entity-Relationship Model-Toward a Unified View of Data. ACM Transactions on Database Systems (TODS), 1(1), 9-36. 
-3. Date, C. J., & Darwen, H. (2003). A guide to the SQL standard: a user's guide to the standard relational language SQL. Addison-Wesley Professional. 

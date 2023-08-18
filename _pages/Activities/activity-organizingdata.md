@@ -115,14 +115,3 @@ In Python, data can be organized using data structures such as dictionaries, lis
    
    employee = Employee('John Doe', 30, 'Software Engineer', 50000)
    ```
-
-## Additional References
-
-- Connolly, T., & Begg, C. (2014). *Database Systems: A Practical Approach to Design, Implementation, and Management*. Addison-Wesley.
-- Elmasri, R., & Navathe, S. B. (2015). *Fundamentals of Database Systems*. Pearson.
-- Garcia-Molina, H., Ullman, J. D., & Widom, J. (2008). *Database Systems: The Complete Book*. Pearson.
-- Ramakrishnan, R., & Gehrke, J. (2000). *Database Management Systems*. McGraw-Hill.
-- C. J. Date, Hugh Darwen, and Nikos A. Lorentzos. *SQL and Relational Theory: How to Write Accurate SQL Code*. O'Reilly Media, 2012.
-- Abraham Silberschatz, Henry F. Korth, and S. Sudarshan. *Database System Concepts*. McGraw-Hill Education, 2019.
-
-Please note that the sources provided above are introductory database textbooks and cover a wide range of topics related to databases beyond just organizing data into fields, records, and keys. For more specific research papers and scholarly articles, it would be beneficial to explore academic databases such as IEEE Xplore, ACM Digital Library, and databases specialized in computer science and information systems.

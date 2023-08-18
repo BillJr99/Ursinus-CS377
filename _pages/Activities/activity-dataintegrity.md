@@ -157,8 +157,3 @@ print(modified_hash_value)
 
 print(hash_value == modified_hash_value)  # False, indicating data modification
 ```
-
-## Additional References
-
-1. Chapman, D. (2005). Data integrity: Challenges and solutions. Communications of the Association for Information Systems, 15(1), 33-51.
-2. Kim, W. C., & Kim, S. (2018). Data Integrity in Cloud Storage Systems. Mobile Networks and Applications, 23(5), 1259–1268.

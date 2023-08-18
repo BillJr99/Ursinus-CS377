@@ -220,13 +220,3 @@ print(vectors)
 print("Reduced vectors:")
 print(reduced_vectors)
 ```
-
-## References
-
-1. Worboys, Michael F., and Matt Duckham. "GIS: a computing perspective." CRC Press, 2015.
-
-2. OGC Simple Feature Specification. [Link](https://www.opengeospatial.org/standards/sfa)
-
-3. PostGIS Documentation. [Link](https://postgis.net/documentation/)
-
-4. Abdo, Wajahat et al. "A Comparative Study of Spatial Indexing Techniques in Vector Data". International Journal of Computer Applications, 2019.

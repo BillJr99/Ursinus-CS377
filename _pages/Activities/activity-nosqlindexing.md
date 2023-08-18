@@ -98,7 +98,3 @@ session.execute(create_index_query)
 create_compound_index_query = "CREATE INDEX ON mykeyspace.mytable (name, age)"
 session.execute(create_compound_index_query)
 ```
-
-## Additional References
-- Lakshman, A., & Maliki, K. S. (2010). Cassandra: A decentralized structured storage system. ACM SIGOPS Operating Systems Review, 44(2), 35-40.
-- Stonebraker, M., Madden, S., Abadi, D., & Harizopoulos, S. (2005). The end of an architectural era: (it's time for a complete rewrite). Proceedings of the 32nd International Conference on Very Large Data Bases, 90-100. 
