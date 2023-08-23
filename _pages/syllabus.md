@@ -68,7 +68,7 @@ instructors:
 - name: William Mongan
   title: Professor
   email: wmongan@ursinus.edu
-  phone: "610-409-3410"
+  phone: "610-409-3268"
   office: "Pfahler Hall 101L"
   webpage_url: "http://www.billmongan.com"
   picture: /images/profile.png
