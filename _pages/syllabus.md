@@ -213,6 +213,8 @@ schedule:
     readings:
       - rtitle: "Demystifying Vector Databases"
         rlink: "https://towardsdatascience.com/explaining-vector-databases-in-3-levels-of-difficulty-fc392e48ab78"
+      - rtitle: "Vector Databases"
+        rlink: "https://www.pinecone.io/learn/vector-database/"
   - week: "2"
     date: "0"
     title: "Relational Database Systems (RDS)"
