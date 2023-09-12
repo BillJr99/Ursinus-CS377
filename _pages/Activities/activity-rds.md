@@ -72,6 +72,7 @@ Indexing is the process of creating an index on a specific column in a table. It
 Python provides several libraries for working with relational databases:
 
 - **sqlite3**: A built-in Python library for interacting with SQLite databases.
+
 ```python
 import sqlite3
 
@@ -90,6 +91,7 @@ conn.close()
 ```
 
 - **SQLAlchemy**: A powerful Python library that provides a SQL toolkit for working with relational databases.
+
 ```python
 from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
