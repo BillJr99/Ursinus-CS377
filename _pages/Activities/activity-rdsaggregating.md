@@ -54,13 +54,9 @@ Processing and aggregating data records is a fundamental aspect of data analysis
 
 ## Database Introduction
 
-The reading on "Database Introduction" [^1] provides a comprehensive overview of databases and their key components. It explains the importance of data processing and aggregation in databases and introduces the basics of SQL, a commonly used language for database management.
-
-According to the reading, SQL (Structured Query Language) is a domain-specific language designed for managing data in a relational database management system (RDBMS). SQL provides various operations for processing and aggregating data records, including filtering, joining, sorting, and grouping.
+SQL (Structured Query Language) is a domain-specific language designed for managing data in a relational database management system (RDBMS). SQL provides various operations for processing and aggregating data records, including filtering, joining, sorting, and grouping.
 
 ## SQL Aggregating Functions
-
-The reading on "Sqlite Aggregating Functions" [^2] specifically focuses on the aggregating functions available in SQLite, a popular relational database management system. Aggregating functions in SQL allow us to compute summaries or aggregations of data within a specified group or for the entire dataset.
 
 SQLite provides a range of aggregating functions, such as COUNT, SUM, AVG, MIN, and MAX. These functions can be applied to columns or expressions, and they enable us to perform calculations on groups of rows or the entire result set.
 
@@ -75,14 +71,6 @@ To compute the average value of a column, we can use the AVG function:
 ```sql
 SELECT AVG(column_name) FROM table_name;
 ```
-
-## Additional References
-
-In addition to the provided readings, there are several relevant scholarly articles and research papers on processing and aggregating data records. Below are some notable references that provide further insights into the topic:
-
-1. Smith, J., & Johnson, A. (2019). Efficient Algorithms for Processing and Aggregating Data Records. Journal of Data Science, 10(2), 123-145. (https://doi.org/10.1007/s11222-019-09456-7)
-
-2. Brown, M., Anderson, L., & Miller, P. (2018). A Comparative Analysis of Aggregation Techniques for Large-scale Data Processing. International Journal of Big Data, 5(3), 201-218. (https://doi.org/10.1016/j.ijbd.2018.05.001)
 
 ### Python Examples
 
