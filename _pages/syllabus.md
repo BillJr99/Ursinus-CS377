@@ -241,15 +241,15 @@ schedule:
   - week: "3"
     date: "0"
     title: "Processing and Aggregating Data Records"
+  - week: "3"
+    date: "1"
+    title: "The Structured Query Language (SQL) and Database Programming Primer"
+    link: "Activities/SQL"
     deliverables:
       - dtitle: "Lab: Database Tables Lab Handed Out"
         dlink: "Labs/DatabaseTables"
         points: 100
         rubricpath: "_pages/Labs/lab-dbtables.md"
-  - week: "3"
-    date: "1"
-    title: "The Structured Query Language (SQL) and Database Programming Primer"
-    link: "Activities/SQL"
     readings:
       - rtitle: "DD Ch. 15-16"
         rlink: false
@@ -268,10 +268,6 @@ schedule:
         dlink: "Assignments/VectorDB"
         points: 100
         rubricpath: "_pages/Assignments/asmt-vectordb.md"
-      - dtitle: "Lab: Schemas Handed Out"
-        dlink: "Labs/Schemas"
-        points: 100
-        rubricpath: "_pages/Labs/lab-schemas.md"
     readings:
       - rtitle: "SQL Aggregation Slides"
         rlink: "./files/cosc_304/topics/7_sql_aggregation/304_7_SQL_aggregation.pdf"
@@ -288,6 +284,10 @@ schedule:
         dlink: "Labs/DatabaseTables"
         points: 100
         rubricpath: "_pages/Labs/lab-dbtables.md"
+      - dtitle: "Lab: Schemas Handed Out"
+        dlink: "Labs/Schemas"
+        points: 100
+        rubricpath: "_pages/Labs/lab-schemas.md"
     readings:
       - rtitle: "DD Ch. 4-5"
         rlink: false
