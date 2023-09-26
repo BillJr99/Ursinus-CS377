@@ -262,7 +262,6 @@ schedule:
   - week: "4"
     date: "0"
     title: "The Structured Query Language (SQL) and Database Programming Primer"
-    link: "Activities/VectorDB"
     deliverables:
       - dtitle: "Programming Assignment: Vector Databases Due"
         dlink: "Assignments/VectorDB"
