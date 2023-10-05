@@ -124,14 +124,16 @@ The database design includes two main tables: `Person` and `Insurance`. The `Per
 CREATE TABLE Person (
     person_id INT PRIMARY KEY,
     first_name VARCHAR(50),
-    last_name VARCHAR(50)
+    last_name VARCHAR(50),
+    age INT,
+    CHECK(age >= 0) -- what does this do?
 );
 
 CREATE TABLE Insurance (
     insurance_id INT PRIMARY KEY,
     person_id INT,
     insurance_provider VARCHAR(50),
-    start_date DATE,
+    start_date DATE DEFAULT NOW,
     end_date DATE,
     FOREIGN KEY (person_id) REFERENCES Person(person_id)
 );
