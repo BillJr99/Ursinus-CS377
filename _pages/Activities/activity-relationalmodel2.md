@@ -179,3 +179,78 @@ FROM Person P
 JOIN Insurance I ON P.person_id = I.person_id
 WHERE I.end_date IS NULL;
 ```
+
+#### Triggers for Provenance and Referential Integrity Enforcement
+
+```sql
+.headers on
+  
+CREATE TABLE IF NOT EXISTS People (
+	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+	FName TEXT,
+	LName TEXT,
+	Age INTEGER,
+           Created_At DATETIME DEFAULT CURRENT_TIMESTAMP,
+           Updated_At DATETIME DEFAULT CURRENT_TIMESTAMP,
+           is_deleted INTEGER DEFAULT 0,
+	CHECK(Age >= 0) -- what does this do to enforce the domain and range of values?
+);
+
+CREATE TABLE IF NOT EXISTS Insurance (
+	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+	PersonID INTEGER,
+	Provider TEXT,
+	StartDate DATETIME DEFAULT current_timestamp,
+	EndDate DATETIME DEFAULT NULL,
+           Created_At DATETIME DEFAULT CURRENT_TIMESTAMP,
+           Updated_At DATETIME DEFAULT CURRENT_TIMESTAMP,
+           is_deleted INTEGER DEFAULT 0,
+	FOREIGN KEY (PersonID) REFERENCES People(ID)
+);
+
+-- Triggers for Provenance
+CREATE TRIGGER PersonUpdatedDate UPDATE OF FName, LName, Age ON People 
+  BEGIN
+    UPDATE People SET Updated_At = CURRENT_TIMESTAMP WHERE ID = old.ID;
+  END;
+
+CREATE TRIGGER InsuranceUpdatedDate UPDATE OF PersonID, Provider, EndDate, StartDate ON Insurance 
+  BEGIN
+    UPDATE Insurance SET Updated_At = CURRENT_TIMESTAMP WHERE ID = old.ID;
+  END;
+
+-- Trigger for Referential Integrity
+CREATE TRIGGER PersonDeleted UPDATE OF is_deleted ON People
+  BEGIN
+    UPDATE Insurance SET is_deleted = 1 WHERE PersonID = old.ID;
+    UPDATE Insurance SET EndDate = CURRENUNT_TIMESTAMP WHERE PersonID = old.ID AND EndDate IS NULL;
+  END;
+
+BEGIN TRANSACTION;
+INSERT INTO People (FName, LName, Age) VALUES ("Bill", "Mongan", 41);
+INSERT INTO Insurance (PersonID, Provider) VALUES (last_insert_rowid(), "Blue Cross");
+COMMIT;
+
+SELECT * FROM Insurance INNER JOIN People 
+			ON Insurance.PersonID = People.ID
+	WHERE FName = "Bill" 
+	AND LName = "Mongan" 
+	AND EndDate = NULL;
+
+-- Invalidate someone's insurance and give them a new policy
+BEGIN TRANSACTION;
+
+UPDATE Insurance 
+	SET EndDate = CURRENT_TIMESTAMP
+	WHERE ID = (SELECT ID FROM People WHERE LName = "Mongan");
+
+INSERT INTO INSURANCE (PersonID, Provider) VALUES ((SELECT ID FROM People WHERE LName = "Mongan"), "Blue Shield");
+
+COMMIT;
+
+-- Delete Bill from People Table
+UPDATE People SET is_deleted = 1 WHERE LName = "Mongan";
+
+SELECT * FROM People WHERE is_deleted = 0;
+SELECT * FROM Insurance;
+```
