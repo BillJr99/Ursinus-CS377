@@ -157,6 +157,18 @@ SET end_date = '2023-12-31'
 WHERE insurance_id = 1;
 ```
 
+```sql
+BEGIN TRANSACTION; -- what do you think this does?
+
+UPDATE Insurance 
+	SET end_date = current_timestamp()
+	WHERE ID = (SELECT ID FROM Person WHERE last_name = "Smith");
+
+INSERT INTO INSURANCE (PersonID, Provider) VALUES ((SELECT ID FROM Person WHERE last_name = "Smith"), "Acme Insurance");
+
+COMMIT; -- ... and this?
+```
+
 #### Querying Data
 
 To find a person's current active insurance coverage:
