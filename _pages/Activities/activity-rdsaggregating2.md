@@ -18,7 +18,9 @@ info:
       
   models:
     - model: |
-        <script type="syntaxhighlighter" class="brush: sql"><![CDATA[        
+        <script type="syntaxhighlighter" class="brush: sql"><![CDATA[   
+        PRAGMA foreign_keys = ON; -- Enforce foreign key constraints
+        
         -- Students Table
         CREATE TABLE STUDENTS (
             ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, 
