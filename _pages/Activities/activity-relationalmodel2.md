@@ -183,8 +183,10 @@ WHERE I.end_date IS NULL;
 #### Triggers for Provenance and Referential Integrity Enforcement
 
 ```sql
-.headers on
-  
+.headers on -- view column headings on output
+
+PRAGMA foreign_keys = ON; -- Enforce foreign key constraints
+
 CREATE TABLE IF NOT EXISTS People (
 	ID INTEGER PRIMARY KEY AUTOINCREMENT,
 	FName TEXT,
