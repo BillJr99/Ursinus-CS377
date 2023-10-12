@@ -49,7 +49,7 @@ info:
         - "What should be done in the <code>EMPLOYEE</code> table if an entry is deleted in the <code>SPOUSE</code> table?"
         - "Draw this schema, and indicate the cardinality of each relationship (1:1, 1:many, optional)."
         - "What inefficiency exists within this table?  Could someone be a spouse of one person and a child of another?  Re-design this schema to eliminate redundant data storage."
-        - "What do you think a <a href=&quot;https://www.w3schools.com/sql/sql_check.asp&quot;>CHECK Constraint</a> does?"
+        - "What do you think a <a href=https://www.w3schools.com/sql/sql_check.asp>CHECK Constraint</a> does?"
         
 tags:
   - integrity
