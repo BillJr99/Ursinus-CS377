@@ -5,6 +5,7 @@ title: "CS377: Database Design - The Structured Query Language (SQL)"
 excerpt: "CS377: Database Design - The Structured Query Language (SQL)"
 
 info:
+  next: ./SQL2
   goals: 
     - To use the SQL language to query and manipulate a database
     - To integrate common programming constructs with SQL language
