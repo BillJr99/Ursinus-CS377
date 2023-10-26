@@ -9,6 +9,7 @@ info:
   points: 100
   goals:
     - To implement join statements to query an existing nontrivial database
+    - To read and interpret relational models for database systems according to specifications
   rubric:
     - weight: 60
       description: Algorithm Implementation
@@ -33,6 +34,8 @@ info:
       rlink: "../Activities/ERModel"
     - rtitle: "The Structured Query Language (SQL) Activity"
       rlink: "../Activities/SQL"    
+    - rtitle: "SQL Join Activity"
+      rlink: "../Activities/Modeling/Join" 
       
 tags:
   - sql
