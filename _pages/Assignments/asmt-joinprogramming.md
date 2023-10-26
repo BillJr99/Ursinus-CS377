@@ -42,6 +42,12 @@ tags:
 
 In this assignment, you will query an existing large database to answer meaningful questions.
 
+## Written Assignment
+
+Complete Exercise 8 in Chapter 12 on Database Normalization of the Database Design textbook.
+
+## Programming Assignment
+
 Write a program that uses the [`sqlite3` database library](https://docs.python.org/3/library/sqlite3.html) to connect to [this database](
 https://github.com/WebucatorTraining/lahman-baseball-mysql/raw/master/lahmansbaseballdb.sqlite) and to execute your queries.
 
