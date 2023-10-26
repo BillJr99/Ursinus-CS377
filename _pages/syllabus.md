@@ -516,7 +516,7 @@ schedule:
     date: "0"
     title: "Review"
     deliverables:
-      - dtitle: "Programming Assignment: Join Programming Handed Out"
+      - dtitle: "Programming Assignment: Join Programming Due"
         dlink: "Assignments/JoinProgramming"
         points: 100
         rubricpath: "_pages/Assignments/asmt-joinprogramming.md"   
