@@ -307,7 +307,7 @@ BEGIN:VEVENT
 UID:00000000-0000-0000-0000-036dc582c41d
 DTSTAMP:20231205T000000Z
 DTSTART;VALUE=DATE:20231205
-SUMMARY:CS377 Database Design: Programming Assignment: Join Programming Handed Out
+SUMMARY:CS377 Database Design: Programming Assignment: Join Programming Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
