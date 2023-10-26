@@ -515,6 +515,11 @@ schedule:
   - week: "14"
     date: "0"
     title: "Review"
+    deliverables:
+      - dtitle: "Programming Assignment: Join Programming Handed Out"
+        dlink: "Assignments/JoinProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-joinprogramming.md"   
   - week: "14"
     date: "1"
     title: "Review"
