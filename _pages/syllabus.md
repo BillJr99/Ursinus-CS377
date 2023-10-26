@@ -391,15 +391,6 @@ schedule:
   - week: "8"
     date: "1"
     title: "Facilitating Integrity with Modeling and the SQL Join"
-    deliverables:
-      - dtitle: "Programming Assignment: Database Programming Due"
-        dlink: "Assignments/DatabaseProgramming"
-        points: 100
-        rubricpath: "_pages/Assignments/asmt-dbprogramming.md"
-      - dtitle: "Programming Assignment: SQL Programming Handed Out"
-        dlink: "Assignments/SQLProgramming"
-        points: 100
-        rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"
     readings:
       - rtitle: "SQL Views Slides"
         rlink: "./files/cosc_304/topics/16_views/304_16_Views.pdf"
@@ -421,14 +412,14 @@ schedule:
     date: "1"
     title: "ER Modeling and Normalization"
     deliverables:
-      - dtitle: "Programming Assignment: SQL Programming Due"
+      - dtitle: "Programming Assignment: Database Programming Due"
+        dlink: "Assignments/DatabaseProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-dbprogramming.md"
+      - dtitle: "Programming Assignment: SQL Programming Handed Out"
         dlink: "Assignments/SQLProgramming"
         points: 100
         rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"
-      - dtitle: "Programming Assignment: SQL Joins Handed Out"
-        dlink: "Assignments/Join"
-        points: 100
-        submission_types: "written"
     readings:
       - rtitle: "SQL Transactions Slides"
         rlink: "./files/cosc_304/topics/18_transactions/304_18_Transactions.pdf"
@@ -451,14 +442,14 @@ schedule:
     title: "CRUD with NoSQL"
     link: "Activities/NoSQL/CRUD"
     deliverables:
-      - dtitle: "Programming Assignment: SQL Joins Due"
+      - dtitle: "Programming Assignment: SQL Programming Due"
+        dlink: "Assignments/SQLProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"
+      - dtitle: "Programming Assignment: SQL Joins Handed Out"
         dlink: "Assignments/Join"
         points: 100
         submission_types: "written"
-      - dtitle: "Programming Assignment: Join Programming Handed Out"
-        dlink: "Assignments/JoinProgramming"
-        points: 100
-        rubricpath: "_pages/Assignments/asmt-joinprogramming.md"
     readings:
       - rtitle: "M Ch. 5 (2)"
         rlink: false
@@ -482,14 +473,14 @@ schedule:
     title: "NoSQL Data Processing and Aggregation"
     link: "Activities/NoSQL/Aggregating"
     deliverables:
-      - dtitle: "Programming Assignment: Join Programming Due"
+      - dtitle: "Programming Assignment: SQL Joins Due"
+        dlink: "Assignments/Join"
+        points: 100
+        submission_types: "written"
+      - dtitle: "Programming Assignment: Join Programming Handed Out"
         dlink: "Assignments/JoinProgramming"
         points: 100
-        rubricpath: "_pages/Assignments/asmt-joinprogramming.md"
-      - dtitle: "Programming Assignment: Normalization Handed Out"
-        dlink: "Assignments/Normalization"
-        points: 100
-        submission_types: "written"        
+        rubricpath: "_pages/Assignments/asmt-joinprogramming.md"      
     readings:
       - rtitle: "M Ch. 6, 9 (3, 6)"
         rlink: false
@@ -524,11 +515,6 @@ schedule:
   - week: "14"
     date: "0"
     title: "Review"
-    deliverables:
-      - dtitle: "Programming Assignment: Normalization Due"
-        dlink: "Assignments/Normalization"
-        points: 100
-        submission_types: "written"
   - week: "14"
     date: "1"
     title: "Review"
