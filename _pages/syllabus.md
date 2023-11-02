@@ -411,15 +411,6 @@ schedule:
   - week: "9"
     date: "1"
     title: "ER Modeling and Normalization"
-    deliverables:
-      - dtitle: "Programming Assignment: Database Programming Due"
-        dlink: "Assignments/DatabaseProgramming"
-        points: 100
-        rubricpath: "_pages/Assignments/asmt-dbprogramming.md"
-      - dtitle: "Programming Assignment: SQL Programming Handed Out"
-        dlink: "Assignments/SQLProgramming"
-        points: 100
-        rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"
     readings:
       - rtitle: "SQL Transactions Slides"
         rlink: "./files/cosc_304/topics/18_transactions/304_18_Transactions.pdf"
@@ -432,6 +423,14 @@ schedule:
         dlink: "Projects/Final"
         points: 100
         rubricpath: "_pages/Projects/proj-final.md"
+      - dtitle: "Programming Assignment: Database Programming Due"
+        dlink: "Assignments/DatabaseProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-dbprogramming.md"
+      - dtitle: "Programming Assignment: SQL Programming Handed Out"
+        dlink: "Assignments/SQLProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"
     readings:
       - rtitle: "M Ch. 4, 8 (1, 5)"
         rlink: false
@@ -441,15 +440,6 @@ schedule:
     date: "1"
     title: "CRUD with NoSQL"
     link: "Activities/NoSQL/CRUD"
-    deliverables:
-      - dtitle: "Programming Assignment: SQL Programming Due"
-        dlink: "Assignments/SQLProgramming"
-        points: 100
-        rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"
-      - dtitle: "Programming Assignment: SQL Joins Handed Out"
-        dlink: "Assignments/Join"
-        points: 100
-        submission_types: "written"
     readings:
       - rtitle: "M Ch. 5 (2)"
         rlink: false
@@ -468,19 +458,19 @@ schedule:
         rlink: "https://flaviocopes.com/http-curl/"
       - rtitle: "Web DB Programming Slides"
         rlink: "./files/cosc_304/topics/304_14_Web_Programming.pdf"
+    deliverables:
+      - dtitle: "Programming Assignment: SQL Programming Due"
+        dlink: "Assignments/SQLProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-sqlprogramming.md"
+      - dtitle: "Programming Assignment: SQL Joins Handed Out"
+        dlink: "Assignments/Join"
+        points: 100
+        submission_types: "written"
   - week: "12"
     date: "0"
     title: "NoSQL Data Processing and Aggregation"
     link: "Activities/NoSQL/Aggregating"
-    deliverables:
-      - dtitle: "Programming Assignment: SQL Joins Due"
-        dlink: "Assignments/Join"
-        points: 100
-        submission_types: "written"
-      - dtitle: "Programming Assignment: Join Programming Handed Out"
-        dlink: "Assignments/JoinProgramming"
-        points: 100
-        rubricpath: "_pages/Assignments/asmt-joinprogramming.md"      
     readings:
       - rtitle: "M Ch. 6, 9 (3, 6)"
         rlink: false
@@ -491,6 +481,14 @@ schedule:
     title: "NoSQL Data Models: Key-Value, Document, Columnar, and Graph"
     link: "Activities/NoSQL/DataModels"
     deliverables:
+      - dtitle: "Programming Assignment: SQL Joins Due"
+        dlink: "Assignments/Join"
+        points: 100
+        submission_types: "written"
+      - dtitle: "Programming Assignment: Join Programming Handed Out"
+        dlink: "Assignments/JoinProgramming"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-joinprogramming.md"      
       - dtitle: "Lab: Graph Databases with Redis Handed Out"
         dlink: "Labs/Redis"
         points: 100
