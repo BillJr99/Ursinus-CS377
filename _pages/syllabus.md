@@ -489,10 +489,6 @@ schedule:
         dlink: "Assignments/JoinProgramming"
         points: 100
         rubricpath: "_pages/Assignments/asmt-joinprogramming.md"      
-      - dtitle: "Lab: Graph Databases with Redis Handed Out"
-        dlink: "Labs/Redis"
-        points: 100
-        rubricpath: "_pages/Labs/lab-redis.md"    
     readings:
       - rtitle: "M. Ch. 10 (7)"
         rlink: false
@@ -521,11 +517,6 @@ schedule:
   - week: "14"
     date: "1"
     title: "Review"
-    deliverables:
-      - dtitle: "Lab: Graph Databases with Redis Due"
-        dlink: "Labs/Redis"
-        points: 100
-        rubricpath: "_pages/Labs/lab-redis.md"    
   
 university:
   semester: "Fall"
