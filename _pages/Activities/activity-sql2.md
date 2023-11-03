@@ -13,6 +13,8 @@ info:
       title: Installing Docker
     - link: https://www.postgresqltutorial.com/postgresql-python/connect/
       title: postgres Tutorial
+    - link: https://medium.com/@aedemirsen/execute-sql-commands-at-postgresql-db-startup-with-docker-2be0abadec48
+      title: Execute SQL Commands at postgresql DB Startup with Docker
       
 tags:
   - sql  
@@ -175,6 +177,44 @@ user=root
 password=root
 ```
 
+## Initializing the Database at Startup via Docker Compose
+
+Create a file called, say, `init.sql` in a directory `postgres/init` within your docker directory (the one containing your `docker-compose.yml` file).  This file can contain your initialization SQL statements (for example, your `CREATE TABLE` commands).  
+
+Next, create a `Dockerfile` file with the following contents below.  This creates a `docker-entrypoint-initdb.d` directory which can contain startup scripts that postgres will execute when composed via docker.  This will copy your `postgres/init` directory to this location within the docker image.
+
+```
+FROM postgres
+
+RUN mkdir -p /docker-entrypoint-initdb.d/
+ADD postgres/init/init.sql /docker-entrypoint-initdb.d/init.sql
+RUN chmod -R 775 /docker-entrypoint-initdb.d
+
+ENV MYSQL_ROOT_PASSWORD root
+
+```
+
+Next, modify your `docker-compose.yml` file to make this `init` directory available to the volume.  We will add the `build: .` and `volumes` section to do this, as well add as a default `POSTGRES_ROOT_PASSWORD`.
+
+```
+  db:
+    build: .
+    image: postgres
+    container_name: pgdb
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: mydb
+      POSTGRES_ROOT_PASSWORD: root
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres/init:/docker-entrypoint-initdb.d
+```
+
+This time, to build your image, first run `docker build .` and then your `docker-compose up -d` command as usual.  You may need to remove and re-initialize the containers and images (see below to remove all of them to start over as needed!).
+
 ## Removing the Docker Instance
 
 If you'd like to remove your docker images permanently, you can do so with the following commands:
@@ -188,4 +228,6 @@ docker stop $(docker ps -aq)
 docker rm $(docker ps -aq)
 # Remove all images
 docker rmi $(docker images -q)
+# Remove all volumes
+docker volume rm $(docker volume ls)
 ```
