@@ -30,7 +30,7 @@ info:
         - "Sketch the database schema implemented with the two programs (they are the same!)"
         - "What basic aggregation operations can you find in each program?"
         - "Why do you think there are two versions of this program, one for the Sqlite database engine, and one for the MySQL database engine?"
-	- "Describe the recursive SQL query to print a family tree in the SQL example below."
+        - "Describe the recursive SQL query to print a family tree in the SQL example below."
         
 tags:
   - relational
