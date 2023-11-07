@@ -10,6 +10,7 @@ info:
   goals: 
     - To implement database schemas into programming constructs using libraries and database engines
     - To describe and implement strategies for data provenance
+    - To write recursive queries in pure SQL
   additional_reading:
     - link: https://pypi.org/project/PyMySQL/
       title: PyMySQL Python Library
