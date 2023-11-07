@@ -23,10 +23,12 @@ info:
         <br>
         <script src="https://gist.github.com/BillJr99/138231874d9d1c00bab4d20d1ff4267e.js"></script>
       title: Database Programming and SQL Library Support
+      embed: <iframe height="400px" width="100%" src="https://repl.it/@BillJr99/SqliteRecursiveExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>  
       questions:
         - "Sketch the database schema implemented with the two programs (they are the same!)"
         - "What basic aggregation operations can you find in each program?"
         - "Why do you think there are two versions of this program, one for the Sqlite database engine, and one for the MySQL database engine?"
+	- "Describe the recursive SQL query to print a family tree in the SQL example below."
         
 tags:
   - relational
