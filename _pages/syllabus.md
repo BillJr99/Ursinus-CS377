@@ -467,6 +467,9 @@ schedule:
         dlink: "Assignments/Join"
         points: 100
         submission_types: "written"
+  - week: "11"
+    date: "1"
+    title: "RESTful Web Services with Databases"
   - week: "12"
     date: "0"
     title: "NoSQL Data Processing and Aggregation"
