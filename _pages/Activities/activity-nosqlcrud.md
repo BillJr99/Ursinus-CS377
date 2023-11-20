@@ -89,12 +89,10 @@ info:
         - "What is an alternative to removing items from a datastore so that you never actually delete anything, while omitting &quot;removed&quot; records from your queries?"
         - "Do you think the <code>query</code> parameter works with <code>remove</code>?  Try it out, and remove all items from the collection whose <code>val1</code> value is greater than 42!"
     - model: |
-        <script src="https://gist.github.com/javierarilos/015e2ce27cecdea63564.js"></script>
-        <br>
         <script src="https://gist.github.com/michaeltreat/d3bdc989b54cff969df86484e091fd0c.js"></script>
         <br>
         <script src="https://gist.github.com/leommoore/6751647.js"></script>
-      title: Putting it All Together with Examples      
+      title: MongoDB Reference Guide    
         
 tags:
   - nosql  
