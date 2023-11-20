@@ -165,3 +165,24 @@ result = session.run("MATCH (p:Person)-[:FRIEND_OF]->(friend:Person) "
 for record in result:
     print(record)
 ```
+
+## Using MongoDB Offline
+
+You can use the `pymongo` library offline using the `tinymongo` library, by running `pip install tinymongo` to install the library.  On some versions of Python, you'll need to override one of the classes to explicitly use a JSON backend store to write your data locally, but otherwise, the library can be used as a drop-in replacement to a MongoDB cloud instance.
+
+```python
+import tinymongo as tm
+import tinydb
+
+# per https://github.com/schapman1974/tinymongo/issues/58
+class TinyMongoClient(tm.TinyMongoClient):
+  @property
+  def _storage(self):
+      return tinydb.storages.JSONStorage
+    
+# you can include a folder name or absolute path
+# as a parameter if not it will default to "tinydb"
+client = TinyMongoClient()
+
+# create your db and collection as before...
+```
