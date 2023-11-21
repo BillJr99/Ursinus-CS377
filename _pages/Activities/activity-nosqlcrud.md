@@ -49,8 +49,8 @@ info:
         for doc in cursor:
             print(doc['key2'])
                 
-        docs = collection.find({"val1": {$in: [0, 100]}})
-        docs = collection.find({"val1": {$gt: -1, $lt: 101}})
+        docs = collection.find({"val1": {"$in": [0, 100]}})
+        docs = collection.find({"val1": {"$gt": -1, "$lt": 101}})
         ]]></script>
       title: Read
       embed: <iframe height="400px" width="100%" src="https://repl.it/@BillJr99/PythonMongoDBExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>    
@@ -64,12 +64,12 @@ info:
         <script type="syntaxhighlighter" class="brush: python"><![CDATA[        
         # TODO: retrieve your collection in a variable called collection
         
-        collection.update({"key1": "val1"}, {$set: {"val2": 0}})
-        collection.update({"key1": "val1"}, {$unset: {"val2": ''}}, {multi: true})
-        collection.update({"key1": "val1"}, {$push: {"val3": 100}})
-        collection.update({"key1": "val1"}, {$rename: {"val3": "value"}})
+        collection.update({"key1": "val1"}, {"$set": {"val2": 0}})
+        collection.update({"key1": "val1"}, {"$unset": {"val2": ''}}, {"multi": true})
+        collection.update({"key1": "val1"}, {"$push": {"val3": 100}})
+        collection.update({"key1": "val1"}, {"$rename": {"val3": "value"}})
         
-        collection.findAndModify({query: {"val1" {$gt: 10}}, update: {$inc, {"val1": 1}}})
+        collection.findAndModify({query: {"val1" {"$gt": 10}}, update: {"$inc", {"val1": 1}}})
         ]]></script>
       title: Update
       questions:
