@@ -14,11 +14,11 @@ info:
         # TODO: obtain the collection as usual
         # ... in a variable called collection
         
-        collection.ensureIndex({airport: 1})
+        collection.ensureIndex({"airport": 1})
         
         # you can have more than one index 
         # ... depending on the values you intend to query together!
-        collection.ensureIndex({student: 1, grade -1})
+        collection.ensureIndex({"student": 1, "grade": -1})
         ]]></script>
       title: Indexes in NoSQL databases
       questions:

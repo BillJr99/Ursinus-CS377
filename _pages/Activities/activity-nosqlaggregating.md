@@ -20,10 +20,10 @@ info:
         # ... with a variable called client
         
         # Compute the average of the $grade field in the collection, in a key called TotalGrade
-        collection.aggregate([{$group: {"_id": "_id", "TotalGrade": {$avg: "$grade"}}}}])
+        collection.aggregate([{$group: {"_id": "_id", "TotalGrade": {"$avg": "$grade"}}}}])
         
         # Compute the average grade of each assignment type
-        collection.aggregate([{$group: {"_id": "$asmttype", "TotalGrade": {$avg: "$grade"}}}}])
+        collection.aggregate([{$group: {"_id": "$asmttype", "TotalGrade": {"$avg": "$grade"}}}}])
         ]]></script>
       title: Quantitative Aggregation Methods
       questions:
