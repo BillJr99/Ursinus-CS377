@@ -501,26 +501,25 @@ schedule:
     date: "1"
     title: "Indexing a Denormalized NoSQL Datastore"
     link: "Activities/NoSQL/Indexing"
-    deliverables:
-      - dtitle: "Project: Final Project Due"
-        dlink: "Projects/Final"
-        points: 100
-        rubricpath: "_pages/Projects/proj-final.md"
     readings:
       - rtitle: "M Ch. 7 (4)"
         rlink: false
   - week: "14"
     date: "0"
     title: "Review"
+  - week: "14"
+    date: "1"
+    title: "Review"
     deliverables:
       - dtitle: "Programming Assignment: Join Programming Due"
         dlink: "Assignments/JoinProgramming"
         points: 100
-        rubricpath: "_pages/Assignments/asmt-joinprogramming.md"   
-  - week: "14"
-    date: "1"
-    title: "Review"
-  
+        rubricpath: "_pages/Assignments/asmt-joinprogramming.md"  
+      - dtitle: "Project: Final Project Due"
+        dlink: "Projects/Final"
+        points: 100
+        rubricpath: "_pages/Projects/proj-final.md"         
+        
 university:
   semester: "Fall"
   academicyear: "2023-24"
