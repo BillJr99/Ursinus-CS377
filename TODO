@@ -1,0 +1,4 @@
+triggers, joins, interfaces, add redis notes and CSR example for storage
+dotenv, sqlalchemy with inheritance/pythonic query comprehensions
+can replace relatively unused examples with these
+gitignore to avoid posting binary and source files
