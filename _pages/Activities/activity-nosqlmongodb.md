@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/NoSQL
 title: "CS377: Database Design - NoSQL"
-excerpt: "CS377: Database Design - NoSQL"
+
 
 info:
   goals: 

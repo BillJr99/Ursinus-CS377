@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/NoSQL/DataModels
 title: "CS377: Database Design - NoSQL Data Models"
-excerpt: "CS377: Database Design - NoSQL Data Models"
+
 
 info:
   goals: 

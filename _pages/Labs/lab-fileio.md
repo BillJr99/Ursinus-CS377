@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Labs/FileIO
 title: "CS377: Database Design - File I/O"
-excerpt: "CS377: Database Design - File I/O"
+
 
 info:
   coursenum: CS377

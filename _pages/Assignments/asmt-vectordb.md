@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/VectorDB
 title: "CS377: Database Design - Vector Databases"
-excerpt: "CS377: Database Design - Vector Databases"
+
 
 info:
   coursenum: CS377

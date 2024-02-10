@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Labs/PeerReview
 title: "CS377: Database Design - Peer Review"
-excerpt: "CS377: Database Design - Peer Review"
+
 
 info:
   coursenum: CS173

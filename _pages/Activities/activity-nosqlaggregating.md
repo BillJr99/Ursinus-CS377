@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/NoSQL/Aggregating
 title: "CS377: Database Design - Aggregation with NoSQL"
-excerpt: "CS377: Database Design - Aggregation with NoSQL"
+
 
 info:
   goals: 

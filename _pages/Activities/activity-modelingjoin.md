@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/Modeling/Join
 title: "CS377: Database Design - Data Modeling and the Join"
-excerpt: "CS377: Database Design - Data Modeling and the Join"
+
 
 info:
   goals: 

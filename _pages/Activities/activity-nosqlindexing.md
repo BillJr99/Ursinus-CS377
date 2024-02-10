@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/NoSQL/Indexing
 title: "CS377: Database Design - Indexing a Denormalized NoSQL Datastore"
-excerpt: "CS377: Database Design - Indexing a Denormalized NoSQL Datastore"
+
 
 info:
   goals: 

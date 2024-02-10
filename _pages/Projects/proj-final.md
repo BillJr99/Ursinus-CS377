@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Projects/Final
 title: "CS377: Database Design - Final Project"
-excerpt: "CS377: Database Design - Final Project"
+
 
 info:
   coursenum: CS377

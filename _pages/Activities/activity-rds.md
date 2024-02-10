@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/RDS
 title: "CS377: Database Design - Relational Database Systems (RDS)"
-excerpt: "CS377: Database Design - Relational Database Systems (RDS)"
+
 
 info:
   goals: 

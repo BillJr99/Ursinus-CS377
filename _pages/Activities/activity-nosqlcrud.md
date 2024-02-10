@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/NoSQL/CRUD
 title: "CS377: Database Design - Create, Read, Update, and Delete (CRUD) with NoSQL"
-excerpt: "CS377: Database Design - Create, Read, Update, and Delete (CRUD) with NoSQL"
+
 
 info:
   goals: 

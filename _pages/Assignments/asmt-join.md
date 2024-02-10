@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Join
 title: "CS377: Database Design - The SQL Join"
-excerpt: "CS377: Database Design - The SQL Join"
+
 
 info:
   coursenum: CS377

@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/Modeling/Schemas
 title: "CS377: Database Design - Data Modeling and Schemas"
-excerpt: "CS377: Database Design - Data Modeling and Schemas"
+
 
 info:
   goals: 

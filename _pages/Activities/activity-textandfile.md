@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/TextAndFileManagement
 title: "CS377: Database Design - Text and File Management"
-excerpt: "CS377: Database Design - Text and File Management"
+
 
 info:
   goals: 

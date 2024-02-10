@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/RelationalModel
 title: "CS377: Database Design - Relational Data Model"
-excerpt: "CS377: Database Design - Relational Data Model"
+
 
 info:
   next: ./RelationalModel2

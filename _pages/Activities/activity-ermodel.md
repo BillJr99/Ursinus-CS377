@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/ERModel
 title: "CS377: Database Design - Entity-Relational (ER) Data Model"
-excerpt: "CS377: Database Design - Entity-Relational (ER)"
+
 
 info:
   goals: 

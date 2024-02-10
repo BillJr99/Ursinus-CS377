@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/ERModeling
 title: "CS377: Database Design - ER Modeling"
-excerpt: "CS377: Database Design - ER Modeling"
+
 
 info:
   coursenum: CS377

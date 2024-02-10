@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/GEDCOM/FileIO
 title: "CS377: Database Design - The GEDCOM File Format"
-excerpt: "CS377: Database Design - The GEDCOM File Format"
+
 
 info:
   coursenum: CS377

@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Labs/Redis
 title: "CS377: Database Design - Graph Databases with Redis"
-excerpt: "CS377: Database Design - Graph Databases with Redis"
+
 
 info:
   coursenum: CS377

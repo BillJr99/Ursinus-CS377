@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/RDS/Aggregating
 title: "CS377: Database Design - Aggregation in Relational Databases"
-excerpt: "CS377: Database Design - Aggregation in Relational Databases"
+
 
 info:
   next: ./Aggregating2

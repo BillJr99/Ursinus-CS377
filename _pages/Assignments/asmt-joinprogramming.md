@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/JoinProgramming
 title: "CS377: Database Design - SQL Join Programming with the Lahman Baseball Database"
-excerpt: "CS377: Database Design - SQL Join Programming with the Lahman Baseball Database"
+
 
 info:
   coursenum: CS377

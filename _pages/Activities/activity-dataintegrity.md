@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/DataIntegrity
 title: "CS377: Database Design - Data Integrity"
-excerpt: "CS377: Database Design - Data Integrity"
+
 
 info:
   goals: 

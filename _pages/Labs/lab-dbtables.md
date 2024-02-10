@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Labs/DatabaseTables
 title: "CS377: Database Design - Database Tables"
-excerpt: "CS377: Database Design - Database Tables"
+
 
 info:
   coursenum: CS377

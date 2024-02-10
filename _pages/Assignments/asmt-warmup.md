@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Warmup
 title: "CS377: Database Design - Warmup"
-excerpt: "CS377: Database Design - Warmup"
+
 
 info:
   coursenum: CS377

@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/Modeling/Normalization
 title: "CS377: Database Design - Data Modeling and Normalization"
-excerpt: "CS377: Database Design - Data Modeling and Normalization"
+
 
 info:
   goals: 

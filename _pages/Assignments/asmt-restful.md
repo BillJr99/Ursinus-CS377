@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/RESTful
 title: "CS377: Database Design - RESTful Web Services with Database Backends"
-excerpt: "CS377: Database Design - RESTful Web Services with Database Backends"
+
 
 info:
   coursenum: CS377

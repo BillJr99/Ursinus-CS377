@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/SQLProgramming
 title: "CS377: Database Design - SQL Programming"
-excerpt: "CS377: Database Design - SQL Programming"
+
 
 info:
   coursenum: CS377

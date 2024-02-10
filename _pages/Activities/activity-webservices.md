@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/WebServices
 title: "CS377: Database Design - RESTful Web Services to Map to CRUD Functionality"
-excerpt: "CS377: Database Design - RESTful Web Services to Map to CRUD Functionality"
+
 
 info:
   goals: 

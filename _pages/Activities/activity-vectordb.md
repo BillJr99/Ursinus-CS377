@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/VectorDB
 title: "CS377: Database Design - Vector Databases"
-excerpt: "CS377: Database Design - Vector Databases"
+
 
 info:
   goals: 

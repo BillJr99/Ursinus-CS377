@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/SQL2
 title: "CS377: Database Design - The Structured Query Language (SQL)"
-excerpt: "CS377: Database Design - The Structured Query Language (SQL)"
+
 
 info:
   prev: ./SQL
