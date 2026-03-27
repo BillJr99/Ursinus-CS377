@@ -25,7 +25,16 @@ info:
         <br>
         <script src="https://gist.github.com/BillJr99/138231874d9d1c00bab4d20d1ff4267e.js"></script>
       title: Database Programming and SQL Library Support
-      embed: <iframe height="400px" width="100%" src="https://repl.it/@BillJr99/SqliteRecursiveExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>  
+      embed: |
+        <iframe
+          height="600px"
+          width="100%"
+          src="https://www.billmongan.com/Ursinus-CS377/assets/code-viewer.html?zip=https%3A%2F%2Fraw.githubusercontent.com%2FBillJr99%2FUrsinus-CS377%2Fgh-pages%2Ffiles%2Freplit%2FSqliteRecursiveExample.zip&title=SQLite%20Recursive%20Example"
+          scrolling="yes"
+          frameborder="no"
+          allowfullscreen="true"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>      
       questions:
         - "Sketch the database schema implemented with the two programs (they are the same!)"
         - "What basic aggregation operations can you find in each program?"

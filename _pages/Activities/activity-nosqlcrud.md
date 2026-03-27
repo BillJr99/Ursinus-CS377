@@ -53,7 +53,16 @@ info:
         docs = collection.find({"val1": {"$gt": -1, "$lt": 101}})
         ]]></script>
       title: Read
-      embed: <iframe height="400px" width="100%" src="https://repl.it/@BillJr99/PythonMongoDBExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>    
+      embed: |
+        <iframe
+          height="600px"
+          width="100%"
+          src="https://www.billmongan.com/Ursinus-CS377/assets/code-viewer.html?zip=https%3A%2F%2Fraw.githubusercontent.com%2FBillJr99%2FUrsinus-CS377%2Fgh-pages%2Ffiles%2Freplit%2FPythonMongoDBExample.zip&title=Python%20MongoDB%20Example"
+          scrolling="yes"
+          frameborder="no"
+          allowfullscreen="true"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>      
       questions:
         - "Modify the above program to insert records into a datastore and query them, iterating over the results."
         - "Which statements search for items according to their value?"

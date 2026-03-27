@@ -29,7 +29,15 @@ info:
         - What do the curly braces represent?
         - What does the square bracket represent?
       embed: |
-        <iframe height="400px" width="100%" src="https://repl.it/@BillJr99/PythonWeatherClient?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>  
+        <iframe
+          height="600px"
+          width="100%"
+          src="https://www.billmongan.com/Ursinus-CS377/assets/code-viewer.html?zip=https%3A%2F%2Fraw.githubusercontent.com%2FBillJr99%2FUrsinus-CS377%2Fgh-pages%2Ffiles%2Freplit%2FPythonWeatherClient.zip&title=Python%20Weather%20Client"
+          scrolling="yes"
+          frameborder="no"
+          allowfullscreen="true"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
     - model: |
         <div align="left">
         <pre>
@@ -91,7 +99,15 @@ info:
       questions:
         - "Modify this program to read a comma separated value, and for each row, print every column individually via a loop (so that they print without the commas!)."
       embed: |
-        <iframe height="400px" width="100%" src="https://repl.it/@BillJr99/PythonFileIO?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>         
+        <iframe
+          height="600px"
+          width="100%"
+          src="https://www.billmongan.com/Ursinus-CS377/assets/code-viewer.html?zip=https%3A%2F%2Fraw.githubusercontent.com%2FBillJr99%2FUrsinus-CS377%2Fgh-pages%2Ffiles%2Freplit%2FPythonFileIO.zip&title=Python%20File%20IO"
+          scrolling="yes"
+          frameborder="no"
+          allowfullscreen="true"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>      
         
 tags:
   - files 

@@ -108,7 +108,15 @@ info:
         ]]></script>
       title: "Aggregating, Joining, Grouping, and Sorting with SQL"
       embed: |
-        <iframe height="400px" width="100%" src="https://repl.it/@BillJr99/Sql-AggregationExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>       
+        <iframe
+          height="600px"
+          width="100%"
+          src="https://www.billmongan.com/Ursinus-CS377/assets/code-viewer.html?zip=https%3A%2F%2Fraw.githubusercontent.com%2FBillJr99%2FUrsinus-CS377%2Fgh-pages%2Ffiles%2Freplit%2FSql-AggregationExample.zip&title=SQL%20Aggregation%20Example"
+          scrolling="yes"
+          frameborder="no"
+          allowfullscreen="true"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>    
       questions:
         - "What is being used to create <strong>aggregated</strong> calculated columns, like the average of a column?"
         - "What clause is used to give a column a custom name?"
@@ -135,7 +143,15 @@ info:
         ]]></script>
       title: "Inserting with SQL Subqueries"
       embed: |
-        <iframe height="400px" width="100%" src="https://repl.it/@BillJr99/Sql-AggregationSubqueryExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>       
+        <iframe
+          height="600px"
+          width="100%"
+          src="https://www.billmongan.com/Ursinus-CS377/assets/code-viewer.html?zip=https%3A%2F%2Fraw.githubusercontent.com%2FBillJr99%2FUrsinus-CS377%2Fgh-pages%2Ffiles%2Freplit%2FSql-AggregationSubqueryExample.zip&title=SQL%20Aggregation%20Subquery%20Example"
+          scrolling="yes"
+          frameborder="no"
+          allowfullscreen="true"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>   
       questions:
         - "What values are being inserted into the <code>ENROLLMENTS</code> table, and how?"        
         

@@ -38,7 +38,16 @@ info:
         <br>
         <p><a href="https://commons.wikimedia.org/wiki/File:Rdf-graph3.png#/media/File:Rdf-graph3.png"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Rdf-graph3.png" alt="Rdf-graph3.png"></a><br>Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=17096">Link</a></p>
       title: Graph Database
-      embed: <iframe height="400px" width="100%" src="https://repl.it/@BillJr99/PythonRedisExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe> 
+      embed: |
+        <iframe
+          height="600px"
+          width="100%"
+          src="https://www.billmongan.com/Ursinus-CS377/assets/code-viewer.html?zip=https%3A%2F%2Fraw.githubusercontent.com%2FBillJr99%2FUrsinus-CS377%2Fgh-pages%2Ffiles%2Freplit%2FPythonRedisExample.zip&title=Python%20Redis%20Example"
+          scrolling="yes"
+          frameborder="no"
+          allowfullscreen="true"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>      
       questions:
         - "What types of applications are best suited to this model?"
         - "Using <a href=\"https://www.redislabs.com\">redis</a>, set up a graph database of the groups in class, and print out each group.  Here is the <a href=\"https://github.com/RedisGraph/redisgraph-py\">Redis for Python API Documentation for reference</a>."
