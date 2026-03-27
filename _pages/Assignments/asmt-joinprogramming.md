@@ -55,7 +55,7 @@ Write a program that uses the [`sqlite3` database library](https://docs.python.o
 https://github.com/WebucatorTraining/lahman-baseball-mysql/raw/master/lahmansbaseballdb.sqlite) and to execute your queries.
 
 ### About the Dataset
-The [Baseball Archive](http://www.seanlahman.com/baseball-archive/statistics/) database is maintained by Sean Lahman \[[^1]\], and contains a number of statistics about players and teams up to and including the current baseball season.  We will use the database for the 2019 season.  It is not important that you are familiar with the game of baseball to query this data; rather, that you use the links shown in the database schema to connect relevant tables together.  This is often helpful when we are called upon to answer questions about data with queries in application domains about which we are less familiar!  The schema for this database is provided below:
+The [Baseball Archive](https://web.archive.org/web/20220127211238/http://www.seanlahman.com/baseball-archive/statistics/) database is maintained by Sean Lahman \[[^1]\], and contains a number of statistics about players and teams up to and including the current baseball season.  We will use the database for the 2019 season.  It is not important that you are familiar with the game of baseball to query this data; rather, that you use the links shown in the database schema to connect relevant tables together.  This is often helpful when we are called upon to answer questions about data with queries in application domains about which we are less familiar!  The schema for this database is provided below:
 
 ![Lahman Baseball Database Schema](../images/asmt-joinprogramming/lahmansbaseballdb.sqlite.png)
 

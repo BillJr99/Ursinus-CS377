@@ -3,7 +3,6 @@ layout: syllabus
 permalink: /
 title: "CS377: Database Design"
 
-    
 info:
   course_number: CS377
   course_sections: 
@@ -53,10 +52,10 @@ info:
     <div style="width: 100%; display: table; border-collapse:separate; border-spacing:5px;">
     <div style="width: 100%; display: table-row;">
         <div style="display: table-cell; padding:5px; width:33%;">
-            <a title="BernardoSulzbach, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:DVD_Rental_Query.png"><img width="256" alt="DVD Rental Query" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/DVD_Rental_Query.png/512px-DVD_Rental_Query.png"></a>
+            <a title="BernardoSulzbach, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:DVD_Rental_Query.png"><img width="256" alt="DVD Rental Query" src=https://upload.wikimedia.org/wikipedia/commons/f/f2/DVD_Rental_Query.png"></a>
         </div>
         <div style="display: table-cell; padding:5px; width:33%;">
-        <a title="Timo Tijhof, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:MediaWiki_1.28.0_database_schema.svg"><img width="288" alt="MediaWiki 1.28.0 database schema" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/MediaWiki_1.28.0_database_schema.svg/512px-MediaWiki_1.28.0_database_schema.svg.png"></a>  
+        <a title="Timo Tijhof, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:MediaWiki_1.28.0_database_schema.svg"><img width="288" alt="MediaWiki 1.28.0 database schema" src="https://upload.wikimedia.org/wikipedia/commons/9/94/MediaWiki_1.28.0_database_schema.svg"></a>  
         </div>
         <div style="display: table-cell; padding:5px; width:33%;">
         <img src="images/DatabaseSchema.png" alt="Example Record-Based Database Schema" width="192">
@@ -169,7 +168,7 @@ schedule:
         submission_types: "onpaper"
     readings:
       - rtitle: "Introduction to Databases"
-        rlink: "https://www.techopedia.com/6/28832/enterprise/databases/introduction-to-databases"
+        rlink: "https://www.geeksforgeeks.org/dbms/what-is-database/"
   - week: "0"
     date: "1"
     title: "Managing Data: Text and Files"
@@ -211,8 +210,8 @@ schedule:
         points: 100
         rubricpath: "_pages/Assignments/asmt-vectordb.md"
     readings:
-      - rtitle: "Demystifying Vector Databases"
-        rlink: "https://towardsdatascience.com/explaining-vector-databases-in-3-levels-of-difficulty-fc392e48ab78"
+      - rtitle: "Explaining Vector Databases in 3 Levels of Difficulty"
+        rlink: "https://web.archive.org/web/20240202202316/https://towardsdatascience.com/explaining-vector-databases-in-3-levels-of-difficulty-fc392e48ab78?gi=9aeaa8c96414"
       - rtitle: "Vector Databases"
         rlink: "https://www.pinecone.io/learn/vector-database/"
   - week: "2"

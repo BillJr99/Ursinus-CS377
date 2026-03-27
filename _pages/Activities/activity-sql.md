@@ -200,7 +200,7 @@ MySQL is an open-source relational database management system that is widely use
 
 #### MacOS
 1. Install Homebrew package manager by executing the following command in the Terminal:\
-   `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+   `$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 2. Install MySQL using Homebrew by executing the following command:\
    `$ brew install mysql`
 3. Follow the instructions displayed after the installation to set up MySQL.

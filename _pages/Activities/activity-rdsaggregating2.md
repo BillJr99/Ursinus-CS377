@@ -227,7 +227,6 @@ You can find more examples of subqueries in these repositories:
 
 - [CSE 344: Introduction to Data Management](https://github.com/ldfaiztt/CSE344/blob/c765a2b62d1688c423c3acd8064c46e54f8b6460/lecture07-sql-subqueries-additional-examples.sql)
 - [SQL_use_case_chinook_db](https://github.com/alzaia/SQL_use_case_chinook_db/blob/f753bf346378baaf133a47c217d04b535bfccd16/SQLite_Chinook_code/03_sql_subqueries_and_joins.sql)
-- [data_management_group5](https://github.com/Gaoyuan66/data_management_group5/blob/549d706f726a870f0276988fe46c74fd2ce45b70/Session3/2021/SQL.Subqueries.and.Views.sql)
 
 ## SQL Joins
 A JOIN clause is used to combine rows from two or more tables, based on a related column between them. Here are the different types of SQL JOINs:
