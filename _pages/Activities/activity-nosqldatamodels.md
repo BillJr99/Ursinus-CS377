@@ -28,7 +28,7 @@ info:
         - "How is this model similar to a document model?  How is it different?"
         - "What types of applications are best suited to this model?"
     - model: |
-        <a title="Scifipete, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Oracle_Table_in_a_Tablespace.jpg"><img width="512" alt="Oracle Table in a Tablespace" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Oracle_Table_in_a_Tablespace.jpg/512px-Oracle_Table_in_a_Tablespace.jpg"></a>
+        <a title="Scifipete, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Oracle_Table_in_a_Tablespace.jpg"><img width="512" alt="Oracle Table in a Tablespace" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Oracle_Table_in_a_Tablespace.jpg"></a>
       title: Columnar Database
       questions:
         - "What does this model remind you of, that you have seen before?"

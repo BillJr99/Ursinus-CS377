@@ -11,7 +11,7 @@ info:
     
   models:
     - model: |
-        <a title="Gringer, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:CousinTree_kinship.svg"><img width="512" alt="CousinTree kinship" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/CousinTree_kinship.svg/512px-CousinTree_kinship.svg.png"></a>
+        <a title="Gringer, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:CousinTree_kinship.svg"><img width="512" alt="CousinTree kinship" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/CousinTree_kinship.svg"></a>
         <br>
         <iframe src="https://en.wikipedia.org/wiki/GEDCOM#Example" width="100%"></iframe>
       title: "A Flat File Structure: GEDCOM"

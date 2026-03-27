@@ -21,7 +21,7 @@ info:
     - model: |
         <img src="https://opentextbc.ca/dbdesign01/wp-content/uploads/sites/11/2014/08/MemFormAug2014.jpg" alt="An example database from Database Design 2nd Ed by Watt and Eng">
         <br>
-        <a title="Jorge Stolfi, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Hash_table_4_1_1_0_0_1_0_LL.svg"><img width="256" alt="Hash table 4 1 1 0 0 1 0 LL" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Hash_table_4_1_1_0_0_1_0_LL.svg/256px-Hash_table_4_1_1_0_0_1_0_LL.svg.png"></a>
+        <a title="Jorge Stolfi, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Hash_table_4_1_1_0_0_1_0_LL.svg"><img width="256" alt="Hash table 4 1 1 0 0 1 0 LL" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Hash_table_4_1_1_0_0_1_0_LL.svg"></a>
       title: Indexing
       questions:
         - "What are some strategies you might use to allow a person to look up the location of a record in a database more quickly than by linear search?"

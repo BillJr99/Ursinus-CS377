@@ -51,7 +51,7 @@ info:
           sandbox="allow-scripts allow-same-origin">
         </iframe>
     - model: |
-        <a title="Pluke, Keiyakins, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:CPT-Databases-OnetoMany2.svg"><img width="256" alt="CPT-Databases-OnetoMany2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/CPT-Databases-OnetoMany2.svg/256px-CPT-Databases-OnetoMany2.svg.png"></a>
+        <a title="Pluke, Keiyakins, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:CPT-Databases-OnetoMany2.svg"><img width="256" alt="CPT-Databases-OnetoMany2" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/CPT-Databases-OnetoMany2.svg"></a>
       title: Characteristic Entities
       questions:
         - "Design a relationship that features a kernel table for people with basic personal information, and a connection to zero or more email addresses.  You can't have infinitely many columns in your kernel table, so you will need a second table.  This relationship is called a <strong>characteristic entity</strong>."
