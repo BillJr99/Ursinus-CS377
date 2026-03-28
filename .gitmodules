@@ -17,3 +17,4 @@
 	path = files/mssamples
 	url = https://github.com/microsoft/sql-server-samples.git
 	fetchRecurseSubmodules = false
+	shallow = true
