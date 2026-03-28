@@ -52,13 +52,13 @@ info:
     <div style="width: 100%; display: table; border-collapse:separate; border-spacing:5px;">
     <div style="width: 100%; display: table-row;">
         <div style="display: table-cell; padding:5px; width:33%;">
-        <a title="BernardoSulzbach, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:DVD_Rental_Query.png"><img width="960" alt="A picture showing an SQL select statement against a database" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/DVD_Rental_Query.png"></a>
+            <a title="BernardoSulzbach, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:DVD_Rental_Query.png"><img style="width:100%; height:auto;" alt="A picture showing an SQL select statement against a database" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/DVD_Rental_Query.png"></a>
         </div>
         <div style="display: table-cell; padding:5px; width:33%;">
-        <a title="Timo Tijhof, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:MediaWiki_1.28.0_database_schema.svg"><img width="288" alt="MediaWiki 1.28.0 database schema" src="https://upload.wikimedia.org/wikipedia/commons/9/94/MediaWiki_1.28.0_database_schema.svg"></a>  
+            <a title="Timo Tijhof, CC BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:MediaWiki_1.28.0_database_schema.svg"><img style="width:100%; height:auto;" alt="MediaWiki 1.28.0 database schema" src="https://upload.wikimedia.org/wikipedia/commons/9/94/MediaWiki_1.28.0_database_schema.svg"></a>  
         </div>
         <div style="display: table-cell; padding:5px; width:33%;">
-        <img src="images/DatabaseSchema.png" alt="Example Record-Based Database Schema" width="192">
+            <img src="images/DatabaseSchema.png" alt="Example Record-Based Database Schema" style="width:100%; height:auto;">
         </div>
     </div>
     </div>
