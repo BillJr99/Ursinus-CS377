@@ -34,10 +34,10 @@ info:
         - "How does the improved (<strong>normalized</strong>) schema help prevent the anomalies you were able to identify?"
     - model: |
         <h3>Inner Join</h3>
-        <a title="GermanX, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SQL_Join_-_07_A_Inner_Join_B.svg"><img width="128" alt="SQL Join - 07 A Inner Join B" src="https://upload.wikimedia.org/wikipedia/commons/1/18/SQL_Join_-_07_A_Inner_Join_B.svg"></a>
+        <a title="GermanX, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SQL_Join_-_07_A_Inner_Join_B.svg"><img width="128" alt="SQL Join - 07 A Inner Join B" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/SQL_Join_-_07_A_Inner_Join_B.svg"></a>
         <br>
         <h3>Left Outer Join</h3>
-        <a title="GermanX, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SQL_Join_-_01_A_Left_Join_B.svg"><img width="128" alt="SQL Join - 01 A Left Join B" src="https://upload.wikimedia.org/wikipedia/commons/f/f6/SQL_Join_-_01_A_Left_Join_B.svg"></a>
+        <a title="GermanX, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SQL_Join_-_01_A_Left_Join_B.svg"><img width="128" alt="SQL Join - 01 A Left Join B" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/SQL_Join_-_01_A_Left_Join_B.svg"></a>
       title: The SQL Join
       questions:
         - "Joins are classified by which records are included if a corresponding match is not found in one table.  An <strong>inner join</strong> includes only records that match across both tables.  A <strong>left outer</strong> join includes all rows from the first table and their corresponding match from the second table (or <code>NULL</code> if no match exists from the second table.  What do you think a <strong>right outer join is</strong>, and a <strong>full outer join</strong>?"

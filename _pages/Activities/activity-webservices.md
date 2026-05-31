@@ -19,7 +19,7 @@ info:
     
   models:
     - model: |
-        <a title="Santiago Paredes, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SQLyHTTP.JPG"><img width="512" alt="SQLyHTTP" src="https://upload.wikimedia.org/wikipedia/commons/1/15/SQLyHTTP.JPG"></a>
+        <a title="Santiago Paredes, CC BY 3.0 &lt;https://creativecommons.org/licenses/by/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:SQLyHTTP.JPG"><img width="512" alt="SQLyHTTP" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/SQLyHTTP.JPG"></a>
       title: Creating a RESTful Web Service in Python with Flask
       embed: |
         <iframe

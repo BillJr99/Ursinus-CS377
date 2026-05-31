@@ -15,28 +15,28 @@ info:
       
   models:
     - model: |
-        <a title="JuliaL0313, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Database-document.png"><img width="256" alt="Database-document" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Database-document.png"></a>
+        <a title="JuliaL0313, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Database-document.png"><img width="256" alt="Database-document" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Database-document.png"></a>
       title: Document Database
       questions:
         - "What does this model remind you of, that you have seen before?"
         - "What types of applications are best suited to this model?"
     - model: |
-        <a title="Clescop, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:KeyValue.PNG"><img width="256" alt="KeyValue" src="https://upload.wikimedia.org/wikipedia/commons/5/5b/KeyValue.PNG"></a>
+        <a title="Clescop, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:KeyValue.PNG"><img width="256" alt="KeyValue" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/KeyValue.PNG"></a>
       title: Key-Value Database
       questions:
         - "How does this model relate to a normalized relational database?"
         - "How is this model similar to a document model?  How is it different?"
         - "What types of applications are best suited to this model?"
     - model: |
-        <a title="Scifipete, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Oracle_Table_in_a_Tablespace.jpg"><img width="512" alt="Oracle Table in a Tablespace" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Oracle_Table_in_a_Tablespace.jpg"></a>
+        <a title="Scifipete, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Oracle_Table_in_a_Tablespace.jpg"><img width="512" alt="Oracle Table in a Tablespace" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Oracle_Table_in_a_Tablespace.jpg"></a>
       title: Columnar Database
       questions:
         - "What does this model remind you of, that you have seen before?"
         - "What types of applications are best suited to this model?"
     - model: |
-        <a title="Originally uploaded by Ahzf (Transferred by Obersachse), CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:GraphDatabase_PropertyGraph.png"><img width="512" alt="GraphDatabase PropertyGraph" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/GraphDatabase_PropertyGraph.png"></a>
+        <a title="Originally uploaded by Ahzf (Transferred by Obersachse), CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:GraphDatabase_PropertyGraph.png"><img width="512" alt="GraphDatabase PropertyGraph" src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/GraphDatabase_PropertyGraph.png"></a>
         <br>
-        <p><a href="https://commons.wikimedia.org/wiki/File:Rdf-graph3.png#/media/File:Rdf-graph3.png"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Rdf-graph3.png" alt="Rdf-graph3.png"></a><br>Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=17096">Link</a></p>
+        <p><a href="https://commons.wikimedia.org/wiki/File:Rdf-graph3.png#/media/File:Rdf-graph3.png"><img src="https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Rdf-graph3.png" alt="Rdf-graph3.png"></a><br>Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=17096">Link</a></p>
       title: Graph Database
       embed: |
         <iframe
