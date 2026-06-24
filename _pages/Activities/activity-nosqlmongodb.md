@@ -24,7 +24,7 @@ info:
           sandbox="allow-scripts allow-same-origin">
         </iframe>      
       questions:
-        - "Create a Cluster at <a href=\"http://mongodb.com\">MongoDB.com</a>, and a user to access it.  Allow network access, and click the <code>Connect</code> button to obtain a database connection string.  The repl.it example code comments contain instructions on how to pass the database parameters (like the password) as environment variables, so that you do not have to embed them in your program code.  Run the given example against your collection."
+        - "Create a Cluster at <a href=\"http://mongodb.com\">MongoDB.com</a>, and a user to access it.  Allow network access, and click the <code>Connect</code> button to obtain a database connection string.  The example code comments contain instructions on how to pass the database parameters (like the password) as environment variables, so that you do not have to embed them in your program code.  Run the given example against your collection."
         - What is the format of the data being stored in a NoSQL collection?
         - Do you think you could lookup relational data in a NoSQL collection?  Why or why not?
         - How might a NoSQL collection make things easier when dealing with a web service that communicates JSON between the browser and the server?

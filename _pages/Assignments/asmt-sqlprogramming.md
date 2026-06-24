@@ -40,7 +40,7 @@ tags:
   
 ---
 
-In this assignment, you will write a program to implement the [insurance database](https://replit.com/@BillJr99/Sql-ERModels) we considered in class.  Specifically, you may have noticed that it was difficult to create a dependent insurance entry into the `DEPENDENTCOVERAGE` table for every dependent of a given employee.  
+In this assignment, you will write a program to implement the insurance database we considered in class (shown below).  Specifically, you may have noticed that it was difficult to create a dependent insurance entry into the `DEPENDENTCOVERAGE` table for every dependent of a given employee.  
 
 ## Implementing a SQL-based Database Program
 
@@ -49,3 +49,7 @@ Using the [sqlite3](https://docs.python.org/3/library/sqlite3.html) Python libra
 ## Exporting your Project for Submission
 
 When you're done, write a README for your project, and save all your files, before exporting your project to ZIP.  In your README, answer any bolded questions presented on this page.  
+
+## Reference Schema
+
+<iframe height="500px" width="100%" src="https://www.billmongan.com/Ursinus-CS377/assets/code-viewer.html?zip=https%3A%2F%2Fraw.githubusercontent.com%2FBillJr99%2FUrsinus-CS377%2Fgh-pages%2Ffiles%2Freplit%2FSql-ERModels.zip&title=SQL%20ER%20Models" scrolling="yes" frameborder="no" allowfullscreen="true" sandbox="allow-scripts allow-same-origin"></iframe>
