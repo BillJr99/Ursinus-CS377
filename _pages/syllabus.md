@@ -330,6 +330,7 @@ schedule:
   - week: "6"
     date: "0"
     title: "The Relational Database Model and Advanced Database Programming"
+    link: "Activities/SQLAlchemy"
     deliverables:
       - dtitle: "Exercise: SQL Aggregation"
         dlink: "Modules/SQL/Aggregation/Exercise"
@@ -342,6 +343,8 @@ schedule:
         rlink: "https://www.youtube.com/watch?v=ciNHn38EyRc"
       - rtitle: "SQL Security Slides"
         rlink: "./files/cosc_304/topics/17_security/304_17_Security.pdf"
+      - rtitle: "SQLAlchemy ORM Quick Start"
+        rlink: "https://docs.sqlalchemy.org/en/20/orm/quickstart.html"
   - week: "6"
     date: "1"
     title: "The Entity-Relational (ER) Model"
