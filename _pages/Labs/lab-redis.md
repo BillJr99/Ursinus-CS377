@@ -31,6 +31,8 @@ info:
   readings:
     - rtitle: "NoSQL Modeling Activity"
       rlink: "../Activities/NoSQL/DataModels" 
+    - rtitle: "Redis Data Structures and Caching Activity"
+      rlink: "../Activities/Redis"
       
 tags:
   - nosql

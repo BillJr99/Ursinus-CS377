@@ -499,6 +499,8 @@ schedule:
         rlink: false
       - rtitle: "Types of NoSQL Databases"
         rlink: "https://www.mongodb.com/scale/types-of-nosql-databases"
+      - rtitle: "Redis Data Structures and Caching Activity"
+        rlink: "Activities/Redis"
   - week: "13"
     date: "1"
     title: "Indexing a Denormalized NoSQL Datastore"
