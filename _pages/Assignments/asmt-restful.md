@@ -50,6 +50,8 @@ In this assignment, you will create a database design in a relational model, and
 
 Your web service is the top layer of the database interface stack described in the [Web Services activity](../Activities/WebServices#layers-of-database-interfaces): clients speak HTTP to your Flask service, and your service speaks to the databases through their Python interfaces.  Map each CRUD operation to an HTTP method and route (`POST` to create, `GET` to read, `PUT` to update, `DELETE` to delete), and return appropriate HTTP status codes (for example, `404` for a missing record, `400` for invalid input).
 
+Your service holds credentials for *two* databases, so configuration management matters here: keep connection details (hostnames, usernames, passwords, connection URIs) in a `.env` file loaded with [python-dotenv](https://pypi.org/project/python-dotenv/) rather than in your source code, add `.env` to your `.gitignore`, and submit a `.env.example` with placeholder values instead.  See the [SQL activity's dotenv section](../Activities/SQL#keeping-credentials-out-of-your-code-with-dotenv) for the pattern.
+
 ## Exporting your Project for Submission
 
 When you're done, write a README for your project, and save all your files, before exporting your project to ZIP.  In your README, answer any bolded questions presented on this page.  

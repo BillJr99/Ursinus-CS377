@@ -38,6 +38,8 @@ info:
       rtitle: Sqlite3 Python Library
     - rlink: https://www.tutorialspoint.com/postgresql/postgresql_python.htm
       rtitle: PostgreSQL Python Library
+    - rlink: https://pypi.org/project/python-dotenv/
+      rtitle: python-dotenv Library
       
 tags:
   - tables
@@ -50,6 +52,8 @@ In this assignment, you will connect to a database engine and write a program to
 ### Connecting to the Database
 
 You can [install the MySQL database engine](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/) locally.  This will provide you with connection details for the database, including a username, password, hostname, port number, and possibly a connection string that includes all of this information in a single URI.  You may also use sqlite using the [`sqlite3` library](https://docs.python.org/3/library/sqlite3.html)
+
+**Do not hard-code these connection details in your source code.**  Store them in a `.env` file loaded with the [python-dotenv](https://pypi.org/project/python-dotenv/) library, and read them with `os.getenv` as shown in the [SQL activity's dotenv section](../Activities/SQL#keeping-credentials-out-of-your-code-with-dotenv).  Add `.env` to your project's `.gitignore` so credentials never enter version control, and include a `.env.example` file (with placeholder values) in your submission so the grader knows which keys to supply.  If you use sqlite, your `.env` may simply hold the database file path — the habit is what matters.
 
 Import the appropriate library for the database engine you are using (for example, PostgreSQL), and write a program that implements a database schema of your choosing.  You can be creative here!  Your schema should have at least three tables with relationships to other tables via foreign keys, and at least one of those relationships should be 1:many.  Draw you schema before implementing it.
 
