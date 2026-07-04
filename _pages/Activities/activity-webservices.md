@@ -7,6 +7,7 @@ title: "CS377: Database Design - RESTful Web Services to Map to CRUD Functionali
 info:
   goals: 
     - To integrate a Flask web service with a NoSQL database
+    - To differentiate the layers of database interfaces (driver/DB-API, ORM, and REST) and choose an appropriate one for an application
   additional_reading:
     - title: "Flask RESTful Web Services"
       link: "https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask"
@@ -49,6 +50,29 @@ info:
         - "How might you make an HTTP get request to retrieve the set of people from your example web service?"
         - "Investigate how to add authentication to an HTTP request."
         - "How would you make these requests using curl?"
+    - model: |
+        <table border="1" cellpadding="4">
+          <caption>Three layers at which a program can talk to a database</caption>
+          <tr><th>Layer</th><th>You write</th><th>Example</th><th>Who typically uses it</th></tr>
+          <tr><td>Driver / DB-API</td><td>SQL strings</td><td><code>cursor.execute("SELECT * FROM person WHERE id = ?", (pid,))</code></td><td>Code running next to the database</td></tr>
+          <tr><td>ORM</td><td>Classes and objects</td><td><code>session.get(Person, pid)</code></td><td>Application developers on the same team</td></tr>
+          <tr><td>REST web service</td><td>HTTP requests</td><td><code>GET /api/v1/person/1</code></td><td>Any client, anywhere, in any language</td></tr>
+        </table>
+      title: "Layers of Database Interfaces"
+      embed: |
+        <iframe
+          height="600px"
+          width="100%"
+          src="https://www.billmongan.com/Ursinus-CS377/assets/code-viewer.html?zip=https%3A%2F%2Fraw.githubusercontent.com%2FBillJr99%2FUrsinus-CS377%2Fgh-pages%2Ffiles%2Freplit%2FFlaskExample.zip&title=Flask%20REST%20Example"
+          scrolling="yes"
+          frameborder="no"
+          allowfullscreen="true"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      questions:
+        - "The embedded Flask example stores its <code>people</code> list in memory rather than a database.  Which layer(s) from the table would you add to persist the data, and where in the code would each go?"
+        - "Each layer trades control for convenience.  What does the REST layer give you that the DB-API layer cannot?  What does the DB-API layer let you do that would be awkward through REST?"
+        - "Why do we not simply expose the database's own network port (for example, MySQL's port 3306) to the Internet and let clients run SQL directly?  List at least two reasons."
         
 tags:
   - nosql
@@ -56,6 +80,70 @@ tags:
   - programming
   
 ---
+
+## Layers of Database Interfaces
+
+Before diving into REST specifically, it helps to see where a web service sits among the ways a program can talk to a database.  There are three common "altitudes," and real systems usually stack them:
+
+```
++---------------------------------------------------------------+
+|  Any client: browser, curl, mobile app, another service        |
+|      |  HTTP + JSON ("GET /api/v1/person/1")                   |
+|      v                                                         |
+|  REST web service (Flask)          <- interface 3: the network |
+|      |  Python objects (Person)                                |
+|      v                                                         |
+|  ORM layer (e.g., SQLAlchemy)      <- interface 2: objects     |
+|      |  SQL ("SELECT ... WHERE id = ?")                        |
+|      v                                                         |
+|  Driver / DB-API (sqlite3, PyMySQL) <- interface 1: SQL        |
+|      |  the database's wire protocol                           |
+|      v                                                         |
+|  Database engine                                               |
++---------------------------------------------------------------+
+```
+
+### Interface 1: The Python DB-API (drivers)
+
+Python database drivers — `sqlite3`, `PyMySQL`, `psycopg2` — all follow the same standard, [PEP 249, the Python Database API](https://peps.python.org/pep-0249/).  That is why the code looks so similar no matter which engine you use: `connect()` gives you a connection, `cursor()` gives you a cursor, `execute()` runs SQL (with `?` or `%s` placeholders for parameters), and `fetchall()`/`fetchone()` retrieve results.
+
+```python
+import sqlite3
+
+conn = sqlite3.connect("people.db")
+cur = conn.cursor()
+cur.execute("SELECT name, age FROM person WHERE id = ?", (1,))
+row = cur.fetchone()   # e.g., ("Alex", 38)
+conn.close()
+```
+
+You write raw SQL, so you have full control — and full responsibility for parameterizing inputs (never concatenate!), managing transactions, and translating rows (plain tuples) into whatever objects your program needs.
+
+### Interface 2: The ORM Layer
+
+An **Object-Relational Mapper (ORM)** such as [SQLAlchemy](https://www.sqlalchemy.org/) sits on top of a DB-API driver and maps tables to classes and rows to objects, generating the SQL for you:
+
+```python
+person = session.get(Person, 1)   # ORM issues the SELECT for us
+print(person.name, person.age)    # a real Python object, not a tuple
+```
+
+The ORM handles parameterization, type conversion, and relationships between tables (a `person.emails` attribute instead of a manual join).  The trade-off is a layer of machinery between you and the SQL — for unusual or performance-critical queries, developers often drop back down to interface 1.  We explore this layer in depth in the [SQLAlchemy activity](./SQLAlchemy).
+
+### Interface 3: REST over the Database
+
+The first two interfaces require the client to be *your own program*, running with database credentials and a network route to the database.  A **RESTful web service** wraps the database behind HTTP so that *any* client — a browser, a phone app, `curl`, a program in another language — can use it without credentials to the database itself:
+
+| CRUD operation | SQL (interface 1) | HTTP (interface 3) |
+|----------------|-------------------|---------------------|
+| Create | `INSERT INTO person ...` | `POST /api/v1/person` |
+| Read   | `SELECT ... WHERE id = 1` | `GET /api/v1/person/1` |
+| Update | `UPDATE person SET ... WHERE id = 1` | `PUT /api/v1/person/1` |
+| Delete | `DELETE FROM person WHERE id = 1` | `DELETE /api/v1/person/1` |
+
+This is why we never expose the database port directly to the Internet: the web service layer enforces *authentication* (who are you?), *authorization* (which rows may you touch?), *validation* (is this input sane?), and *shape* (clients see friendly JSON, not your schema), while the database credentials stay safely on the server — ideally in a `.env` configuration file rather than in the code, as discussed in the [SQL activity](./SQL#keeping-credentials-out-of-your-code-with-dotenv).
+
+**Choosing a layer:** inside one program, use the DB-API or an ORM; between programs, machines, or organizations, put a REST interface in front.  Most production systems use all three at once — exactly the stack you will build in the [RESTful Web Services assignment](../Assignments/RESTful).
 
 ## RESTful Web Services
 Representational State Transfer (REST)ful Web Services are a popular architecture for building scalable and interoperable distributed systems. They provide an efficient way to expose data and functionality through HTTP endpoints. 

@@ -48,6 +48,8 @@ tags:
 
 In this assignment, you will create a database design in a relational model, and in a NoSQL model (they can be the same design, implemented in both models, or two different designs as appropriate to each model).  Implement a RESTful web service interface, tested with curl or a client program, that implements the database and creates, reads, updates, and deletes data within each database.
 
+Your web service is the top layer of the database interface stack described in the [Web Services activity](../Activities/WebServices#layers-of-database-interfaces): clients speak HTTP to your Flask service, and your service speaks to the databases through their Python interfaces.  Map each CRUD operation to an HTTP method and route (`POST` to create, `GET` to read, `PUT` to update, `DELETE` to delete), and return appropriate HTTP status codes (for example, `404` for a missing record, `400` for invalid input).
+
 ## Exporting your Project for Submission
 
 When you're done, write a README for your project, and save all your files, before exporting your project to ZIP.  In your README, answer any bolded questions presented on this page.  
