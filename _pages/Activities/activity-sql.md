@@ -164,7 +164,12 @@ WHERE condition;
 
 Python is a popular programming language for data analysis and manipulation. It provides several libraries and packages for working with SQL databases, such as the **`sqlite3`** module for local databases and the **`psycopg2`** module for working with PostgreSQL databases.
 
-Here is an example of using Python to connect to an SQLite database and execute a simple SQL query:
+Here is an example of using Python to connect to an SQLite database and execute a simple SQL query.  Suppose `example.db` contains this `employees` table:
+
+| id | name | job_title | salary |
+|----|------------|-------------------|--------|
+| 1 | John Doe | Software Engineer | 50000 |
+| 2 | Jane Smith | Data Analyst | 45000 |
 
 ```python
 import sqlite3
@@ -187,6 +192,13 @@ for row in rows:
 
 # Close the database connection
 conn.close()
+```
+
+Each fetched row arrives as a plain Python tuple, one per record, so this program prints:
+
+```
+(1, 'John Doe', 'Software Engineer', 50000)
+(2, 'Jane Smith', 'Data Analyst', 45000)
 ```
 
 ## SQL Injections
@@ -218,6 +230,59 @@ def get_user(username):
 
     return result
 ```
+
+## Keeping Credentials Out of Your Code with dotenv
+
+Notice that database programs need to know *secrets* — usernames, passwords, hostnames — and it is tempting to type them right into the source code:
+
+```python
+cnx = mysql.connector.connect(user='root', password='hunter2', ...)  # DON'T do this!
+```
+
+This is one of the most common real-world security mistakes: the moment that file is committed to git, e-mailed, or posted to GitHub, the password goes with it (and stays in the repository's *history* even if you delete it later).  Search GitHub for leaked keys and you will find thousands — attackers run those searches constantly.
+
+The standard fix is to keep configuration in the process **environment** instead of the code, using a `.env` file and the [python-dotenv](https://pypi.org/project/python-dotenv/) library (`pip install python-dotenv`).
+
+**Step 1 — put the secrets in a file named `.env`** (one `KEY=value` per line, no quotes needed):
+
+```
+DB_HOST=localhost
+DB_USER=cs377
+DB_PASSWORD=hunter2
+DB_NAME=example
+```
+
+**Step 2 — keep `.env` out of version control** by adding it to your `.gitignore` file:
+
+```
+.env
+```
+
+(It is customary to commit a `.env.example` file instead, listing the *keys* with dummy values, so teammates know what to fill in.)
+
+**Step 3 — load the values at runtime:**
+
+```python
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  # reads .env into environment variables
+
+cnx = mysql.connector.connect(
+    host=os.getenv('DB_HOST'),
+    user=os.getenv('DB_USER'),
+    password=os.getenv('DB_PASSWORD'),
+    database=os.getenv('DB_NAME')
+)
+```
+
+Now the same code runs on your laptop, a teammate's machine, and a production server — each with its own `.env` (or real environment variables, which `os.getenv` also reads; hosting platforms provide a settings screen for exactly this).  The code describes *how* to connect; the environment supplies *where* and *as whom*.
+
+**Common pitfalls:**
+
+- Adding `.env` to `.gitignore` *after* you've already committed it doesn't remove it from history — rotate (change) the password too.
+- `os.getenv` returns the *string* `None` semantics: if a key is missing you get `None`, and the connection error appears far from the real cause.  Check for required keys at startup and fail with a clear message.
+- Don't print or log the loaded values while debugging — that just leaks them into another file.
 
 ## Installing and Configuring MySQL
 

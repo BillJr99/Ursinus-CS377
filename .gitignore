@@ -11,3 +11,21 @@ Gemfile.lock
 .text2qti.bespon
 _pages/Quizzes/qti_*
 setformprocessorasmtid.sh
+# Build artifacts and compiled/intermediate files that should not be published
+*.pyc
+__pycache__/
+*.class
+*.o
+*.out
+
+# Environment/credential files (see the dotenv guidance in the SQL activity)
+.env
+
+# Editor swap and backup files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# NOTE: *.zip and *.db are deliberately NOT ignored: files/replit/*.zip and
+# files/mspubs/pubs.db are course materials served directly to students.
