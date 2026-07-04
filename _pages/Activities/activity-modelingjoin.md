@@ -138,7 +138,7 @@ Now the unmatched *right* row (Marketing) is kept instead, padded with `NULL` on
 | Edsger | 20     | Research    |
 | NULL   | NULL   | Marketing   |
 
-A right join is just a left join with the tables swapped: `A RIGHT JOIN B` returns the same rows as `B LEFT JOIN A`.  (Older versions of SQLite had no `RIGHT JOIN` for exactly this reason — you can always rewrite it.)
+A right join is just a left join with the tables swapped: `A RIGHT JOIN B` returns the same rows as `B LEFT JOIN A`.  (Older versions of SQLite — before 3.39, released in 2022 — had no `RIGHT JOIN` *or* `FULL OUTER JOIN`, for exactly this reason: a right join can always be rewritten as a swapped left join, and a full outer join can be emulated by `UNION`ing a left join with the right side's unmatched rows.  If a join keyword errors out in your environment, check the dialect version before checking your syntax.)
 
 #### Full Outer Join: matches, plus every leftover from both sides
 

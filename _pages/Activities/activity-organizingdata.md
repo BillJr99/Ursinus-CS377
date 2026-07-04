@@ -27,7 +27,7 @@ info:
         - "Which fields should a user be able to update?  Which ones should a user not update directly, and why?"
     - model: |
         <table border="1" cellpadding="4">
-          <caption>A mostly-empty matrix, and the three arrays that store only its nonzero values in Compressed Sparse Row (CSR) form</caption>
+          <caption>A small example matrix, and the three arrays that store only its nonzero values in Compressed Sparse Row (CSR) form (this one is mostly full, so CSR would not save space here -- it is small so we can trace every entry; CSR pays off when most cells are zero)</caption>
           <tr><th></th><th>col 0</th><th>col 1</th><th>col 2</th></tr>
           <tr><th>row 0</th><td>1</td><td>0</td><td>2</td></tr>
           <tr><th>row 1</th><td>0</td><td>3</td><td>4</td></tr>

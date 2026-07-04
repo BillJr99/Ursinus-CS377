@@ -97,27 +97,27 @@ Let's keep a running year-to-date sales total on the pubs bookstore database.  S
 
 ```sql
 CREATE TRIGGER update_ytd_sales
-AFTER INSERT ON sales
+AFTER INSERT ON "dbo.sales"
 FOR EACH ROW
 BEGIN
-    UPDATE titles
+    UPDATE "dbo.titles"
     SET ytd_sales = COALESCE(ytd_sales, 0) + NEW.qty
     WHERE title_id = NEW.title_id;
 END;
 ```
 
-(`COALESCE(ytd_sales, 0)` guards against a `NULL` total: `NULL + 20` would be `NULL`, a classic pitfall.)
+(`COALESCE(ytd_sales, 0)` guards against a `NULL` total: `NULL + 20` would be `NULL`, a classic pitfall.  And why the quotes?  The SQLite conversion of pubs keeps the SQL Server schema prefix in each table's name — the table is literally named `dbo.sales` — so we quote it to keep the dot from being read as a `schema.table` separator.)
 
 **Step 2 — a store records a sale:**
 
 ```sql
-INSERT INTO sales (stor_id, ord_num, ord_date, qty, payterms, title_id)
+INSERT INTO "dbo.sales" (stor_id, ord_num, ord_date, qty, payterms, title_id)
 VALUES ('7066', 'QA7442.3', '2023-09-13', 20, 'Net 30', 'BU1032');
 ```
 
 **Step 3 — trace what the database does, in order:**
 
-1. The row is inserted into `sales` (it's an `AFTER` trigger, so the insert happens first).
+1. The row is inserted into `"dbo.sales"` (it's an `AFTER` trigger, so the insert happens first).
 2. The insert event fires `update_ytd_sales`, with `NEW.qty = 20` and `NEW.title_id = 'BU1032'`.
 3. The trigger body runs its `UPDATE`, matching only the row `WHERE title_id = 'BU1032'`.
 4. That row's `ytd_sales` becomes `4095 + 20 = 4115`.
@@ -125,7 +125,7 @@ VALUES ('7066', 'QA7442.3', '2023-09-13', 20, 'Net 30', 'BU1032');
 **Step 4 — verify the result:**
 
 ```sql
-SELECT title_id, ytd_sales FROM titles WHERE title_id = 'BU1032';
+SELECT title_id, ytd_sales FROM "dbo.titles" WHERE title_id = 'BU1032';
 ```
 
 | title_id | ytd_sales |
@@ -134,7 +134,7 @@ SELECT title_id, ytd_sales FROM titles WHERE title_id = 'BU1032';
 
 `BU1111` is untouched — the `WHERE` clause in the trigger body scoped the update to the one book that was sold.  Notice that the application only issued a single `INSERT`; the consistency bookkeeping came for free.
 
-> **Try it yourself:** download [pubs.db](../files/mspubs/pubs.db) and run this in the `sqlite3` shell or from Python's `sqlite3` module.  One catch: in the SQLite conversion of pubs, table names carry a `dbo.` prefix, so quote them — for example `AFTER INSERT ON "dbo.sales"` and `UPDATE "dbo.titles" ...`.
+> **Try it yourself:** download [pubs.db](../files/mspubs/pubs.db) and run this in the `sqlite3` shell or from Python's `sqlite3` module — the snippets above run as-written against it.  If you build your own database instead, drop the `dbo.` prefixes and use plain `sales`/`titles` names; only the pubs conversion carries them.
 
 ## Vetoing Bad Data with a BEFORE Trigger
 
@@ -142,7 +142,7 @@ SELECT title_id, ytd_sales FROM titles WHERE title_id = 'BU1032';
 
 ```sql
 CREATE TRIGGER check_positive_qty
-BEFORE INSERT ON sales
+BEFORE INSERT ON "dbo.sales"
 FOR EACH ROW
 WHEN NEW.qty <= 0
 BEGIN
@@ -150,7 +150,7 @@ BEGIN
 END;
 ```
 
-Now `INSERT INTO sales (...) VALUES (..., -5, ...)` fails with `sales quantity must be positive`, and the bad row never lands in the table.  The optional `WHEN` clause is a filter: the body only runs for rows that match it.
+Now `INSERT INTO "dbo.sales" (...) VALUES (..., -5, ...)` fails with `sales quantity must be positive`, and the bad row never lands in the table.  The optional `WHEN` clause is a filter: the body only runs for rows that match it.
 
 ## Common Pitfalls
 
