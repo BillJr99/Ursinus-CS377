@@ -160,7 +160,7 @@ schedule:
   - week: "0"
     date: "0"
     title: "Course Overview: What is a Database, and Why Use Them?"
-    link: "../Ursinus-CS377-Overview"
+    link: "https://www.billmongan.com/Ursinus-CS377-Overview"
     deliverables:
       - dtitle: "Programming Assignment: Warmup Handed Out"
         dlink: "Assignments/Warmup"
