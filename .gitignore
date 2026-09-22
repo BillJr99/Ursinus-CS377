@@ -28,3 +28,4 @@ __pycache__/
 
 # NOTE: *.zip and *.db are deliberately NOT ignored: files/replit/*.zip and
 # files/mspubs/pubs.db are course materials served directly to students.
+/*.sh
