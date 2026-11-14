@@ -52,6 +52,7 @@ In the Reduce stage, the output of the map function is grouped by the keys and p
 
 Example using Python:
 
+<!-- run: id=cs377-activity-nosqlaggregating-1 viz=env -->
 ```python
 # Import required libraries
 from functools import reduce
@@ -67,6 +68,7 @@ reduced_data = reduce(lambda x, y: (x[0] + y[0], x[1] + y[1]), mapped_data)
 
 print(reduced_data)
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-nosqlaggregating-1) <!-- code-viz link -->
 
 Referring to the above example, the map function transforms each element in the input data into a tuple of the value itself and its square. The reduce function then accumulates the squares and their values into a final result of (15, 55).
 

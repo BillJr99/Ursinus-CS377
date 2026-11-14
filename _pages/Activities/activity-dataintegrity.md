@@ -139,6 +139,7 @@ user = User(**user_data)  # Raises a validation error due to an invalid age fiel
 The `hashlib` module in Python provides access to various secure hash and message digest algorithms.
 
 Example:
+<!-- run: id=cs377-activity-dataintegrity-2 viz=env -->
 ```python
 import hashlib
 
@@ -157,3 +158,4 @@ print(modified_hash_value)
 
 print(hash_value == modified_hash_value)  # False, indicating data modification
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-dataintegrity-2) <!-- code-viz link -->

@@ -121,6 +121,7 @@ The process usually involves the following steps:
 
 Here is an example of how these similarity scores might be calculated (using cosine similarity):
 
+<!-- run: id=cs377-activity-vectordb-1 viz=env -->
 ```python
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
@@ -138,6 +139,7 @@ target_vector = np.array([2, 4, 6]) # the user preference vector for which we ar
 nearest_vector = find_nearest_vector(vectors, target_vector)
 print("Nearest vector:", nearest_vector)
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-vectordb-1) <!-- code-viz link -->
 
 In this program, we use the `cosine_similarity` function from the `sklearn.metrics.pairwise` module to calculate the cosine similarity between each vector in the `vectors` array and the `target_vector`. The `cosine_similarity` function expects the input to be in the shape `(n_samples, n_features)`, so we reshape the `target_vector` using `reshape(1, -1)`.
 
@@ -204,6 +206,7 @@ Here is an example of Dimensionality Reduction using PCA:
 
 For Dimensionality Reduction using PCA:
 
+<!-- run: id=cs377-activity-vectordb-2 viz=env -->
 ```python
 import numpy as np
 from sklearn.decomposition import PCA
@@ -220,3 +223,4 @@ print(vectors)
 print("Reduced vectors:")
 print(reduced_vectors)
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-vectordb-2) <!-- code-viz link -->

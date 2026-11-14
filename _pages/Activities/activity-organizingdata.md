@@ -194,6 +194,7 @@ Worked for row 1: `start = indptr[1] = 2`, `end = indptr[2] = 4`; the values `da
 
 A single element lookup, say cell `(1, 2)`, is the same slice plus a search: among `indices[2:4] = [1, 2]`, column 2 appears at offset 1 of the slice, so the value is `data[2 + 1] = 4`.
 
+<!-- run: id=cs377-activity-organizingdata-1 viz=env -->
 ```python
 import numpy as np
 from scipy.sparse import csr_matrix
@@ -204,6 +205,7 @@ m = csr_matrix((np.array([1, 2, 3, 4, 5, 6, 7]),      # data
                shape=(3, 3))
 print(m.toarray())
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-organizingdata-1) <!-- code-viz link -->
 
 Expected output:
 

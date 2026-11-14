@@ -181,6 +181,7 @@ In conclusion, the choice between ACID and BASE depends on the specific needs of
 
 We can use hashing to more efficiently index data within an RDS.  By looking up a hash table according to its index, we can identify the location of a record in constant `O(1)` time.  In addition to storing the record, we also store the hash table in the datastore.  This code uses Python's built-in `pickle` module for serialization and deserialization of the Python object structure. For hashing, it uses Python's built-in `hashlib` module.
 
+<!-- run: id=cs377-activity-rds-2 viz=env -->
 ```python
 import os
 import pickle
@@ -220,5 +221,6 @@ index = HashIndex('index.bin')
 index.add('key1', 'value1')
 print(index.get('key1'))  # Outputs: value1
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-rds-2) <!-- code-viz link -->
 
 In this example, `HashIndex` is a class that represents a hash-based index stored in a binary file. The `add` method adds a key-value pair to the index, and the get method retrieves a value by its key. The `_hash` method is a helper method that computes a SHA-256 hash of a key. The `_load` and `_save` methods are used to load the index from a file and save the index to a file, respectively.

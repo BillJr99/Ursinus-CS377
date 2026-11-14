@@ -124,6 +124,7 @@ Modern encoding schemes, such as Unicode, have expanded on ASCII and provide a c
 
 Python provides built-in support for working with different encodings and manipulating text data. The `ord()` function can be used to obtain the Unicode code point of a character, while the `chr()` function converts a Unicode code point to its corresponding character. Here is an example:
 
+<!-- run: id=cs377-activity-textandfile-1 viz=env -->
 ```python
 # ASCII value of 'A'
 ascii_value = ord('A')
@@ -133,6 +134,7 @@ print(ascii_value)  # Output: 65
 character = chr(65)
 print(character)  # Output: A
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-textandfile-1) <!-- code-viz link -->
 
 Further reading: 
 - [ASCII - Wikipedia](https://en.wikipedia.org/wiki/ASCII)
@@ -146,6 +148,7 @@ When working with text data, it is crucial to be aware of the encoding used to r
 
 In Python, the `encode()` and `decode()` methods can be used to convert text between different encodings. The encoding argument specifies the desired encoding while decoding or encoding the text. Here is an example that demonstrates encoding and decoding using the UTF-8 encoding:
 
+<!-- run: id=cs377-activity-textandfile-2 viz=env -->
 ```python
 text = 'Hello, World!'
 
@@ -157,6 +160,7 @@ print(encoded_text)  # Output: b'Hello, World!'
 decoded_text = encoded_text.decode('utf-8')
 print(decoded_text)  # Output: Hello, World!
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-textandfile-2) <!-- code-viz link -->
 
 It is important to note that when reading or writing text files in Python, it is necessary to specify the appropriate encoding explicitly. Failure to do so may result in text corruption or misinterpretation. The `open()` function in Python provides an `encoding` parameter that can be used to specify the desired encoding for file operations.
 
@@ -345,6 +349,7 @@ Further reading:
 - Reference: Flanagan, D., & Flanagan, Y. A. (2021). Python Cookbook: Modern Recipes for Busy Developers. O'Reilly Media.
 
 - Python Example:
+<!-- run: id=cs377-activity-textandfile-8 viz=env -->
 ```python
 try:
     file = open("file.txt", "r")
@@ -355,6 +360,7 @@ except FileNotFoundError:
 except IOError:
     print("An I/O error occurred.")
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-textandfile-8) <!-- code-viz link -->
 
 ### File Permissions and Access Control
 
@@ -417,6 +423,7 @@ print(data)
 #### `json.loads()`
 The `json.loads()` method is used if you have a JSON formatted string that you want to convert into a Python object.
 
+<!-- run: id=cs377-activity-textandfile-12 viz=env -->
 ```python
 import json
 
@@ -425,6 +432,7 @@ data = json.loads(json_string)
 
 print(data)
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-textandfile-12) <!-- code-viz link -->
 
 ### Writing JSON data
 To write JSON data, we use the json.dump() or json.dumps() methods.
@@ -448,6 +456,7 @@ with open('data.json', 'w') as f:
 #### `json.dumps()`
 The `json.dumps()` method converts a Python object into a JSON string.
 
+<!-- run: id=cs377-activity-textandfile-13 viz=env -->
 ```python
 import json
 
@@ -461,12 +470,14 @@ json_string = json.dumps(data)
 
 print(json_string)
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-textandfile-13) <!-- code-viz link -->
 
 ### Reading JSON data into a Python dictionary
 JSON data naturally translates into a Python dictionary. This is because JSON format is essentially a structured form of data that aligns well with the structure of a dictionary. When we load JSON data using the json module, it is converted into a Python dictionary.
 
 Here's an example:
 
+<!-- run: id=cs377-activity-textandfile-14 viz=env -->
 ```python
 import json
 
@@ -480,6 +491,7 @@ data = json.loads(json_string)
 print(type(data))  # <class 'dict'>
 print(data)  # {'name': 'John', 'age': 30, 'city': 'New York'}
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-textandfile-14) <!-- code-viz link -->
 
 In this example, `json.loads()` is used to convert a JSON string into a Python dictionary. The resulting dictionary, data, can be used just like any other dictionary in Python. For instance, you can access the value of "name" in the JSON data with data`['name']`.
 
@@ -682,6 +694,7 @@ Understanding file encoding and character sets is crucial for proper handling of
 - Reference: VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly Media.
 
 - Python Example:
+<!-- run: id=cs377-activity-textandfile-21 viz=env -->
 ```python
 # Write binary data
 with open("file.bin", "wb") as binary_file:
@@ -692,6 +705,7 @@ with open("file.bin", "rb") as binary_file:
     data = binary_file.read()
     print(data)
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-textandfile-21) <!-- code-viz link -->
     
 ### Example: File Compression and Archiving with the ZIP file format
 
