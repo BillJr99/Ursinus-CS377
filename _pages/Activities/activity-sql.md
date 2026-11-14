@@ -400,6 +400,7 @@ Once the connection is established, you can perform various operations on the My
 
 ### Example Code in Java
 
+<!-- run: id=cs377-activity-sql-1 viz=java -->
 ```java
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -430,6 +431,7 @@ public class MySQLConnectionExample {
 }
 
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-sql-1) <!-- code-viz link -->
 
 ### Example Code in Python
 Here is an example code snippet in Python:

@@ -94,6 +94,7 @@ psql -h localhost -p 5432 -U root -d mydb
 
 From here, you can execute SQL queries in the usual way.  For example:
 
+<!-- run: id=cs377-activity-sql2-1 viz=sql -->
 ```sql
 CREATE TABLE accounts (
 	user_id serial PRIMARY KEY,
@@ -108,6 +109,7 @@ INSERT INTO accounts (username, password, email, created_on) VALUES ('user', 'pa
 
 SELECT * FROM accounts;
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-sql2-1) <!-- code-viz link -->
 
 If you navigate back to the web interface, you'll see this table with options to create triggers and foreign keys directly through the interface.
 

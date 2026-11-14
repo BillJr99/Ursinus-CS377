@@ -163,6 +163,8 @@ Now `INSERT INTO "dbo.sales" (...) VALUES (..., -5, ...)` fails with `sales quan
 
 Triggers persist like tables do.  To remove one:
 
+<!-- run: id=cs377-activity-sqltriggers-2 viz=sql -->
 ```sql
 DROP TRIGGER IF EXISTS update_ytd_sales;
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-sqltriggers-2) <!-- code-viz link -->

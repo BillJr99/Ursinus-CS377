@@ -1,7 +1,7 @@
 {
  "course": "cs377",
  "site": "https://billjr99.github.io/Ursinus-CS377",
- "built": "2026-11-14 17:46",
+ "built": "2026-11-14 13:07",
  "examples": [
   {
    "id": "cs377-activity-dataintegrity-2",
@@ -42,6 +42,96 @@
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-rds",
    "error": null,
    "steps": 35
+  },
+  {
+   "id": "cs377-activity-rdsaggregating2-1",
+   "viz": "sql",
+   "lang": "sql",
+   "page": "_pages/Activities/activity-rdsaggregating2.md",
+   "line": 22,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-rdsaggregating2",
+   "error": null,
+   "steps": 19
+  },
+  {
+   "id": "cs377-activity-rdsaggregating2-2",
+   "viz": "sql",
+   "lang": "sql",
+   "page": "_pages/Activities/activity-rdsaggregating2.md",
+   "line": 78,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-rdsaggregating2",
+   "error": null,
+   "steps": 3
+  },
+  {
+   "id": "cs377-activity-rdsaggregating2-3",
+   "viz": "sql",
+   "lang": "sql",
+   "page": "_pages/Activities/activity-rdsaggregating2.md",
+   "line": 135,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-rdsaggregating2",
+   "error": null,
+   "steps": 3
+  },
+  {
+   "id": "cs377-activity-relationalmodel2-1",
+   "viz": "sql",
+   "lang": "sql",
+   "page": "_pages/Activities/activity-relationalmodel2.md",
+   "line": 137,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-relationalmodel2",
+   "error": null,
+   "steps": 2
+  },
+  {
+   "id": "cs377-activity-relationalmodel2-2",
+   "viz": "sql",
+   "lang": "sql",
+   "page": "_pages/Activities/activity-relationalmodel2.md",
+   "line": 160,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-relationalmodel2",
+   "error": null,
+   "steps": 2
+  },
+  {
+   "id": "cs377-activity-relationalmodel2-3",
+   "viz": "sql",
+   "lang": "sql",
+   "page": "_pages/Activities/activity-relationalmodel2.md",
+   "line": 172,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-relationalmodel2",
+   "error": null,
+   "steps": 1
+  },
+  {
+   "id": "cs377-activity-sql-1",
+   "viz": "java",
+   "lang": "java",
+   "page": "_pages/Activities/activity-sql.md",
+   "line": 404,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-sql",
+   "error": null,
+   "steps": 6
+  },
+  {
+   "id": "cs377-activity-sql2-1",
+   "viz": "sql",
+   "lang": "sql",
+   "page": "_pages/Activities/activity-sql2.md",
+   "line": 98,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-sql2",
+   "error": null,
+   "steps": 3
+  },
+  {
+   "id": "cs377-activity-sqltriggers-2",
+   "viz": "sql",
+   "lang": "sql",
+   "page": "_pages/Activities/activity-sqltriggers.md",
+   "line": 167,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-sqltriggers",
+   "error": null,
+   "steps": 1
   },
   {
    "id": "cs377-activity-textandfile-1",

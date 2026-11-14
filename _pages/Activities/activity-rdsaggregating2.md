@@ -18,6 +18,7 @@ info:
       
   models:
     - model: |
+        <!-- run: id=cs377-activity-rdsaggregating2-1 viz=sql -->
         <script type="syntaxhighlighter" class="brush: sql"><![CDATA[   
         PRAGMA foreign_keys = ON; -- Enforce foreign key constraints
         
@@ -66,12 +67,14 @@ info:
 
         SELECT * FROM ENROLLMENTS;        
         ]]></script>
+        <a href="https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-rdsaggregating2-1">Visualize this example</a> <!-- code-viz link -->
       title: The Structured Query Language (SQL)
       questions:
         - "Which statements create tables, and which statements insert records into tables?"
         - "What is unique about the ID columns?  What does <code>AUTOINCREMENT</code> mean?"
         - "What are the values of the <code>STUDENTS</code> and <code>COURSES</code> tables?"
     - model: |
+        <!-- run: id=cs377-activity-rdsaggregating2-2 viz=sql setup=cs377-activity-rdsaggregating2-1 -->
         <script type="syntaxhighlighter" class="brush: sql"><![CDATA[        
         -- These use the table created by the statements above...
         -- You can paste that code together to run everything at once
@@ -106,6 +109,7 @@ info:
         GROUP BY CourseNum
         ORDER BY NumStudents DESC;        
         ]]></script>
+        <a href="https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-rdsaggregating2-2">Visualize this example</a> <!-- code-viz link -->
       title: "Aggregating, Joining, Grouping, and Sorting with SQL"
       embed: |
         <iframe
@@ -127,6 +131,7 @@ info:
         - "How might you update or delete records in these tables?"
         - "What should you be careful of when deleting records?"
     - model: |
+        <!-- run: id=cs377-activity-rdsaggregating2-3 viz=sql setup=cs377-activity-rdsaggregating2-1 -->
         <script type="syntaxhighlighter" class="brush: sql"><![CDATA[        
         INSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (
           (SELECT ID FROM STUDENTS WHERE FirstName="Alex" AND LastName="Smith"), 
@@ -141,6 +146,7 @@ info:
           (SELECT ID FROM COURSES WHERE CourseNum="CS173")
         );       
         ]]></script>
+        <a href="https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-rdsaggregating2-3">Visualize this example</a> <!-- code-viz link -->
       title: "Inserting with SQL Subqueries"
       embed: |
         <iframe

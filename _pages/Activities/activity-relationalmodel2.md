@@ -133,6 +133,7 @@ The database design includes two main tables: `Person` and `Insurance`. The `Per
 
 #### Creating Tables
 
+<!-- run: id=cs377-activity-relationalmodel2-1 viz=sql -->
 ```sql
 CREATE TABLE Person (
     person_id INT PRIMARY KEY,
@@ -151,9 +152,11 @@ CREATE TABLE Insurance (
     FOREIGN KEY (person_id) REFERENCES Person(person_id)
 );
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-relationalmodel2-1) <!-- code-viz link -->
 
 #### Inserting Data
 
+<!-- run: id=cs377-activity-relationalmodel2-2 viz=sql setup=cs377-activity-relationalmodel2-1 -->
 ```sql
 INSERT INTO Person (person_id, first_name, last_name)
 VALUES (1, 'John', 'Doe');
@@ -161,14 +164,17 @@ VALUES (1, 'John', 'Doe');
 INSERT INTO Insurance (insurance_id, person_id, insurance_provider, start_date, end_date)
 VALUES (1, 1, 'Provider A', '2022-01-01', '2022-12-31');
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-relationalmodel2-2) <!-- code-viz link -->
 
 #### Updating Data
 
+<!-- run: id=cs377-activity-relationalmodel2-3 viz=sql setup=cs377-activity-relationalmodel2-1,cs377-activity-relationalmodel2-2 -->
 ```sql
 UPDATE Insurance
 SET end_date = '2023-12-31'
 WHERE insurance_id = 1;
 ```
+[Visualize this example](https://billjr99.github.io/Ursinus-CS377/viz/#cs377-activity-relationalmodel2-3) <!-- code-viz link -->
 
 ```sql
 BEGIN TRANSACTION; -- what do you think this does?
