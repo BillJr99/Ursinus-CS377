@@ -1,0 +1,137 @@
+{
+ "course": "cs377",
+ "site": "https://billjr99.github.io/Ursinus-CS377",
+ "built": "2026-11-14 17:46",
+ "examples": [
+  {
+   "id": "cs377-activity-dataintegrity-2",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-dataintegrity.md",
+   "line": 143,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-dataintegrity",
+   "error": null,
+   "steps": 18
+  },
+  {
+   "id": "cs377-activity-nosqlaggregating-1",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-nosqlaggregating.md",
+   "line": 56,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-nosqlaggregating",
+   "error": null,
+   "steps": 24
+  },
+  {
+   "id": "cs377-activity-organizingdata-1",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-organizingdata.md",
+   "line": 198,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-organizingdata",
+   "error": null,
+   "steps": 10
+  },
+  {
+   "id": "cs377-activity-rds-2",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-rds.md",
+   "line": 185,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-rds",
+   "error": null,
+   "steps": 35
+  },
+  {
+   "id": "cs377-activity-textandfile-1",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-textandfile.md",
+   "line": 128,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
+   "error": null,
+   "steps": 5
+  },
+  {
+   "id": "cs377-activity-textandfile-2",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-textandfile.md",
+   "line": 152,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
+   "error": null,
+   "steps": 6
+  },
+  {
+   "id": "cs377-activity-textandfile-8",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-textandfile.md",
+   "line": 353,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
+   "error": null,
+   "steps": 6
+  },
+  {
+   "id": "cs377-activity-textandfile-12",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-textandfile.md",
+   "line": 427,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
+   "error": null,
+   "steps": 5
+  },
+  {
+   "id": "cs377-activity-textandfile-13",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-textandfile.md",
+   "line": 460,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
+   "error": null,
+   "steps": 8
+  },
+  {
+   "id": "cs377-activity-textandfile-14",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-textandfile.md",
+   "line": 481,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
+   "error": null,
+   "steps": 6
+  },
+  {
+   "id": "cs377-activity-textandfile-21",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-textandfile.md",
+   "line": 698,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
+   "error": null,
+   "steps": 8
+  },
+  {
+   "id": "cs377-activity-vectordb-1",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-vectordb.md",
+   "line": 125,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-vectordb",
+   "error": null,
+   "steps": 13
+  },
+  {
+   "id": "cs377-activity-vectordb-2",
+   "viz": "env",
+   "lang": "python",
+   "page": "_pages/Activities/activity-vectordb.md",
+   "line": 210,
+   "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-vectordb",
+   "error": null,
+   "steps": 10
+  }
+ ]
+}
