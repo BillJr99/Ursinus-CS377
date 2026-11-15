@@ -1,33 +1,33 @@
 {
  "code": "import java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.SQLException;\n\npublic class MySQLConnectionExample {\n    public static void main(String[] args) {\n        // Define connection URL\n        String jdbcUrl = \"jdbc:mysql://hostname:port/dbName\";\n\n        // Provide username and password\n        String username = \"yourUsername\";\n        String password = \"yourPassword\";\n\n        // Establish connection\n        try {\n            Connection connection = DriverManager.getConnection(jdbcUrl, username, password);\n            System.out.println(\"Connected to MySQL database successfully!\");\n            // Perform database operations here\n            // ...\n\n            // Close the connection\n            connection.close();\n        } catch (SQLException e) {\n            System.out.println(\"Error connecting to MySQL database: \" + e.getMessage());\n        }\n    }\n}\n",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can separate connection setup from the recorded exception path.",
  "example": "cs377-activity-sql-1",
  "lang": "java",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 1-5 set things up.",
+   "description": "You import JDBC classes and define a connection URL with placeholder account strings. These values supply the connection call.",
    "kind": "reveal",
-   "lines": "1-5"
+   "lines": "1-12"
   },
   {
-   "description": "Lines 6-26 define `main`.",
+   "description": "getConnection runs inside try. On success, the program would print confirmation and close the returned connection after the operations placeholder.",
    "kind": "reveal",
-   "lines": "6-26"
+   "lines": "14-22"
   },
   {
-   "description": "Lines 27-28 run the rest of the example.",
-   "kind": "reveal",
-   "lines": "27-28"
+   "answer": "It selects the SQLException handler's error message rather than the success print.",
+   "kind": "predict",
+   "lines": "23-24",
+   "question": "Which message does the supplied run select when no suitable driver is found?"
   },
   {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "26",
-   "trace_step": 5
+   "description": "You see No suitable driver found for the supplied JDBC URL. This recording ends on the exception path without establishing a connection.",
+   "kind": "reveal",
+   "lines": "23-28"
   }
  ],
- "title": "Example Code in Java",
+ "title": "Following a JDBC connection attempt",
  "version": 1
 }

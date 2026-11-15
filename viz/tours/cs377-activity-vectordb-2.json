@@ -1,28 +1,33 @@
 {
  "code": "import numpy as np\nfrom sklearn.decomposition import PCA\n\n# Example data\nvectors = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])\n\n# Dimensionality reduction using PCA\npca = PCA(n_components=2)\nreduced_vectors = pca.fit_transform(vectors)\n\nprint(\"Original vectors:\")\nprint(vectors)\nprint(\"Reduced vectors:\")\nprint(reduced_vectors)",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can compare the input array's shape with its transformed coordinates.",
  "example": "cs377-activity-vectordb-2",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 1-2 import `numpy` and `sklearn.decomposition`.",
+   "description": "vectors contains four rows with three coordinates each. You import principal component analysis, PCA, to transform those rows.",
    "kind": "reveal",
-   "lines": "1-2"
+   "lines": "1-5"
   },
   {
-   "description": "Lines 5-14 run the main code and print the results.",
+   "description": "n_components=2 requests two transformed coordinates per vector. You store that configuration in pca.",
    "kind": "reveal",
-   "lines": "5-14"
+   "lines": "7-8"
   },
   {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "14",
-   "trace_step": 9
+   "answer": "No. It keeps four rows and transforms each from three coordinates to two.",
+   "kind": "predict",
+   "lines": "9",
+   "question": "Will fit_transform reduce the number of vector rows?"
+  },
+  {
+   "description": "You see the original and reduced arrays printed. In this recording the second transformed coordinate is near zero for all four rows.",
+   "kind": "reveal",
+   "lines": "9-14"
   }
  ],
- "title": "Retrieve the nearest vectors",
+ "title": "Reducing vector coordinates with PCA",
  "version": 1
 }

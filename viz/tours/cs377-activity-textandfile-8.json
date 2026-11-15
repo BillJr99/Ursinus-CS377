@@ -1,23 +1,33 @@
 {
  "code": "try:\n    file = open(\"file.txt\", \"r\")\n    # Perform file I/O operations\n    file.close()\nexcept FileNotFoundError:\n    print(\"File not found.\")\nexcept IOError:\n    print(\"An I/O error occurred.\")",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow an open failure into its matching handler.",
  "example": "cs377-activity-textandfile-8",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 1-8 run the main code and print the results.",
+   "description": "You attempt to open file.txt for reading inside try. The close call follows the placeholder for file operations on the successful path.",
    "kind": "reveal",
-   "lines": "1-8"
+   "lines": "1-4"
   },
   {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "6",
-   "trace_step": 5
+   "answer": "It reaches the FileNotFoundError handler and prints File not found.",
+   "kind": "predict",
+   "lines": "5-6",
+   "question": "Which handler does the supplied missing-file run reach?"
+  },
+  {
+   "description": "The recorded open raises before the close line executes. You see the missing-file message from its handler.",
+   "kind": "reveal",
+   "lines": "5-6"
+  },
+  {
+   "description": "The later IOError handler provides a separate message for other matching I/O failures. This recording prints only File not found.",
+   "kind": "reveal",
+   "lines": "7-8"
   }
  ],
- "title": "Error Handling in File I/O Operations",
+ "title": "Handling a missing input file",
  "version": 1
 }

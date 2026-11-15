@@ -1,23 +1,33 @@
 {
  "code": "# ASCII value of 'A'\nascii_value = ord('A')\nprint(ascii_value)  # Output: 65\n\n# Character corresponding to Unicode code point 65\ncharacter = chr(65)\nprint(character)  # Output: A",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow A into its numeric code point and back.",
  "example": "cs377-activity-textandfile-1",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 2-7 run the main code and print the results.",
+   "description": "ord receives the character A. You store its Unicode code point in ascii_value; for this character it also matches the ASCII value.",
    "kind": "reveal",
-   "lines": "2-7"
+   "lines": "1-2"
   },
   {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "7",
-   "trace_step": 4
+   "description": "The first print displays 65. You have converted the character into an integer.",
+   "kind": "reveal",
+   "lines": "3"
+  },
+  {
+   "answer": "It returns A, reversing this example's ord conversion.",
+   "kind": "predict",
+   "lines": "5-6",
+   "question": "Which character does chr return for 65?"
+  },
+  {
+   "description": "You see A after 65 in the output. The two calls move between a character and its numeric code point.",
+   "kind": "reveal",
+   "lines": "6-7"
   }
  ],
- "title": "Data Representation",
+ "title": "Converting a character and code point",
  "version": 1
 }

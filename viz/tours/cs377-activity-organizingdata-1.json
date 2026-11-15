@@ -1,28 +1,33 @@
 {
  "code": "import numpy as np\nfrom scipy.sparse import csr_matrix\n\nm = csr_matrix((np.array([1, 2, 3, 4, 5, 6, 7]),      # data\n                np.array([0, 2, 1, 2, 0, 1, 2]),      # indices\n                np.array([0, 2, 4, 7])),              # indptr\n               shape=(3, 3))\nprint(m.toarray())",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can connect stored values, column indices and row boundaries to a dense matrix.",
  "example": "cs377-activity-organizingdata-1",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 1-2 import `numpy` and `scipy.sparse`.",
+   "description": "csr_matrix constructs a compressed sparse row matrix. You supply seven stored values in the data array.",
    "kind": "reveal",
-   "lines": "1-2"
+   "lines": "1-4"
   },
   {
-   "description": "Lines 4-8 run the main code and print the results.",
+   "description": "indices gives each stored value's column. Consecutive indptr entries bound each row's slice, and shape declares three rows and three columns.",
    "kind": "reveal",
-   "lines": "4-8"
+   "lines": "5-7"
   },
   {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "8",
-   "trace_step": 9
+   "answer": "Columns 0 and 2 receive 1 and 2. The row boundaries select the first two entries of data and indices.",
+   "kind": "predict",
+   "lines": "4-7",
+   "question": "Which columns receive the first row's two stored values?"
+  },
+  {
+   "description": "You convert to a dense array and print rows [1, 0, 2], [0, 3, 4] and [5, 6, 7]. The omitted entries appear as zeros.",
+   "kind": "reveal",
+   "lines": "8"
   }
  ],
- "title": "Decoding, Step by Step",
+ "title": "Reading compressed sparse rows",
  "version": 1
 }

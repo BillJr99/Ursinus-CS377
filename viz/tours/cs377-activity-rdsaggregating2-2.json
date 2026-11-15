@@ -1,33 +1,33 @@
 {
  "code": "-- These use the table created by the statements above...\n-- You can paste that code together to run everything at once\n-- Join\nSELECT * FROM ENROLLMENTS \n  INNER JOIN STUDENTS\n    ON STUDENTS.ID = ENROLLMENTS.StudentID\n  INNER JOIN COURSES\n    ON COURSES.ID = ENROLLMENTS.CourseID;\n\n-- Aggregation\nSELECT \n  COUNT(ENROLLMENTS.ID) AS NumStudents, \n  AVG(STUDENTS.Age) AS AvgAge \nFROM ENROLLMENTS\n  INNER JOIN STUDENTS\n    ON STUDENTS.ID = ENROLLMENTS.StudentID\n  INNER JOIN COURSES\n    ON COURSES.ID = ENROLLMENTS.CourseID\nWHERE COURSES.CourseNum = \"CS377\";\n\n-- Group and Sort\nSELECT \n  COUNT(ENROLLMENTS.ID) AS NumStudents, \n  AVG(STUDENTS.Age) AS AvgAge,\n  CourseNum\nFROM ENROLLMENTS\n  INNER JOIN STUDENTS\n    ON STUDENTS.ID = ENROLLMENTS.StudentID\n  INNER JOIN COURSES\n    ON COURSES.ID = ENROLLMENTS.CourseID\nGROUP BY CourseNum\nORDER BY NumStudents DESC;        ",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow detailed rows into filtered and grouped aggregates.",
  "example": "cs377-activity-rdsaggregating2-2",
  "lang": "sql",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Lines 4-8 run a `SELECT` statement.",
+   "description": "The first query links each enrollment to its student and course using their IDs. You select all columns from those matching rows.",
    "kind": "reveal",
-   "lines": "4-8"
+   "lines": "1-8"
   },
   {
-   "description": "Lines 11-19 run a `SELECT` statement.",
+   "description": "The second query uses the same joins and keeps CS377 rows. You calculate an enrollment count and an average student age.",
    "kind": "reveal",
-   "lines": "11-19"
+   "lines": "10-19"
   },
   {
-   "description": "Lines 22-32 run a `SELECT` statement.",
-   "kind": "reveal",
-   "lines": "22-32"
+   "answer": "No. GROUP BY CourseNum produces one summary per represented course, then ORDER BY places larger enrollment counts first.",
+   "kind": "predict",
+   "lines": "21-32",
+   "question": "Will the final query return one summary for the entire join?"
   },
   {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "21",
-   "trace_step": 2
+   "description": "You see CS377 with count 2 and average age 20.5, followed by CS173 with count 1 and average age 18.0. The earlier filtered aggregate prints 2 and 20.5.",
+   "kind": "reveal",
+   "lines": "21-32"
   }
  ],
- "title": "Example cs377-activity-rdsaggregating2-2",
+ "title": "Reading joined enrollment summaries",
  "version": 1
 }

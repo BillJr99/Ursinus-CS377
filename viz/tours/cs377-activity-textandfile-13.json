@@ -1,28 +1,33 @@
 {
  "code": "import json\n\ndata = {\n    \"name\": \"John\",\n    \"age\": 30,\n    \"city\": \"New York\"\n}\n\njson_string = json.dumps(data)\n\nprint(json_string)",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow a Python dictionary into a serialized string.",
  "example": "cs377-activity-textandfile-13",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Line 1 imports `json`.",
+   "description": "You import json and create a dictionary with name, age and city. Its values include strings and an integer.",
    "kind": "reveal",
-   "lines": "1"
+   "lines": "1-7"
   },
   {
-   "description": "Lines 3-11 run the main code and print the results.",
-   "kind": "reveal",
-   "lines": "3-11"
+   "answer": "No. It returns a JSON string, which the assignment stores in json_string.",
+   "kind": "predict",
+   "lines": "9",
+   "question": "Does dumps write this dictionary to a file?"
   },
   {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "11",
-   "trace_step": 7
+   "description": "json_string now holds the serialized text. You can pass that returned value to another operation.",
+   "kind": "reveal",
+   "lines": "9"
+  },
+  {
+   "description": "You see the JSON object printed with John, 30 and New York. This example displays the string without opening a file.",
+   "kind": "reveal",
+   "lines": "11"
   }
  ],
- "title": "json.dumps()",
+ "title": "Converting a dictionary to JSON text",
  "version": 1
 }

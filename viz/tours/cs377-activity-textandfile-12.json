@@ -1,28 +1,33 @@
 {
  "code": "import json\n\njson_string = '{\"name\": \"John\", \"age\": 30, \"city\": \"New York\"}'\ndata = json.loads(json_string)\n\nprint(data)",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow serialized text into a Python dictionary.",
  "example": "cs377-activity-textandfile-12",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Line 1 imports `json`.",
+   "description": "json_string holds JSON text inside a Python string. You can read name, age and city in that text.",
    "kind": "reveal",
-   "lines": "1"
+   "lines": "1-3"
   },
   {
-   "description": "Lines 3-6 run the main code and print the results.",
-   "kind": "reveal",
-   "lines": "3-6"
+   "answer": "No. It parses the string passed directly as its argument.",
+   "kind": "predict",
+   "lines": "4",
+   "question": "Does loads open a file to obtain this data?"
   },
   {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "6",
-   "trace_step": 4
+   "description": "You store the parsed object in data. This JSON object becomes a Python dictionary.",
+   "kind": "reveal",
+   "lines": "4"
+  },
+  {
+   "description": "The print displays the dictionary with John, 30 and New York. You now have structured Python values rather than the original serialized string.",
+   "kind": "reveal",
+   "lines": "6"
   }
  ],
- "title": "json.loads()",
+ "title": "Parsing a JSON string",
  "version": 1
 }

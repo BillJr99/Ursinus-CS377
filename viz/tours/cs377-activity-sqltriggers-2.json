@@ -1,23 +1,33 @@
 {
  "code": "DROP TRIGGER IF EXISTS update_ytd_sales;",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can identify the object named by a DROP statement.",
  "example": "cs377-activity-sqltriggers-2",
  "lang": "sql",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model",
  "steps": [
   {
-   "description": "Line 1 runs a `DROP` statement.",
+   "description": "DROP TRIGGER identifies a trigger as the object to remove. You name update_ytd_sales as the target.",
    "kind": "reveal",
    "lines": "1"
   },
   {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
+   "description": "IF EXISTS makes this cleanup conditional on the trigger being present. The statement contains no table-removal command.",
+   "kind": "focus",
+   "lines": "1"
+  },
+  {
+   "answer": "No. It removes the named trigger if present rather than returning a result set.",
+   "kind": "predict",
    "lines": "1",
-   "trace_step": 0
+   "question": "Does this statement query and display the trigger's rows?"
+  },
+  {
+   "description": "The supplied trace visits the DROP statement and shows no text output. You have no reported row data from this cleanup operation.",
+   "kind": "focus",
+   "lines": "1"
   }
  ],
- "title": "Cleaning Up",
+ "title": "Reading a conditional trigger removal",
  "version": 1
 }
