@@ -1,0 +1,50 @@
+{
+ "code": "import hashlib\n\ndef calculate_hash(data):\n    hasher = hashlib.sha256()\n    hasher.update(data.encode())\n    return hasher.hexdigest()\n\noriginal_data = \"Hello, World!\"\nhash_value = calculate_hash(original_data)  # Calculate hash value\nprint(hash_value)\n\nmodified_data = \"Hello, World!!\"\nmodified_hash_value = calculate_hash(modified_data)  # Calculate hash value\nprint(modified_hash_value)\n\nprint(hash_value == modified_hash_value)  # False, indicating data modification",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-dataintegrity-2",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Line 1 imports `hashlib`.",
+   "kind": "reveal",
+   "lines": "1"
+  },
+  {
+   "description": "Lines 3-6 define `calculate_hash(data)`.",
+   "kind": "reveal",
+   "lines": "3-6"
+  },
+  {
+   "description": "Line 6 returns `hasher.hexdigest()`.",
+   "kind": "focus",
+   "lines": "6"
+  },
+  {
+   "description": "Lines 8-16 run the main code and print the results.",
+   "kind": "reveal",
+   "lines": "8-16"
+  },
+  {
+   "description": "Here `calculate_hash` is called for the first time; its frame appears on the right.",
+   "kind": "run",
+   "lines": "4",
+   "trace_step": 4
+  },
+  {
+   "description": "Here `calculate_hash` returns, the first time it does.",
+   "kind": "run",
+   "lines": "6",
+   "trace_step": 7
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "16",
+   "trace_step": 17
+  }
+ ],
+ "title": "Hash Functions with the hashlib Module",
+ "version": 1
+}

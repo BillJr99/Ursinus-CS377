@@ -1,0 +1,28 @@
+{
+ "code": "import json\n\ndata = {\n    \"name\": \"John\",\n    \"age\": 30,\n    \"city\": \"New York\"\n}\n\njson_string = json.dumps(data)\n\nprint(json_string)",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-textandfile-13",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Line 1 imports `json`.",
+   "kind": "reveal",
+   "lines": "1"
+  },
+  {
+   "description": "Lines 3-11 run the main code and print the results.",
+   "kind": "reveal",
+   "lines": "3-11"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "11",
+   "trace_step": 7
+  }
+ ],
+ "title": "json.dumps()",
+ "version": 1
+}

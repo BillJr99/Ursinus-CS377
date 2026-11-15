@@ -1,0 +1,50 @@
+{
+ "code": "import numpy as np\nfrom sklearn.metrics.pairwise import cosine_similarity\n\ndef find_nearest_vector(vectors, target_vector):\n    cosine_similarities = cosine_similarity(vectors, target_vector.reshape(1, -1))\n    nearest_index = np.argmax(cosine_similarities)\n    nearest_vector = vectors[nearest_index]\n    return nearest_vector\n\n# Example usage\nvectors = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) # the collection of vectors\ntarget_vector = np.array([2, 4, 6]) # the user preference vector for which we are seeking a nearest match in the collection\n\nnearest_vector = find_nearest_vector(vectors, target_vector)\nprint(\"Nearest vector:\", nearest_vector)",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-vectordb-1",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-2 import `numpy` and `sklearn.metrics.pairwise`.",
+   "kind": "reveal",
+   "lines": "1-2"
+  },
+  {
+   "description": "Lines 4-8 define `find_nearest_vector(vectors, target_vector)`.",
+   "kind": "reveal",
+   "lines": "4-8"
+  },
+  {
+   "description": "Line 8 returns `nearest_vector`.",
+   "kind": "focus",
+   "lines": "8"
+  },
+  {
+   "description": "Lines 11-15 run the main code and print the results.",
+   "kind": "reveal",
+   "lines": "11-15"
+  },
+  {
+   "description": "Here `find_nearest_vector` is called for the first time; its frame appears on the right.",
+   "kind": "run",
+   "lines": "5",
+   "trace_step": 6
+  },
+  {
+   "description": "Here `find_nearest_vector` returns, the first time it does.",
+   "kind": "run",
+   "lines": "8",
+   "trace_step": 10
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "15",
+   "trace_step": 12
+  }
+ ],
+ "title": "Querying a Vector Database",
+ "version": 1
+}

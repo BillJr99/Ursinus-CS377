@@ -1,0 +1,28 @@
+{
+ "code": "CREATE TABLE Person (\n    person_id INT PRIMARY KEY,\n    first_name VARCHAR(50),\n    last_name VARCHAR(50),\n    age INT,\n    CHECK(age >= 0) -- what does this do?\n);\n\nCREATE TABLE Insurance (\n    insurance_id INT PRIMARY KEY,\n    person_id INT,\n    insurance_provider VARCHAR(50),\n    start_date DATE DEFAULT NOW,\n    end_date DATE,\n    FOREIGN KEY (person_id) REFERENCES Person(person_id)\n);",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-relationalmodel2-1",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-7 run a `CREATE` statement.",
+   "kind": "reveal",
+   "lines": "1-7"
+  },
+  {
+   "description": "Lines 9-16 run a `CREATE` statement.",
+   "kind": "reveal",
+   "lines": "9-16"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "9",
+   "trace_step": 1
+  }
+ ],
+ "title": "Creating Tables",
+ "version": 1
+}

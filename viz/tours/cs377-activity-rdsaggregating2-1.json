@@ -1,0 +1,63 @@
+{
+ "code": "PRAGMA foreign_keys = ON; -- Enforce foreign key constraints\n\n-- Students Table\nCREATE TABLE STUDENTS (\n    ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, \n    FirstName TEXT NOT NULL, \n    LastName TEXT NOT NULL, \n    Age INTEGER\n);\n\nINSERT INTO STUDENTS (FirstName, LastName, Age) VALUES (\"Alex\", \"Smith\", 20);\nINSERT INTO STUDENTS (FirstName, LastName, Age) VALUES (\"Lee\", \"Jones\", 21);\nINSERT INTO STUDENTS (FirstName, LastName, Age) VALUES (\"Brian\", \"McMullen\", 18);\nINSERT INTO STUDENTS (FirstName, LastName, Age) VALUES (\"Samantha\", \"Johnson\", 22);\nINSERT INTO STUDENTS (FirstName, LastName, Age) VALUES (\"Lee\", \"Jones\", 24);\n\n-- Courses Table\nCREATE TABLE COURSES (\n  ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, \n  CourseNum TEXT NOT NULL, \n  CourseName TEXT NOT NULL\n);\n\nINSERT INTO COURSES (CourseNum, CourseName) VALUES (\"CS377\", \"Database Design\");\nINSERT INTO COURSES (CourseNum, CourseName) VALUES (\"CS173\", \"Intro to Computer Science\");\nINSERT INTO COURSES (CourseNum, CourseName) VALUES (\"CS174\", \"Object Oriented Programming\");\nINSERT INTO COURSES (CourseNum, CourseName) VALUES (\"CS275\", \"Software Engineering\");\n\n-- Try it out\nSELECT * FROM STUDENTS;\nSELECT * FROM COURSES;\n\n-- Link the Tables Together with Primary and Foreign Keys\nCREATE TABLE ENROLLMENTS (\n  ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, \n  StudentID INTEGER NOT NULL, \n  CourseID INTEGER NOT NULL, \n  FOREIGN KEY(StudentID) REFERENCES STUDENTS(ID), \n  FOREIGN KEY(CourseID) REFERENCES COURSES(ID)\n);\n\nINSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (1, 1);\nINSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (2, 1);\nINSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (3, 2);\n\nSELECT * FROM ENROLLMENTS;        ",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-rdsaggregating2-1",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-9 run a `PRAGMA` statement.",
+   "kind": "reveal",
+   "lines": "1-9"
+  },
+  {
+   "description": "Lines 11-12 continue the example.",
+   "kind": "reveal",
+   "lines": "11-12"
+  },
+  {
+   "description": "Lines 13-15 continue the example.",
+   "kind": "reveal",
+   "lines": "13-15"
+  },
+  {
+   "description": "Lines 18-22 run a `CREATE` statement.",
+   "kind": "reveal",
+   "lines": "18-22"
+  },
+  {
+   "description": "Lines 24-27 continue the example.",
+   "kind": "reveal",
+   "lines": "24-27"
+  },
+  {
+   "description": "Lines 30-31 continue the example.",
+   "kind": "reveal",
+   "lines": "30-31"
+  },
+  {
+   "description": "Lines 34-40 run a `CREATE` statement.",
+   "kind": "reveal",
+   "lines": "34-40"
+  },
+  {
+   "description": "Lines 42-44 continue the example.",
+   "kind": "reveal",
+   "lines": "42-44"
+  },
+  {
+   "description": "Line 46 runs a `SELECT` statement.",
+   "kind": "reveal",
+   "lines": "46"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "46",
+   "trace_step": 18
+  }
+ ],
+ "title": "Example cs377-activity-rdsaggregating2-1",
+ "version": 1
+}

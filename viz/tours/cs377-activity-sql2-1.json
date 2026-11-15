@@ -1,0 +1,33 @@
+{
+ "code": "CREATE TABLE accounts (\n\tuser_id serial PRIMARY KEY,\n\tusername VARCHAR ( 50 ) UNIQUE NOT NULL,\n\tpassword VARCHAR ( 50 ) NOT NULL,\n\temail VARCHAR ( 255 ) UNIQUE NOT NULL,\n\tcreated_on TIMESTAMP NOT NULL,\n        last_login TIMESTAMP \n);\n\nINSERT INTO accounts (username, password, email, created_on) VALUES ('user', 'pass', 'user@user.com', '10/16/2023');\n\nSELECT * FROM accounts;",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-sql2-1",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-8 run a `CREATE` statement.",
+   "kind": "reveal",
+   "lines": "1-8"
+  },
+  {
+   "description": "Line 10 runs a `INSERT` statement.",
+   "kind": "reveal",
+   "lines": "10"
+  },
+  {
+   "description": "Line 12 runs a `SELECT` statement.",
+   "kind": "reveal",
+   "lines": "12"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "12",
+   "trace_step": 2
+  }
+ ],
+ "title": "Executing SQL Queries through psql",
+ "version": 1
+}

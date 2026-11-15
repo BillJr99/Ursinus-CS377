@@ -1,7 +1,7 @@
 {
  "course": "cs377",
  "site": "https://billjr99.github.io/Ursinus-CS377",
- "built": "2026-11-14 13:07",
+ "built": "2026-11-15 00:53",
  "examples": [
   {
    "id": "cs377-activity-dataintegrity-2",
@@ -11,7 +11,11 @@
    "line": 143,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-dataintegrity",
    "error": null,
-   "steps": 18
+   "steps": 18,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-nosqlaggregating-1",
@@ -21,7 +25,11 @@
    "line": 56,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-nosqlaggregating",
    "error": null,
-   "steps": 24
+   "steps": 24,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-organizingdata-1",
@@ -31,7 +39,11 @@
    "line": 198,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-organizingdata",
    "error": null,
-   "steps": 10
+   "steps": 10,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-rds-2",
@@ -41,7 +53,11 @@
    "line": 185,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-rds",
    "error": null,
-   "steps": 35
+   "steps": 35,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-rdsaggregating2-1",
@@ -51,7 +67,11 @@
    "line": 22,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-rdsaggregating2",
    "error": null,
-   "steps": 19
+   "steps": 19,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-rdsaggregating2-2",
@@ -61,7 +81,11 @@
    "line": 78,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-rdsaggregating2",
    "error": null,
-   "steps": 3
+   "steps": 3,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-rdsaggregating2-3",
@@ -71,7 +95,11 @@
    "line": 135,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-rdsaggregating2",
    "error": null,
-   "steps": 3
+   "steps": 3,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-relationalmodel2-1",
@@ -81,7 +109,11 @@
    "line": 137,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-relationalmodel2",
    "error": null,
-   "steps": 2
+   "steps": 2,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-relationalmodel2-2",
@@ -91,7 +123,11 @@
    "line": 160,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-relationalmodel2",
    "error": null,
-   "steps": 2
+   "steps": 2,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-relationalmodel2-3",
@@ -101,7 +137,11 @@
    "line": 172,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-relationalmodel2",
    "error": null,
-   "steps": 1
+   "steps": 1,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-sql-1",
@@ -111,7 +151,11 @@
    "line": 404,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-sql",
    "error": null,
-   "steps": 6
+   "steps": 6,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-sql2-1",
@@ -121,7 +165,11 @@
    "line": 98,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-sql2",
    "error": null,
-   "steps": 3
+   "steps": 3,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-sqltriggers-2",
@@ -131,7 +179,11 @@
    "line": 167,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-sqltriggers",
    "error": null,
-   "steps": 1
+   "steps": 1,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-textandfile-1",
@@ -141,7 +193,11 @@
    "line": 128,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
    "error": null,
-   "steps": 5
+   "steps": 5,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-textandfile-2",
@@ -151,7 +207,11 @@
    "line": 152,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
    "error": null,
-   "steps": 6
+   "steps": 6,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-textandfile-8",
@@ -161,7 +221,11 @@
    "line": 353,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
    "error": null,
-   "steps": 6
+   "steps": 6,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-textandfile-12",
@@ -171,7 +235,11 @@
    "line": 427,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
    "error": null,
-   "steps": 5
+   "steps": 5,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-textandfile-13",
@@ -181,7 +249,11 @@
    "line": 460,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
    "error": null,
-   "steps": 8
+   "steps": 8,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-textandfile-14",
@@ -191,7 +263,11 @@
    "line": 481,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
    "error": null,
-   "steps": 6
+   "steps": 6,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-textandfile-21",
@@ -201,7 +277,11 @@
    "line": 698,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-textandfile",
    "error": null,
-   "steps": 8
+   "steps": 8,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-vectordb-1",
@@ -211,7 +291,11 @@
    "line": 125,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-vectordb",
    "error": null,
-   "steps": 13
+   "steps": 13,
+   "modes": [
+    "run",
+    "explain"
+   ]
   },
   {
    "id": "cs377-activity-vectordb-2",
@@ -221,7 +305,11 @@
    "line": 210,
    "page_url": "https://billjr99.github.io/Ursinus-CS377/Activities/activity-vectordb",
    "error": null,
-   "steps": 10
+   "steps": 10,
+   "modes": [
+    "run",
+    "explain"
+   ]
   }
  ]
 }

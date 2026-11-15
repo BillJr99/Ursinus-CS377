@@ -1,0 +1,23 @@
+{
+ "code": "DROP TRIGGER IF EXISTS update_ytd_sales;",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-sqltriggers-2",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Line 1 runs a `DROP` statement.",
+   "kind": "reveal",
+   "lines": "1"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "1",
+   "trace_step": 0
+  }
+ ],
+ "title": "Cleaning Up",
+ "version": 1
+}

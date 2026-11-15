@@ -1,0 +1,33 @@
+{
+ "code": "INSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (\n  (SELECT ID FROM STUDENTS WHERE FirstName=\"Alex\" AND LastName=\"Smith\"), \n  (SELECT ID FROM COURSES WHERE CourseNum=\"CS377\")\n);\nINSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (\n  (SELECT ID FROM STUDENTS WHERE FirstName=\"Lee\" AND LastName=\"Jones\"), \n  (SELECT ID FROM COURSES WHERE CourseNum=\"CS377\")\n);\nINSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (\n  (SELECT ID FROM STUDENTS WHERE FirstName=\"Brian\" AND LastName=\"McMullen\"), \n  (SELECT ID FROM COURSES WHERE CourseNum=\"CS173\")\n);       ",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-rdsaggregating2-3",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-4 run a `INSERT` statement.",
+   "kind": "reveal",
+   "lines": "1-4"
+  },
+  {
+   "description": "Lines 5-8 run a `INSERT` statement.",
+   "kind": "reveal",
+   "lines": "5-8"
+  },
+  {
+   "description": "Lines 9-12 run a `INSERT` statement.",
+   "kind": "reveal",
+   "lines": "9-12"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "9",
+   "trace_step": 2
+  }
+ ],
+ "title": "Example cs377-activity-rdsaggregating2-3",
+ "version": 1
+}

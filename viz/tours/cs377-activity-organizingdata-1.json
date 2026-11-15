@@ -1,0 +1,28 @@
+{
+ "code": "import numpy as np\nfrom scipy.sparse import csr_matrix\n\nm = csr_matrix((np.array([1, 2, 3, 4, 5, 6, 7]),      # data\n                np.array([0, 2, 1, 2, 0, 1, 2]),      # indices\n                np.array([0, 2, 4, 7])),              # indptr\n               shape=(3, 3))\nprint(m.toarray())",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-organizingdata-1",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-2 import `numpy` and `scipy.sparse`.",
+   "kind": "reveal",
+   "lines": "1-2"
+  },
+  {
+   "description": "Lines 4-8 run the main code and print the results.",
+   "kind": "reveal",
+   "lines": "4-8"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "8",
+   "trace_step": 9
+  }
+ ],
+ "title": "Decoding, Step by Step",
+ "version": 1
+}

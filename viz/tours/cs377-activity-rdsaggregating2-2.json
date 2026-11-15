@@ -1,0 +1,33 @@
+{
+ "code": "-- These use the table created by the statements above...\n-- You can paste that code together to run everything at once\n-- Join\nSELECT * FROM ENROLLMENTS \n  INNER JOIN STUDENTS\n    ON STUDENTS.ID = ENROLLMENTS.StudentID\n  INNER JOIN COURSES\n    ON COURSES.ID = ENROLLMENTS.CourseID;\n\n-- Aggregation\nSELECT \n  COUNT(ENROLLMENTS.ID) AS NumStudents, \n  AVG(STUDENTS.Age) AS AvgAge \nFROM ENROLLMENTS\n  INNER JOIN STUDENTS\n    ON STUDENTS.ID = ENROLLMENTS.StudentID\n  INNER JOIN COURSES\n    ON COURSES.ID = ENROLLMENTS.CourseID\nWHERE COURSES.CourseNum = \"CS377\";\n\n-- Group and Sort\nSELECT \n  COUNT(ENROLLMENTS.ID) AS NumStudents, \n  AVG(STUDENTS.Age) AS AvgAge,\n  CourseNum\nFROM ENROLLMENTS\n  INNER JOIN STUDENTS\n    ON STUDENTS.ID = ENROLLMENTS.StudentID\n  INNER JOIN COURSES\n    ON COURSES.ID = ENROLLMENTS.CourseID\nGROUP BY CourseNum\nORDER BY NumStudents DESC;        ",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-rdsaggregating2-2",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 4-8 run a `SELECT` statement.",
+   "kind": "reveal",
+   "lines": "4-8"
+  },
+  {
+   "description": "Lines 11-19 run a `SELECT` statement.",
+   "kind": "reveal",
+   "lines": "11-19"
+  },
+  {
+   "description": "Lines 22-32 run a `SELECT` statement.",
+   "kind": "reveal",
+   "lines": "22-32"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "21",
+   "trace_step": 2
+  }
+ ],
+ "title": "Example cs377-activity-rdsaggregating2-2",
+ "version": 1
+}

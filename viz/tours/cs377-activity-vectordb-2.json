@@ -1,0 +1,28 @@
+{
+ "code": "import numpy as np\nfrom sklearn.decomposition import PCA\n\n# Example data\nvectors = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])\n\n# Dimensionality reduction using PCA\npca = PCA(n_components=2)\nreduced_vectors = pca.fit_transform(vectors)\n\nprint(\"Original vectors:\")\nprint(vectors)\nprint(\"Reduced vectors:\")\nprint(reduced_vectors)",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-vectordb-2",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-2 import `numpy` and `sklearn.decomposition`.",
+   "kind": "reveal",
+   "lines": "1-2"
+  },
+  {
+   "description": "Lines 5-14 run the main code and print the results.",
+   "kind": "reveal",
+   "lines": "5-14"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "14",
+   "trace_step": 9
+  }
+ ],
+ "title": "Retrieve the nearest vectors",
+ "version": 1
+}

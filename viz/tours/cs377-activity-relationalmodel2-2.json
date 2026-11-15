@@ -1,0 +1,28 @@
+{
+ "code": "INSERT INTO Person (person_id, first_name, last_name)\nVALUES (1, 'John', 'Doe');\n\nINSERT INTO Insurance (insurance_id, person_id, insurance_provider, start_date, end_date)\nVALUES (1, 1, 'Provider A', '2022-01-01', '2022-12-31');",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-relationalmodel2-2",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Lines 1-2 run a `INSERT` statement.",
+   "kind": "reveal",
+   "lines": "1-2"
+  },
+  {
+   "description": "Lines 4-5 run a `INSERT` statement.",
+   "kind": "reveal",
+   "lines": "4-5"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "4",
+   "trace_step": 1
+  }
+ ],
+ "title": "Inserting Data",
+ "version": 1
+}

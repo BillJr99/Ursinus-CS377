@@ -1,0 +1,28 @@
+{
+ "code": "import json\n\n# JSON string\njson_string = '{\"name\": \"John\", \"age\": 30, \"city\": \"New York\"}'\n\n# Use json.loads() to convert JSON string to a Python dictionary\ndata = json.loads(json_string)\n\n# Now data is a Python dictionary\nprint(type(data))  # <class 'dict'>\nprint(data)  # {'name': 'John', 'age': 30, 'city': 'New York'}",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "example": "cs377-activity-textandfile-14",
+ "lang": "python",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "description": "Line 1 imports `json`.",
+   "kind": "reveal",
+   "lines": "1"
+  },
+  {
+   "description": "Lines 4-11 run the main code and print the results.",
+   "kind": "reveal",
+   "lines": "4-11"
+  },
+  {
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "kind": "run",
+   "lines": "11",
+   "trace_step": 5
+  }
+ ],
+ "title": "Reading JSON data into a Python dictionary",
+ "version": 1
+}
