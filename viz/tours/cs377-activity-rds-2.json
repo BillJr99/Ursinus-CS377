@@ -1,102 +1,33 @@
 {
  "code": "import os\nimport pickle\nimport hashlib\n\nclass HashIndex:\n\n    def __init__(self, file_name):\n        self.file_name = file_name\n        self.index = {}\n        if os.path.exists(self.file_name):\n            self._load()\n\n    def _load(self):\n        with open(self.file_name, 'rb') as f:\n            self.index = pickle.load(f)\n\n    def _save(self):\n        with open(self.file_name, 'wb') as f:\n            pickle.dump(self.index, f)\n\n    def add(self, key, value):\n        hash_key = self._hash(key)\n        self.index[hash_key] = value\n        self._save()\n\n    def get(self, key):\n        hash_key = self._hash(key)\n        return self.index.get(hash_key)\n\n    def _hash(self, key):\n        return hashlib.sha256(key.encode()).hexdigest()\n\n\n# Usage\nindex = HashIndex('index.bin')\nindex.add('key1', 'value1')\nprint(index.get('key1'))  # Outputs: value1",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow a key through hashing, dictionary storage and file serialization.",
  "example": "cs377-activity-rds-2",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model + edit: codex",
  "steps": [
   {
-   "description": "Lines 1-3 import `os`, `pickle` and `hashlib`.",
+   "description": "HashIndex starts with an empty dictionary and remembers its file name. You load a saved dictionary when that file exists.",
    "kind": "reveal",
-   "lines": "1-3"
+   "lines": "1-15"
   },
   {
-   "description": "Lines 5-6 start the class `HashIndex`, which has methods `__init__`, `_load`, `_save`, `add`, `get` and `_hash`.",
+   "description": "add hashes the supplied key, assigns its value in the dictionary and saves the dictionary with pickle. Each add calls _save.",
    "kind": "reveal",
-   "lines": "5-6"
+   "lines": "17-24"
   },
   {
-   "description": "Lines 7-11 define the method `__init__(self, file_name)`.",
+   "answer": "It applies the same hash transformation to the key and looks up that digest in the dictionary.",
+   "kind": "predict",
+   "lines": "26-31",
+   "question": "How does get locate the value stored by add?"
+  },
+  {
+   "description": "You add key1 with value1 and retrieve it using key1. The supplied run prints value1.",
    "kind": "reveal",
-   "lines": "7-11"
-  },
-  {
-   "description": "Line 10 checks `os.path.exists(self.file_name)`.",
-   "kind": "focus",
-   "lines": "10"
-  },
-  {
-   "description": "Lines 13-15 define the method `_load(self)`.",
-   "kind": "reveal",
-   "lines": "13-15"
-  },
-  {
-   "description": "Lines 17-19 define the method `_save(self)`.",
-   "kind": "reveal",
-   "lines": "17-19"
-  },
-  {
-   "description": "Lines 21-24 define the method `add(self, key, value)`.",
-   "kind": "reveal",
-   "lines": "21-24"
-  },
-  {
-   "description": "Lines 26-28 define the method `get(self, key)`, which calls itself.",
-   "kind": "reveal",
-   "lines": "26-28"
-  },
-  {
-   "description": "Line 28 returns `self.index.get(hash_key)`.",
-   "kind": "focus",
-   "lines": "28"
-  },
-  {
-   "description": "Lines 30-31 define the method `_hash(self, key)`.",
-   "kind": "reveal",
-   "lines": "30-31"
-  },
-  {
-   "description": "Line 31 returns `hashlib.sha256(key.encode()).hexdigest()`.",
-   "kind": "focus",
-   "lines": "31"
-  },
-  {
-   "description": "Lines 35-37 run the main code and print the results.",
-   "kind": "reveal",
-   "lines": "35-37"
-  },
-  {
-   "description": "Here `__init__` is called for the first time; its frame appears on the right.",
-   "kind": "run",
-   "lines": "8",
-   "trace_step": 13
-  },
-  {
-   "description": "Here `__init__` returns, the first time it does.",
-   "kind": "run",
-   "lines": "10",
-   "trace_step": 16
-  },
-  {
-   "description": "Here `_save` is called for the first time; its frame appears on the right.",
-   "kind": "run",
-   "lines": "18",
-   "trace_step": 23
-  },
-  {
-   "description": "Here `_save` returns, the first time it does.",
-   "kind": "run",
-   "lines": "18",
-   "trace_step": 26
-  },
-  {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "37",
-   "trace_step": 34
+   "lines": "34-37"
   }
  ],
- "title": "Indexing",
+ "title": "Saving and retrieving a hash index",
  "version": 1
 }

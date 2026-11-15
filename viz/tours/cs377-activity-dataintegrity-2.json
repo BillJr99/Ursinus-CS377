@@ -1,50 +1,33 @@
 {
  "code": "import hashlib\n\ndef calculate_hash(data):\n    hasher = hashlib.sha256()\n    hasher.update(data.encode())\n    return hasher.hexdigest()\n\noriginal_data = \"Hello, World!\"\nhash_value = calculate_hash(original_data)  # Calculate hash value\nprint(hash_value)\n\nmodified_data = \"Hello, World!!\"\nmodified_hash_value = calculate_hash(modified_data)  # Calculate hash value\nprint(modified_hash_value)\n\nprint(hash_value == modified_hash_value)  # False, indicating data modification",
- "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "description": "You can follow two strings into hash digest comparisons.",
  "example": "cs377-activity-dataintegrity-2",
  "lang": "python",
  "reviewed": false,
- "source": "skeleton",
+ "source": "draft: codex free model + edit: codex",
  "steps": [
   {
-   "description": "Line 1 imports `hashlib`.",
+   "description": "calculate_hash creates a hasher. You encode text as bytes, update the hasher and return its hexadecimal digest.",
    "kind": "reveal",
-   "lines": "1"
+   "lines": "1-6"
   },
   {
-   "description": "Lines 3-6 define `calculate_hash(data)`.",
+   "description": "The first call hashes Hello, World with its supplied punctuation. You store and print the returned digest string.",
    "kind": "reveal",
-   "lines": "3-6"
+   "lines": "8-10"
   },
   {
-   "description": "Line 6 returns `hasher.hexdigest()`.",
-   "kind": "focus",
-   "lines": "6"
+   "answer": "No. The second string adds an exclamation mark, and the supplied output shows two different digests.",
+   "kind": "predict",
+   "lines": "12-16",
+   "question": "Will the supplied strings produce equal digest values?"
   },
   {
-   "description": "Lines 8-16 run the main code and print the results.",
+   "description": "You see False from the equality check. This comparison detects the change between these two supplied inputs.",
    "kind": "reveal",
-   "lines": "8-16"
-  },
-  {
-   "description": "Here `calculate_hash` is called for the first time; its frame appears on the right.",
-   "kind": "run",
-   "lines": "4",
-   "trace_step": 4
-  },
-  {
-   "description": "Here `calculate_hash` returns, the first time it does.",
-   "kind": "run",
-   "lines": "6",
-   "trace_step": 7
-  },
-  {
-   "description": "This is the end of the run: the final state, and all of the output.",
-   "kind": "run",
-   "lines": "16",
-   "trace_step": 17
+   "lines": "12-16"
   }
  ],
- "title": "Hash Functions with the hashlib Module",
+ "title": "Comparing hashes after a text change",
  "version": 1
 }
