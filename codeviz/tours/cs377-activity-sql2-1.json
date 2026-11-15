@@ -1,0 +1,31 @@
+{
+ "version": 1,
+ "example": "cs377-activity-sql2-1",
+ "title": "Executing SQL Queries through psql",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1-8",
+   "description": "Lines 1-8 run a `CREATE` statement."
+  },
+  {
+   "kind": "reveal",
+   "lines": "10",
+   "description": "Line 10 runs a `INSERT` statement."
+  },
+  {
+   "kind": "reveal",
+   "lines": "12",
+   "description": "Line 12 runs a `SELECT` statement."
+  },
+  {
+   "kind": "run",
+   "trace_step": 2,
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "lines": "12"
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "version": 1,
+ "example": "cs377-activity-rdsaggregating2-1",
+ "title": "Example cs377-activity-rdsaggregating2-1",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1-9",
+   "description": "Lines 1-9 run a `PRAGMA` statement."
+  },
+  {
+   "kind": "reveal",
+   "lines": "11-12",
+   "description": "Lines 11-12 continue the example."
+  },
+  {
+   "kind": "reveal",
+   "lines": "13-15",
+   "description": "Lines 13-15 continue the example."
+  },
+  {
+   "kind": "reveal",
+   "lines": "18-22",
+   "description": "Lines 18-22 run a `CREATE` statement."
+  },
+  {
+   "kind": "reveal",
+   "lines": "24-27",
+   "description": "Lines 24-27 continue the example."
+  },
+  {
+   "kind": "reveal",
+   "lines": "30-31",
+   "description": "Lines 30-31 continue the example."
+  },
+  {
+   "kind": "reveal",
+   "lines": "34-40",
+   "description": "Lines 34-40 run a `CREATE` statement."
+  },
+  {
+   "kind": "reveal",
+   "lines": "42-44",
+   "description": "Lines 42-44 continue the example."
+  },
+  {
+   "kind": "reveal",
+   "lines": "46",
+   "description": "Line 46 runs a `SELECT` statement."
+  },
+  {
+   "kind": "run",
+   "trace_step": 18,
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "lines": "46"
+  }
+ ]
+}

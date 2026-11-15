@@ -1,0 +1,21 @@
+{
+ "version": 1,
+ "example": "cs377-activity-sqltriggers-2",
+ "title": "Cleaning Up",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1",
+   "description": "Line 1 runs a `DROP` statement."
+  },
+  {
+   "kind": "run",
+   "trace_step": 0,
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "lines": "1"
+  }
+ ]
+}

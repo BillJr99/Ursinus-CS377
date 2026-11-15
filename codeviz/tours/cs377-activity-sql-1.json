@@ -1,0 +1,31 @@
+{
+ "version": 1,
+ "example": "cs377-activity-sql-1",
+ "title": "Example Code in Java",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1-5",
+   "description": "Lines 1-5 set things up."
+  },
+  {
+   "kind": "reveal",
+   "lines": "6-26",
+   "description": "Lines 6-26 define `main`."
+  },
+  {
+   "kind": "reveal",
+   "lines": "27-28",
+   "description": "Lines 27-28 run the rest of the example."
+  },
+  {
+   "kind": "run",
+   "trace_step": 5,
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "lines": "26"
+  }
+ ]
+}

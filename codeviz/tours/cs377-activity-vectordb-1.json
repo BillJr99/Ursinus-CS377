@@ -1,0 +1,48 @@
+{
+ "version": 1,
+ "example": "cs377-activity-vectordb-1",
+ "title": "Querying a Vector Database",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1-2",
+   "description": "Lines 1-2 import `numpy` and `sklearn.metrics.pairwise`."
+  },
+  {
+   "kind": "reveal",
+   "lines": "4-8",
+   "description": "Lines 4-8 define `find_nearest_vector(vectors, target_vector)`."
+  },
+  {
+   "kind": "focus",
+   "lines": "8",
+   "description": "Line 8 returns `nearest_vector`."
+  },
+  {
+   "kind": "reveal",
+   "lines": "11-15",
+   "description": "Lines 11-15 run the main code and print the results."
+  },
+  {
+   "kind": "run",
+   "trace_step": 6,
+   "lines": "5",
+   "description": "Here `find_nearest_vector` is called for the first time; its frame appears on the right."
+  },
+  {
+   "kind": "run",
+   "trace_step": 10,
+   "lines": "8",
+   "description": "Here `find_nearest_vector` returns, the first time it does."
+  },
+  {
+   "kind": "run",
+   "trace_step": 12,
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "lines": "15"
+  }
+ ]
+}

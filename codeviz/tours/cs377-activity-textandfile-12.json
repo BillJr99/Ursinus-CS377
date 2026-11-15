@@ -1,0 +1,26 @@
+{
+ "version": 1,
+ "example": "cs377-activity-textandfile-12",
+ "title": "json.loads()",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "1",
+   "description": "Line 1 imports `json`."
+  },
+  {
+   "kind": "reveal",
+   "lines": "3-6",
+   "description": "Lines 3-6 run the main code and print the results."
+  },
+  {
+   "kind": "run",
+   "trace_step": 4,
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "lines": "6"
+  }
+ ]
+}

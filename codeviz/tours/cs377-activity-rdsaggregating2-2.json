@@ -1,0 +1,31 @@
+{
+ "version": 1,
+ "example": "cs377-activity-rdsaggregating2-2",
+ "title": "Example cs377-activity-rdsaggregating2-2",
+ "description": "A walkthrough built from the code's structure: each part in reading order, then the moments to look at.",
+ "reviewed": false,
+ "source": "skeleton",
+ "steps": [
+  {
+   "kind": "reveal",
+   "lines": "4-8",
+   "description": "Lines 4-8 run a `SELECT` statement."
+  },
+  {
+   "kind": "reveal",
+   "lines": "11-19",
+   "description": "Lines 11-19 run a `SELECT` statement."
+  },
+  {
+   "kind": "reveal",
+   "lines": "22-32",
+   "description": "Lines 22-32 run a `SELECT` statement."
+  },
+  {
+   "kind": "run",
+   "trace_step": 2,
+   "description": "This is the end of the run: the final state, and all of the output.",
+   "lines": "21"
+  }
+ ]
+}
