@@ -1,0 +1,33 @@
+{
+ "code": "# Import required libraries\nfrom functools import reduce\n\n# Sample input data\ndata = [1, 2, 3, 4, 5]\n\n# Map function\nmapped_data = list(map(lambda x: (x, x**2), data))\n\n# Reduce function\nreduced_data = reduce(lambda x, y: (x[0] + y[0], x[1] + y[1]), mapped_data)\n\nprint(reduced_data)",
+ "description": "You can follow values and squares into a pair of sums.",
+ "example": "cs377-activity-nosqlaggregating-1",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "You import reduce and create the list 1 through 5. These values supply the map operation.",
+   "kind": "reveal",
+   "lines": "1-5"
+  },
+  {
+   "description": "map turns each x into the pair (x, x squared). list collects those transformed pairs in mapped_data.",
+   "kind": "reveal",
+   "lines": "7-8"
+  },
+  {
+   "answer": "It keeps the sum of original values in position zero and the sum of squares in position one.",
+   "kind": "predict",
+   "lines": "10-11",
+   "question": "What does the reduction keep in each position of its accumulated pair?"
+  },
+  {
+   "description": "You see (15, 55) printed. This code combines all mapped pairs directly in one local reduction.",
+   "kind": "reveal",
+   "lines": "10-13"
+  }
+ ],
+ "title": "Mapping pairs and reducing totals",
+ "version": 1
+}

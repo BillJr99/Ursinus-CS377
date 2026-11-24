@@ -1,0 +1,33 @@
+{
+ "code": "import os\nimport pickle\nimport hashlib\n\nclass HashIndex:\n\n    def __init__(self, file_name):\n        self.file_name = file_name\n        self.index = {}\n        if os.path.exists(self.file_name):\n            self._load()\n\n    def _load(self):\n        with open(self.file_name, 'rb') as f:\n            self.index = pickle.load(f)\n\n    def _save(self):\n        with open(self.file_name, 'wb') as f:\n            pickle.dump(self.index, f)\n\n    def add(self, key, value):\n        hash_key = self._hash(key)\n        self.index[hash_key] = value\n        self._save()\n\n    def get(self, key):\n        hash_key = self._hash(key)\n        return self.index.get(hash_key)\n\n    def _hash(self, key):\n        return hashlib.sha256(key.encode()).hexdigest()\n\n\n# Usage\nindex = HashIndex('index.bin')\nindex.add('key1', 'value1')\nprint(index.get('key1'))  # Outputs: value1",
+ "description": "You can follow a key through hashing, dictionary storage and file serialization.",
+ "example": "cs377-activity-rds-2",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model + edit: codex",
+ "steps": [
+  {
+   "description": "HashIndex starts with an empty dictionary and remembers its file name. You load a saved dictionary when that file exists.",
+   "kind": "reveal",
+   "lines": "1-15"
+  },
+  {
+   "description": "add hashes the supplied key, assigns its value in the dictionary and saves the dictionary with pickle. Each add calls _save.",
+   "kind": "reveal",
+   "lines": "17-24"
+  },
+  {
+   "answer": "It applies the same hash transformation to the key and looks up that digest in the dictionary.",
+   "kind": "predict",
+   "lines": "26-31",
+   "question": "How does get locate the value stored by add?"
+  },
+  {
+   "description": "You add key1 with value1 and retrieve it using key1. The supplied run prints value1.",
+   "kind": "reveal",
+   "lines": "34-37"
+  }
+ ],
+ "title": "Saving and retrieving a hash index",
+ "version": 1
+}

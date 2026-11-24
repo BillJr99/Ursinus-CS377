@@ -1,0 +1,33 @@
+{
+ "code": "INSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (\n  (SELECT ID FROM STUDENTS WHERE FirstName=\"Alex\" AND LastName=\"Smith\"), \n  (SELECT ID FROM COURSES WHERE CourseNum=\"CS377\")\n);\nINSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (\n  (SELECT ID FROM STUDENTS WHERE FirstName=\"Lee\" AND LastName=\"Jones\"), \n  (SELECT ID FROM COURSES WHERE CourseNum=\"CS377\")\n);\nINSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (\n  (SELECT ID FROM STUDENTS WHERE FirstName=\"Brian\" AND LastName=\"McMullen\"), \n  (SELECT ID FROM COURSES WHERE CourseNum=\"CS173\")\n);       ",
+ "description": "You can identify how lookup expressions supply foreign-key values.",
+ "example": "cs377-activity-rdsaggregating2-3",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "The first INSERT names StudentID and CourseID as its target columns. You supply a SELECT expression for each value.",
+   "kind": "reveal",
+   "lines": "1-4"
+  },
+  {
+   "description": "The second statement follows the same shape with different student-name conditions. Its course lookup still selects CS377.",
+   "kind": "reveal",
+   "lines": "5-8"
+  },
+  {
+   "answer": "No. Their SELECT expressions supply inserted values, and the block contains no standalone result query.",
+   "kind": "predict",
+   "lines": "9-12",
+   "question": "Do these INSERT statements include a SELECT that prints the resulting enrollment rows?"
+  },
+  {
+   "description": "The third statement uses Brian McMullen and CS173 in its lookups. You see three statement visits in the supplied trace and no printed output.",
+   "kind": "reveal",
+   "lines": "9-12"
+  }
+ ],
+ "title": "Reading inserts with subqueries",
+ "version": 1
+}

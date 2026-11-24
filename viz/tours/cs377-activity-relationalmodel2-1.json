@@ -1,0 +1,33 @@
+{
+ "code": "CREATE TABLE Person (\n    person_id INT PRIMARY KEY,\n    first_name VARCHAR(50),\n    last_name VARCHAR(50),\n    age INT,\n    CHECK(age >= 0) -- what does this do?\n);\n\nCREATE TABLE Insurance (\n    insurance_id INT PRIMARY KEY,\n    person_id INT,\n    insurance_provider VARCHAR(50),\n    start_date DATE DEFAULT NOW,\n    end_date DATE,\n    FOREIGN KEY (person_id) REFERENCES Person(person_id)\n);",
+ "description": "You can identify keys and the relationship declared between two tables.",
+ "example": "cs377-activity-relationalmodel2-1",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "Person declares person_id as its primary key and stores names and age. You can also see a CHECK expression attached to age.",
+   "kind": "reveal",
+   "lines": "1-7"
+  },
+  {
+   "description": "Insurance declares its own primary key, a person_id column and provider and date fields. The start_date declaration includes a default expression.",
+   "kind": "reveal",
+   "lines": "9-14"
+  },
+  {
+   "answer": "It references person_id in Person, connecting an insurance record to a person key.",
+   "kind": "predict",
+   "lines": "15",
+   "question": "Which table and column does Insurance's foreign key reference?"
+  },
+  {
+   "description": "You finish with two table declarations linked by the foreign key. The supplied trace visits both CREATE statements and shows no printed rows.",
+   "kind": "reveal",
+   "lines": "15-16"
+  }
+ ],
+ "title": "Reading related table definitions",
+ "version": 1
+}

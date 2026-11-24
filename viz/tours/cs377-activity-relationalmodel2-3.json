@@ -1,0 +1,33 @@
+{
+ "code": "UPDATE Insurance\nSET end_date = '2023-12-31'\nWHERE insurance_id = 1;",
+ "description": "You can separate the target table, changed field and row condition.",
+ "example": "cs377-activity-relationalmodel2-3",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "UPDATE names Insurance as the target table. You will change existing matching rows.",
+   "kind": "reveal",
+   "lines": "1"
+  },
+  {
+   "description": "SET supplies a new end_date of 2023-12-31. This assignment identifies the field being changed.",
+   "kind": "reveal",
+   "lines": "2"
+  },
+  {
+   "answer": "No. WHERE restricts the update to rows whose insurance_id equals 1.",
+   "kind": "predict",
+   "lines": "3",
+   "question": "Does this statement target every insurance record?"
+  },
+  {
+   "description": "The statement changes the selected record's end date in the supplied setup. You see one statement visit and no printed row because the block contains no result query.",
+   "kind": "reveal",
+   "lines": "3"
+  }
+ ],
+ "title": "Updating one insurance record",
+ "version": 1
+}

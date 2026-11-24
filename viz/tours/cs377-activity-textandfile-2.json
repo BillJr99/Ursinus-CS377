@@ -1,0 +1,33 @@
+{
+ "code": "text = 'Hello, World!'\n\n# Encoding text to UTF-8\nencoded_text = text.encode('utf-8')\nprint(encoded_text)  # Output: b'Hello, World!'\n\n# Decoding UTF-8 text\ndecoded_text = encoded_text.decode('utf-8')\nprint(decoded_text)  # Output: Hello, World!",
+ "description": "You can follow the same greeting through two representations.",
+ "example": "cs377-activity-textandfile-2",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "text holds a Python string. You will convert that string using the explicitly named UTF-8 encoding.",
+   "kind": "reveal",
+   "lines": "1"
+  },
+  {
+   "description": "encode returns bytes in encoded_text. The printed representation begins with b to identify that bytes value.",
+   "kind": "reveal",
+   "lines": "3-5"
+  },
+  {
+   "answer": "It returns a Python string containing the original greeting.",
+   "kind": "predict",
+   "lines": "7-8",
+   "question": "What representation does decode return from these UTF-8 bytes?"
+  },
+  {
+   "description": "You see the greeting printed again without the bytes prefix. Both conversions use UTF-8, completing this text-to-bytes round trip.",
+   "kind": "reveal",
+   "lines": "8-9"
+  }
+ ],
+ "title": "Encoding text and decoding bytes",
+ "version": 1
+}

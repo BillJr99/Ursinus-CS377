@@ -1,0 +1,33 @@
+{
+ "code": "import numpy as np\nfrom sklearn.metrics.pairwise import cosine_similarity\n\ndef find_nearest_vector(vectors, target_vector):\n    cosine_similarities = cosine_similarity(vectors, target_vector.reshape(1, -1))\n    nearest_index = np.argmax(cosine_similarities)\n    nearest_vector = vectors[nearest_index]\n    return nearest_vector\n\n# Example usage\nvectors = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) # the collection of vectors\ntarget_vector = np.array([2, 4, 6]) # the user preference vector for which we are seeking a nearest match in the collection\n\nnearest_vector = find_nearest_vector(vectors, target_vector)\nprint(\"Nearest vector:\", nearest_vector)",
+ "description": "You can follow similarity scores into one selected vector.",
+ "example": "cs377-activity-vectordb-1",
+ "lang": "python",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "The function compares all vector rows with one target. You reshape the target into a single row for cosine_similarity.",
+   "kind": "reveal",
+   "lines": "1-5"
+  },
+  {
+   "description": "argmax selects the index of the highest similarity. You return the original vector at that index.",
+   "kind": "reveal",
+   "lines": "6-8"
+  },
+  {
+   "answer": "[1, 2, 3] does. The target is twice that vector, so their cosine similarity is maximal.",
+   "kind": "predict",
+   "lines": "11-12",
+   "question": "Which stored vector points in the same direction as the target [2, 4, 6]?"
+  },
+  {
+   "description": "You see Nearest vector: [1 2 3]. The selection uses cosine similarity rather than the smallest coordinate-wise difference.",
+   "kind": "reveal",
+   "lines": "14-15"
+  }
+ ],
+ "title": "Selecting by cosine similarity",
+ "version": 1
+}

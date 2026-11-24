@@ -1,0 +1,33 @@
+{
+ "code": "PRAGMA foreign_keys = ON; -- Enforce foreign key constraints\n\n-- Students Table\nCREATE TABLE STUDENTS (\n    ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, \n    FirstName TEXT NOT NULL, \n    LastName TEXT NOT NULL, \n    Age INTEGER\n);\n\nINSERT INTO STUDENTS (FirstName, LastName, Age) VALUES (\"Alex\", \"Smith\", 20);\nINSERT INTO STUDENTS (FirstName, LastName, Age) VALUES (\"Lee\", \"Jones\", 21);\nINSERT INTO STUDENTS (FirstName, LastName, Age) VALUES (\"Brian\", \"McMullen\", 18);\nINSERT INTO STUDENTS (FirstName, LastName, Age) VALUES (\"Samantha\", \"Johnson\", 22);\nINSERT INTO STUDENTS (FirstName, LastName, Age) VALUES (\"Lee\", \"Jones\", 24);\n\n-- Courses Table\nCREATE TABLE COURSES (\n  ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, \n  CourseNum TEXT NOT NULL, \n  CourseName TEXT NOT NULL\n);\n\nINSERT INTO COURSES (CourseNum, CourseName) VALUES (\"CS377\", \"Database Design\");\nINSERT INTO COURSES (CourseNum, CourseName) VALUES (\"CS173\", \"Intro to Computer Science\");\nINSERT INTO COURSES (CourseNum, CourseName) VALUES (\"CS174\", \"Object Oriented Programming\");\nINSERT INTO COURSES (CourseNum, CourseName) VALUES (\"CS275\", \"Software Engineering\");\n\n-- Try it out\nSELECT * FROM STUDENTS;\nSELECT * FROM COURSES;\n\n-- Link the Tables Together with Primary and Foreign Keys\nCREATE TABLE ENROLLMENTS (\n  ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, \n  StudentID INTEGER NOT NULL, \n  CourseID INTEGER NOT NULL, \n  FOREIGN KEY(StudentID) REFERENCES STUDENTS(ID), \n  FOREIGN KEY(CourseID) REFERENCES COURSES(ID)\n);\n\nINSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (1, 1);\nINSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (2, 1);\nINSERT INTO ENROLLMENTS(StudentID, CourseID) VALUES (3, 2);\n\nSELECT * FROM ENROLLMENTS;        ",
+ "description": "You can follow separate student and course records into a linking table.",
+ "example": "cs377-activity-rdsaggregating2-1",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "You enable foreign-key enforcement and define STUDENTS. The inserts include two Lee Jones records with different ages.",
+   "kind": "reveal",
+   "lines": "1-15"
+  },
+  {
+   "description": "COURSES stores course numbers and names separately. The first two SELECT statements display the populated source tables.",
+   "kind": "reveal",
+   "lines": "17-31"
+  },
+  {
+   "answer": "No. It stores StudentID and CourseID, with foreign keys referencing the two source tables.",
+   "kind": "predict",
+   "lines": "33-40",
+   "question": "Does an enrollment store the full student name and course title?"
+  },
+  {
+   "description": "You add three links and select them. The recorded enrollment rows connect students 1 and 2 to course 1, and student 3 to course 2.",
+   "kind": "reveal",
+   "lines": "33-46"
+  }
+ ],
+ "title": "Building enrollment relationships",
+ "version": 1
+}

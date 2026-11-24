@@ -1,0 +1,33 @@
+{
+ "code": "INSERT INTO Person (person_id, first_name, last_name)\nVALUES (1, 'John', 'Doe');\n\nINSERT INTO Insurance (insurance_id, person_id, insurance_provider, start_date, end_date)\nVALUES (1, 1, 'Provider A', '2022-01-01', '2022-12-31');",
+ "description": "You can match explicit column lists with their supplied values.",
+ "example": "cs377-activity-relationalmodel2-2",
+ "lang": "sql",
+ "reviewed": false,
+ "source": "draft: codex free model",
+ "steps": [
+  {
+   "description": "The first INSERT supplies person_id, first_name and last_name. You place John Doe under person_id 1.",
+   "kind": "reveal",
+   "lines": "1-2"
+  },
+  {
+   "description": "The second INSERT targets Insurance with five named columns. Its person_id column connects the insurance row to a person.",
+   "kind": "reveal",
+   "lines": "4"
+  },
+  {
+   "answer": "The second value, 1, fills person_id and matches the person inserted first.",
+   "kind": "predict",
+   "lines": "5",
+   "question": "Which supplied value identifies the person associated with this insurance row?"
+  },
+  {
+   "description": "You supply Provider A and explicit start and end dates for that row. The trace visits both inserts and shows no printed rows because the block contains no SELECT.",
+   "kind": "reveal",
+   "lines": "5"
+  }
+ ],
+ "title": "Inserting linked person and insurance rows",
+ "version": 1
+}
